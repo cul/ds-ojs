@@ -23,7 +23,7 @@ The OJS update:themes task requires the following variables.
   ojs_version: 3.1.1-2
   ojs_instance: https://jmetc-dev.cul.columbia.edu/index.php  
   application: jmetc
-  shared_dir: /cul/cul0/cdrs/ojs/jmetc/dev/shared  
+  shared_dir: /path/to//shared  
 ```
 
 
