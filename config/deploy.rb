@@ -13,18 +13,18 @@ set :deploy_to,   "/var/www/#{fetch(:instance)}/#{fetch(:deploy_name)}"
 
 set :remote_user, "#{fetch(:instance)}serv"
 
-set :ojs_version_no, OJS_CONFIG[:ojs_version]
-set :ojs_version, "ojs-#{fetch(:ojs_version_no)}"
-set :ojs_tar_file, "#{fetch(:ojs_version)}.tar"
-set :download_url, "http://pkp.sfu.ca/ojs/download/#{fetch(:ojs_tar_file)}.gz"
-
-set :ojs_root, "#{fetch(:deploy_to)}/html"
-set :shared_path, OJS_CONFIG[:shared_dir]
-
-
 
 
 namespace :ojs do
+
+
+  set :ojs_version_no, OJS_CONFIG[:ojs_version]
+  set :ojs_version, "ojs-#{fetch(:ojs_version_no)}"
+  set :ojs_tar_file, "#{fetch(:ojs_version)}.tar"
+  set :download_url, "http://pkp.sfu.ca/ojs/download/#{fetch(:ojs_tar_file)}.gz"
+
+  set :ojs_root, "#{fetch(:deploy_to)}/html"
+  set :shared_path, OJS_CONFIG[:shared_dir]
 
 
   task :setup do

@@ -1,4 +1,2 @@
 dev:
-  ojs_version: 3.1.1-2
   application: app_name
-  shared_dir: /path/to/shared 
