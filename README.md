@@ -18,7 +18,7 @@ Capistrano v3 tasks for OJS projects.
    Updates themes managed in ds-ojs repo.
 
 #### Configurable variables
-The OJS update:themes task requires the following variables.
+The OJS update:themes task requires the following variable set in ojs_config.yml.
 ```yaml
   application: app_name
 ```
