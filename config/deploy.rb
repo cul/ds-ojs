@@ -1,7 +1,3 @@
-# lock Capistrano version
-lock "3.9.0"
-
-
 OJS_CONFIG = YAML.load(File.read(File.expand_path('../ojs_config.yml', __FILE__)))["#{fetch(:stage)}"].symbolize_keys!
 
 
