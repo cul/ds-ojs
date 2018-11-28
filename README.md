@@ -20,9 +20,7 @@ Capistrano v3 tasks for OJS projects.
 #### Configurable variables
 The OJS update:themes task requires the following variables.
 ```yaml
-  ojs_version: 3.1.1-2
   application: app_name
-  shared_dir: /path/to/shared  
 ```
 
 
