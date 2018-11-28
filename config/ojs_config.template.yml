@@ -1,0 +1,4 @@
+dev:
+  ojs_version: 3.1.1-2
+  application: journals
+  shared_dir: /cul/cul0/cdrs/ojs/journals/dev/shared  
