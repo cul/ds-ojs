@@ -1,0 +1,164 @@
+/* bootstrap3 theme modifications */
+
+/* general formating */
+
+h1 {
+  margin-bottom: 12px;
+}
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.4;
+}
+
+p {
+	line-height: 1.6;
+}
+
+/* header */
+
+.top-nav {
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.navbar-brand {
+  height: 115px;
+  padding: 25px;
+}
+
+.navbar-nav {
+  font-size: 17px;
+  margin: 33px 0 0 20px;
+}
+
+.navbar-form {
+  margin-top: 42px;
+
+  & .form-control {
+    padding: 6px;
+  }
+}
+
+.navbar-header .navbar-toggle {
+  margin-top: 42px;
+}
+
+@media (max-width: 1210px) {
+
+	.navbar-brand {
+		height: 82px;
+		padding: 15px;
+	}
+
+	.navbar-nav {
+		font-size: 13px;
+		margin: 16px 0 0 10px;
+	}
+
+	.navbar-form {
+		margin-top: 23px;
+	}
+
+	.navbar-header .navbar-toggle {
+		margin-top: 23px;
+	}
+}
+
+/* article details */
+
+.article-published-date {
+  display: inline;
+  color: #999;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.media-heading p {
+  margin: 2px 0 5px 0;
+}
+
+.authors {
+  padding-bottom: 8px
+}
+
+/* issue page */
+
+h3.issue-title {
+
+  & p {
+    font-size: 18px;
+    color: #999;
+    padding-top: 8px;
+  }
+}
+
+/* article page */
+
+body.pkp_page_article {
+
+  & #sidebar {
+    display: none;
+  }
+
+  & .pkp_structure_main {
+    width: 100%;
+  }
+
+  & .article-primary-content {
+    display: flex;
+  }
+
+  & .article-main {
+    width: 70%;
+  }
+
+  & .article-more-details {
+    margin-left: 25px;
+    width: 30%;
+  }
+
+  & .date-published strong {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  body.pkp_page_article {
+
+    & .article-primary-content {
+      display: block;
+    }
+
+    & .article-main,
+    & .article-more-details {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+/* announcement page */
+
+.announcements {
+	padding-top: 10px;
+}
+
+/* hide breadcrumbs on announcement page */
+
+// .pkp_page_announcement .cmp_breadcrumbs {
+//   display: none;
+// }
+
+/* footer */
+
+footer[role="contentinfo"] {
+  font-size: 14px;
+}
+
+footer img.cul-logo {
+  max-width: 300px;
+}
+
+footer img.ojs-logo {
+  max-width: 100px;
+}
