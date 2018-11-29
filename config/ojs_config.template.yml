@@ -1,2 +1,6 @@
 dev:
   application: app_name
+test:
+  application: app_name
+prod:
+  application: app_name

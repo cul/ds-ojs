@@ -4,6 +4,8 @@ Capistrano v3 tasks for OJS projects.
 
 ## Usage
 
+copy ojs_config.template.yml to ojs_config.yml
+
 ### OJS deployment
 #### Tasks
 1. `cap {env} ojs:setup`

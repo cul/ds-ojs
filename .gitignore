@@ -1,0 +1,6 @@
+.project
+.bundle
+log/*.log
+log/*.log*
+tmp/**/*
+config/ojs_config.yml
