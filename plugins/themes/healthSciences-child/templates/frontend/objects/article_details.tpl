@@ -65,7 +65,7 @@ Modifications:
 				</div>
 			{/if}
 
-			{if $article->getAuthors()}
+			<!-- {if $article->getAuthors()}
 				<ul class="authors-string">
 					{foreach from=$article->getAuthors() item=authorString key=authorStringKey}
 						{strip}
@@ -83,7 +83,7 @@ Modifications:
 					{/foreach}
 				</ul>
 
-				<!-- {* Authors *}
+				{* Authors *}
 				{assign var="authorCount" value=$article->getAuthors()|@count}
 				{assign var="authorBioIndex" value=0}
 				<div class="article-details-authors">
@@ -139,7 +139,7 @@ Modifications:
 					{/foreach}
 				</div>
 
-			{/if} -->
+			{/if}  -->
 		</div>
 	</div><!-- .page-header -->
 
