@@ -44,7 +44,7 @@ Modifications:
 			<div class="row">
 				{if $pageFooter}
 				<div class="col-md-10">
-          <img class="img-responsive cul-logo" alt="Columbia University Libraries" src="{$baseUrl}/plugins/themes/bootstrap3-child/assets/logo-cul.png">
+          <a href="https://library.columbia.edu"><img class="img-responsive cul-logo" alt="Columbia University Libraries" src="{$baseUrl}/plugins/themes/bootstrap3-child/assets/logo-cul.png"></a>
 					{$pageFooter}
 				</div>
 				{/if}
