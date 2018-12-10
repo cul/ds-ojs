@@ -18,7 +18,7 @@
 		<div class="row">
 			{if $pageFooter}
 				<div class="col-md site-footer-content align-self-center">
-          <a href="https://library.columbia.edu"><img class="cul-logo" alt="Columbia University Libraries" src="{$baseUrl}/plugins/themes/healthsciences-child/assets/logo-cul-white.png"></a>
+          <a href="https://library.columbia.edu"><img class="cul-logo" alt="Columbia University Libraries" src="{$baseUrl}/plugins/themes/healthSciences-child/assets/logo-cul-white.png"></a>
 					{$pageFooter}
 				</div>
 			{/if}
