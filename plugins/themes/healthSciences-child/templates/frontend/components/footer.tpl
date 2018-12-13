@@ -1,3 +1,11 @@
+{*
+
+Modifications:
+
+- add CUL logo
+
+*}
+
 {**
  * templates/frontend/components/footer.tpl
  *
