@@ -147,15 +147,6 @@ Modifications:
 					</div>
 				{/if}
 
-				{call_hook name="Templates::Article::Main"}
-
-			</section><!-- .article-main -->
-
-			<section class="article-more-details">
-
-				{* Screen-reader heading for easier navigation jumps *}
-				<h2 class="sr-only">{translate key="plugins.themes.bootstrap3.article.details"}</h2>
-
         {* Author biographies *}
         {assign var="hasBiographies" value=0}
         {foreach from=$article->getAuthors() item=author}
@@ -195,6 +186,15 @@ Modifications:
           </div>
         {/if}
 
+				{call_hook name="Templates::Article::Main"}
+
+			</section><!-- .article-main -->
+
+			<section class="article-more-details">
+
+				{* Screen-reader heading for easier navigation jumps *}
+				<h2 class="sr-only">{translate key="plugins.themes.bootstrap3.article.details"}</h2>
+
         {* Keywords *}
         {if !empty($keywords[$currentLocale])}
           <div class="panel panel-default">
@@ -208,28 +208,6 @@ Modifications:
                   {$keywordItem|escape}{if !$smarty.foreach.keywords.last}, {/if}
                 {/foreach}
               {/foreach}
-            </div>
-          </div>
-        {/if}
-
-        {* Licensing info *}
-        {if $copyright || $licenseUrl}
-          <div class="panel panel-default copyright">
-            <div class="panel-body">
-              {if $licenseUrl}
-                {if $ccLicenseBadge}
-                  {$ccLicenseBadge}
-                {else}
-                  <a href="{$licenseUrl|escape}" class="copyright">
-                    {if $copyrightHolder}
-                      {translate key="submission.copyrightStatement" copyrightHolder=$copyrightHolder copyrightYear=$copyrightYear}
-                    {else}
-                      {translate key="submission.license"}
-                    {/if}
-                  </a>
-                {/if}
-              {/if}
-              {$copyright}
             </div>
           </div>
         {/if}
@@ -257,6 +235,28 @@ Modifications:
 						</div>
 					</div>
 				{/if}
+
+        {* Licensing info *}
+        {if $copyright || $licenseUrl}
+          <div class="panel panel-default copyright">
+            <div class="panel-body">
+              {if $licenseUrl}
+                {if $ccLicenseBadge}
+                  {$ccLicenseBadge}
+                {else}
+                  <a href="{$licenseUrl|escape}" class="copyright">
+                    {if $copyrightHolder}
+                      {translate key="submission.copyrightStatement" copyrightHolder=$copyrightHolder copyrightYear=$copyrightYear}
+                    {else}
+                      {translate key="submission.license"}
+                    {/if}
+                  </a>
+                {/if}
+              {/if}
+              {$copyright}
+            </div>
+          </div>
+        {/if}
 
 				{* How to cite *}
 				{if $citation}
