@@ -176,3 +176,42 @@ footer img.cul-logo {
 footer img.ojs-logo {
   max-width: 100px;
 }
+
+/* small tables embedded in posts */
+
+table.table-small {
+  border-collapse: collapse;
+
+  & tr {
+    vertical-align: top;
+  }
+
+  & td,
+  & th {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+    width: 33%;
+  }
+}
+
+/* lists with checkboxes */
+
+.checkboxes {
+  padding-left: 10px;
+
+    & li {
+      display: flex;
+      list-style: none;
+      margin: 5px 0;
+      padding-left: 6px;
+    }
+
+    & input[type="checkbox"] {
+      margin-top: 4px;
+    }
+
+    & span {
+      padding-left: 10px;
+    }
+  }
