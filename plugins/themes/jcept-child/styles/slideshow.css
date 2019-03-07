@@ -1,3 +1,9 @@
+
+/*
+Pure CSS slider
+https://github.com/drygiel/csslider
+*/
+
 .csslider {
   -moz-perspective: 1300px;
   -ms-perspective: 1300px;
@@ -229,5 +235,3 @@
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
 }
-/*#region MODULES */
-/*#endregion */
