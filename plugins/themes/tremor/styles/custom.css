@@ -51,16 +51,114 @@
 
 /* homepage */
 
-.homepage-cover {
-	background: gray;
-	padding: 50px;
+
+/* front page info box */
+
+#pkp_content_main .infobox {
+	display: flex;
 }
 
-.obj_issue_toc .sections:not(:first-child) {
-	margin-top: 0;
+#pkp_content_main .infobox .cover {
+	flex: 1 0 0;
+	max-width: 200px;
 }
 
-.obj_article_summary > .title {
-	font-size: 21px;
+#pkp_content_main .infobox .cover img {
+	max-width: 100%;
+}
+
+#pkp_content_main .infobox ul {
+	flex: 3 0 0;
+	margin: 0 0 0 26px;
+}
+
+#pkp_content_main .infobox li {
+	list-style: none;
+	float: left;
+}
+
+#pkp_content_main .infobox li img {
+	float: left;
+	margin: 5px 10px 0 0;
+	width: 28px;
+}
+
+#pkp_content_main .infobox p {
+	float: right;
+	font-size: 13px;
+	margin: 0 0 13px 0;
+	max-width: 450px;
+}
+
+/* article feeds */
+
+.obj_article_summary {
+	padding-bottom: 10px;
+}
+
+.obj_article_summary .title {
+	font-size: 19px;
+	font-weight: 500;
 	line-height: 1.4;
 }
+
+.obj_article_summary .title a {
+	color: black;
+}
+
+.obj_article_summary .title a:hover {
+	color: #00C24E;
+}
+
+.obj_article_summary .meta {
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+.obj_article_summary .date {
+	color: #888;
+	display: inline-block;
+	font-size: 16px;
+	padding-right: 20px;
+}
+
+.obj_article_summary .galleys_links {
+	display: inline-block;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
