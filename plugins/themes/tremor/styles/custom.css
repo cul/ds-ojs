@@ -1,0 +1,66 @@
+/* tremor styles */
+
+/* top navigation */
+
+.pkp_navigation_primary {
+	z-index: 1000;
+}
+
+.pkp_navigation_primary_row {
+	background: #02341c;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+ 	top: 0;
+	width: 100%;
+}
+
+/* header */
+
+.pkp_navigation_user {
+	padding-right: 20px;
+	position: absolute;
+	right: 0;
+	top: 4px;
+	width: 20%;
+}
+
+.pkp_head_wrapper,
+.has_site_logo .pkp_head_wrapper {
+	padding: 60px 0 10px 0;
+	width: 100%;
+}
+
+.pkp_structure_head {
+	background-color: white;
+}
+
+.pkp_site_name {
+	text-align: center;
+}
+
+.pkp_site_name .is_img img {
+	max-height: none;
+	text-align: center;
+}
+
+.pkp_navigation_primary > li > a:hover, .pkp_navigation_primary > li > a:focus {
+	border: 0;
+}
+
+/* homepage */
+
+.homepage-cover {
+	background: gray;
+	padding: 50px;
+}
+
+.obj_issue_toc .sections:not(:first-child) {
+	margin-top: 0;
+}
+
+.obj_article_summary > .title {
+	font-size: 21px;
+	line-height: 1.4;
+}
