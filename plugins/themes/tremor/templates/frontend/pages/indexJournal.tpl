@@ -1,11 +1,13 @@
-<!--
+{*
+	
+Modifications:
 
 - remove announcements
 - remove homepage image
 - add tremor cover info box
 - link to /browse
 
--->
+*}
 
 {**
  * templates/frontend/pages/indexJournal.tpl

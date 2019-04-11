@@ -118,21 +118,37 @@
 .obj_article_summary .date {
 	color: #888;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
 	padding-right: 20px;
 }
 
-.obj_article_summary .galleys_links {
+.obj_article_summary .galleys_links,
+.obj_article_summary .galleys_links li {
 	display: inline-block;
 	
 }
 
 
+/* article page */
 
+.obj_article_details .main_entry {
+	border-right: 0;
+	width: 100%;
+}
 
+.obj_article_details .main_entry .item .label {
+	font-size: 20px;
+}
 
+.obj_article_details .item.galleys,
+.obj_article_details .item.doi {
+	border-top: 1px solid #ddd;
+	padding: 20px 30px;
+}
 
-
+.pkp_structure_main p {
+	font-size: 16px;
+}
 
 
 

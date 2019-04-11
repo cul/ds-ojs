@@ -1,8 +1,10 @@
-<!--
+{*
+	
+Modifications:
 
 - hide default search
 
--->
+*}
 
 {**
  * lib/pkp/templates/frontend/components/header.tpl

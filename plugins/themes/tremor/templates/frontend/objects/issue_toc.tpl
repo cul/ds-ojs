@@ -1,8 +1,10 @@
-<!--
+{*
+	
+Modifications:
 
 - remove issue pubdate
 
--->
+*}
 
 {**
  * templates/frontend/objects/issue_toc.tpl
