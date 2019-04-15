@@ -49,9 +49,6 @@
 	border: 0;
 }
 
-/* homepage */
-
-
 /* front page info box */
 
 #pkp_content_main .infobox {
@@ -88,6 +85,47 @@
 	font-size: 13px;
 	margin: 0 0 13px 0;
 	max-width: 450px;
+}
+
+/* front page tab navs */
+
+#homepage-tabs section {
+	border-top: 1px solid #ddd;
+  display: none;
+  padding: 20px;
+}
+
+#homepage-tabs input {
+  display: none;
+}
+
+#homepage-tabs label {
+  border: 1px solid transparent;
+	border-radius: 5px;
+	color: #888;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+#homepage-tabs label:hover {
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+#homepage-tabs input:checked + label {
+  color: black;
+  border: 1px solid #ddd;
+  border-top: 2px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+
+#homepage-tabs #tab1:checked ~ #content1,
+#homepage-tabs #tab2:checked ~ #content2 {
+  display: block;
 }
 
 /* article feeds */
