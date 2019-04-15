@@ -100,8 +100,11 @@
 }
 
 #homepage-tabs label {
+	background-color: #f3f3f3;
   border: 1px solid transparent;
-	border-radius: 5px;
+  	border-bottom: 1px solid #ddd;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	color: #888;
   display: inline-block;
   font-weight: bold;
@@ -111,12 +114,12 @@
 }
 
 #homepage-tabs label:hover {
-	background-color: #f3f3f3;
-	border-bottom: 1px solid #ddd;
+	background-color: #e3e3e3;
   cursor: pointer;
 }
 
 #homepage-tabs input:checked + label {
+	background-color: white;
   color: black;
   border: 1px solid #ddd;
   border-top: 2px solid #ddd;
@@ -126,6 +129,19 @@
 #homepage-tabs #tab1:checked ~ #content1,
 #homepage-tabs #tab2:checked ~ #content2 {
   display: block;
+}
+
+#homepage-tabs ul.papers {
+	padding: 0;	
+}
+
+#homepage-tabs ul.papers h3 {
+	margin: 0 0 5px 0;	
+}
+
+#homepage-tabs ul.papers li {
+	list-style: none;
+	margin-bottom: 20px;
 }
 
 /* article feeds */
