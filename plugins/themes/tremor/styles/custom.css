@@ -53,6 +53,7 @@
 
 #pkp_content_main .infobox {
 	display: flex;
+	padding-bottom: 20px;
 }
 
 #pkp_content_main .infobox .cover {
@@ -66,7 +67,7 @@
 
 #pkp_content_main .infobox ul {
 	flex: 3 0 0;
-	margin: 0 0 0 26px;
+	margin: 0;
 }
 
 #pkp_content_main .infobox li {
@@ -90,9 +91,9 @@
 /* front page tab navs */
 
 #homepage-tabs section {
-	border-top: 1px solid #ddd;
+	border: 1px solid #ddd;
   display: none;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
 }
 
 #homepage-tabs input {
@@ -182,7 +183,6 @@
 	
 }
 
-
 /* article page */
 
 .obj_article_details .main_entry {
@@ -202,6 +202,17 @@
 
 .pkp_structure_main p {
 	font-size: 16px;
+}
+
+/* html galleys */
+
+.header_view {
+	background: #008335;
+}
+
+.galley_view {
+	margin: 0 auto;
+	max-width: 800px;
 }
 
 
