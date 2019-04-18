@@ -2,22 +2,18 @@
 	
 Modifications:
 	
-	- remove entry details column
-		- hide date published
-		- hide citation
-		- hide issue info
-		- hide licensing info
-	- remove author bios
 	- move article galleys to main column
 	- move doi to bottom of the main column
+	- remove entry details column
+	- hide author bios and orcid id
 	
 *}
-	
+
 {**
  * templates/frontend/objects/article_details.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2019 Simon Fraser University
+ * Copyright (c) 2003-2019 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief View of an Article which displays all details about the article.
@@ -101,17 +97,21 @@ Modifications:
 								{$author->getFullName()|escape}
 							</span>
 							{if $author->getLocalizedAffiliation()}
+{*
 								<span class="affiliation">
 									{$author->getLocalizedAffiliation()|escape}
 								</span>
+*}
 							{/if}
 							{if $author->getOrcid()}
+{*
 								<span class="orcid">
 									{$orcidIcon}
 									<a href="{$author->getOrcid()|escape}" target="_blank">
 										{$author->getOrcid()|escape}
 									</a>
 								</span>
+*}
 							{/if}
 						</li>
 					{/foreach}
@@ -145,6 +145,43 @@ Modifications:
 
 			{call_hook name="Templates::Article::Main"}
 
+			{* Author biographies *}
+			{assign var="hasBiographies" value=0}
+			{foreach from=$article->getAuthors() item=author}
+				{if $author->getLocalizedBiography()}
+					{assign var="hasBiographies" value=$hasBiographies+1}
+				{/if}
+			{/foreach}
+			{if $hasBiographies}
+				<div class="item author_bios">
+					<h3 class="label">
+						{if $hasBiographies > 1}
+							{translate key="submission.authorBiographies"}
+						{else}
+							{translate key="submission.authorBiography"}
+						{/if}
+					</h3>
+					{foreach from=$article->getAuthors() item=author}
+						{if $author->getLocalizedBiography()}
+							<div class="sub_item">
+								<div class="label">
+									{if $author->getLocalizedAffiliation()}
+										{capture assign="authorName"}{$author->getFullName()|escape}{/capture}
+										{capture assign="authorAffiliation"}<span class="affiliation">{$author->getLocalizedAffiliation()|escape}</span>{/capture}
+										{translate key="submission.authorWithAffiliation" name=$authorName affiliation=$authorAffiliation}
+									{else}
+										{$author->getFullName()|escape}
+									{/if}
+								</div>
+								<div class="value">
+									{$author->getLocalizedBiography()|strip_unsafe_html}
+								</div>
+							</div>
+						{/if}
+					{/foreach}
+				</div>
+			{/if}
+
 			{* References *}
 			{if $parsedCitations->getCount() || $article->getCitations()}
 				<div class="item references">
@@ -166,8 +203,6 @@ Modifications:
 			{* Article Galleys *}
 			{if $primaryGalleys}
 				<div class="item galleys">
-					
-					<h3 class="label">Full Text:</h3>
 					<ul class="value galleys_links">
 						{foreach from=$primaryGalleys item=galley}
 							<li>
@@ -192,7 +227,7 @@ Modifications:
 			{* DOI (requires plugin) *}
 			{foreach from=$pubIdPlugins item=pubIdPlugin}
 				{if $pubIdPlugin->getPubIdType() != 'doi'}
-					{php}continue;{/php}
+					{continue}
 				{/if}
 				{assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
 				{if $pubId}
@@ -201,7 +236,7 @@ Modifications:
 						<span class="label">
 							{capture assign=translatedDOI}{translate key="plugins.pubIds.doi.readerDisplayName"}{/capture}
 							{translate key="semicolon" label=$translatedDOI}
-						</span><br>
+						</span>
 						<span class="value">
 							<a href="{$doiUrl}">
 								{$doiUrl}
