@@ -5,7 +5,7 @@ Modifications:
 	- move article galleys to main column
 	- move doi to bottom of the main column
 	- remove entry details column
-	- hide author bios and orcid id
+	- hide author bios, orcid, references
 	
 *}
 
@@ -92,28 +92,7 @@ Modifications:
 			{if $article->getAuthors()}
 				<ul class="item authors">
 					{foreach from=$article->getAuthors() item=author}
-						<li>
-							<span class="name">
-								{$author->getFullName()|escape}
-							</span>
-							{if $author->getLocalizedAffiliation()}
-{*
-								<span class="affiliation">
-									{$author->getLocalizedAffiliation()|escape}
-								</span>
-*}
-							{/if}
-							{if $author->getOrcid()}
-{*
-								<span class="orcid">
-									{$orcidIcon}
-									<a href="{$author->getOrcid()|escape}" target="_blank">
-										{$author->getOrcid()|escape}
-									</a>
-								</span>
-*}
-							{/if}
-						</li>
+						<li>{$author->getFullName()|escape}</li>
 					{/foreach}
 				</ul>
 			{/if}
