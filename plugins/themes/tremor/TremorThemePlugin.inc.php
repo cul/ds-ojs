@@ -25,8 +25,9 @@ class TremorThemePlugin extends ThemePlugin {
 		$this->setParent('defaultthemeplugin');
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less')));
 		$this->addStyle('custom', 'styles/custom.css');
+		$this->addStyle('htmlgalleystyles', 'styles/htmlgalley.less', array('contexts' => 'htmlGalley'));
 	}
-
+	
 	/**
 	 * Get the display name of this plugin
 	 * @return string

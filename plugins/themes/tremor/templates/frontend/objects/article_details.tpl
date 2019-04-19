@@ -119,6 +119,7 @@ Modifications:
 			{/if}
 
 			{* Keywords *}
+{*
 			{if !empty($keywords[$currentLocale])}
 			<div class="item keywords">
 				<span class="label">
@@ -134,6 +135,7 @@ Modifications:
 				</span>
 			</div>
 			{/if}
+*}
 
 			{* Abstract *}
 			{if $article->getLocalizedAbstract()}
@@ -146,6 +148,7 @@ Modifications:
 			{call_hook name="Templates::Article::Main"}
 
 			{* Author biographies *}
+{*
 			{assign var="hasBiographies" value=0}
 			{foreach from=$article->getAuthors() item=author}
 				{if $author->getLocalizedBiography()}
@@ -181,8 +184,10 @@ Modifications:
 					{/foreach}
 				</div>
 			{/if}
+*}
 
 			{* References *}
+{*
 			{if $parsedCitations->getCount() || $article->getCitations()}
 				<div class="item references">
 					<h3 class="label">
@@ -199,6 +204,7 @@ Modifications:
 					</div>
 				</div>
 			{/if}
+*}
 			
 			{* Article Galleys *}
 			{if $primaryGalleys}
