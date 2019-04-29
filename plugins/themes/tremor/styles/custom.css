@@ -226,6 +226,46 @@
 	font-size: 16px;
 }
 
+/* sidebar */
+
+/* sidebar info box */
+
+.pkp_structure_sidebar .pkp_block .about,
+.pkp_structure_sidebar .pkp_block .masthead,
+.pkp_structure_sidebar .pkp_block .indexing,
+.pkp_structure_sidebar .pkp_block .journal-metrics {
+	border: 1px solid #ddd;
+	font-size: 13px;
+	line-height: 1.4;
+	padding: 15px 15px 15px 15px;
+}
+
+.pkp_structure_sidebar .pkp_block h3 {
+	margin: 0 0 8px 0;
+}
+
+.pkp_structure_sidebar .pkp_block .about {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.pkp_structure_sidebar .pkp_block .about p {
+	line-height: 1.4;
+	margin: 0;
+}
+
+.pkp_structure_sidebar .pkp_block .masthead,
+.pkp_structure_sidebar .pkp_block .indexing {
+	border-top: 0;
+}
+
+.pkp_structure_sidebar .pkp_block .journal-metrics {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top: 0;
+	margin: 0 0 10px 0;
+}
+
 /* html galleys */
 
 .header_view {
