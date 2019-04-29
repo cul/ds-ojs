@@ -227,7 +227,41 @@
 	background: #008335;
 }
 
+/* footer */
 
+.pkp_structure_footer_wrapper {
+	background: rgb(204,204,204);
+	background: linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(238,238,238,1) 100%);
+}
+
+footer,
+.license {
+	color: #777;
+	padding: 20px 0 10px 0;
+	text-align: left;
+}
+
+footer .logo img {
+	max-width: 400px;
+}
+
+footer p {
+	margin: 0 0 8px 0;
+}
+
+.license p {
+	margin: 0 0 12px 0;
+}
+
+.license .logo-copyright {
+	float: left;
+	margin: -9px 10px 0 0;
+}
+
+.license {
+	border-top: 1px solid #bbb;
+	padding: 25px 0;
+}
 
 
 
