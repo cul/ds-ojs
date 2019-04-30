@@ -279,15 +279,21 @@
 	background: linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(238,238,238,1) 100%);
 }
 
+.pkp_structure_footer {
+	max-width: 1140px;
+	padding: 0 20px;
+}
+
 footer,
 .license {
 	color: #777;
-	padding: 20px 0 10px 0;
+	padding: 30px 0 10px 0;
 	text-align: left;
 }
 
-footer .logo img {
+footer .logo {
 	max-width: 400px;
+	padding-bottom: 9px;
 }
 
 footer p {
@@ -321,28 +327,3 @@ footer p {
 .pkp_structure_main:after {
 	width: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
