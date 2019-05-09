@@ -4,6 +4,7 @@ Modifications:
 
 - always show date in article summary
 - hide doi in article summary
+- increase column size to col-lg-2 for article-summary-pages
 
 *}
 
@@ -36,7 +37,7 @@ Modifications:
 			<div class="col">
 				<div class="article-summary-authors">{$article->getAuthorString()}</div>
 			</div>
-			<div class="col-3 col-md-2 col-lg-1">
+			<div class="col-3 col-md-2 col-lg-2">
 				<div class="article-summary-pages text-right">
 					{$article->getPages()|escape}
 				</div>
