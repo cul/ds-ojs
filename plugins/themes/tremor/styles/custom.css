@@ -330,21 +330,24 @@ footer p {
 
 /* tables */
 
-table.special {
+table.special,
+.page table {
 	border-collapse: collapse;
 	font-size: 12px;
 	line-height: 1.4;
 	margin: 0 0 30px 0;
 }
 
-table.special th {
+table.special th,
+.page table th {
 	background: #eee;
 	border: 1px solid #ddd;
 	font-size: 12px;
 	padding: 8px;
 }
 
-table.special td {
+table.special td,
+.page table td {
 	border: 1px solid #ddd;
 	padding: 8px;
 	vertical-align: top;
