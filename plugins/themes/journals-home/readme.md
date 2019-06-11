@@ -1,0 +1,1 @@
+# Journals Home Child Theme
