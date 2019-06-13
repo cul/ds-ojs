@@ -10,6 +10,7 @@ class JournalsHomeThemePlugin extends ThemePlugin {
 	 * @return null
 	 */
 	public function init() {
+		$this->setParent('defaultthemeplugin');
 		$this->addStyle('custom', 'styles/custom.less');
 	}
 

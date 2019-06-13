@@ -2,6 +2,7 @@
 
 
 @color-main: #000d74;
+@color-highlight: #1a9fff;
 
 
 
@@ -17,39 +18,52 @@ img {
 	max-width: 100%;
 }
 
+
+/* general layout */
+
+.cul-banner .container,
+header, 
+main {
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+
+
+
 /* cul banner */
 
 .cul-banner {
-  background: #000d74;
+  background: @color-main;
   padding: 8px;
   text-align: left;
+	
+	& .cul-banner-logo {
+	  display: inline-block;
+	  width: 320px;
+	}
+	
+	& .cul-banner-logo img {
+		vertical-align: middle;
+	}
 }
 
-.cul-banner .container {
-	margin: 0 auto;
-	max-width: 1100px;
+/* user nav */
+
+.pkp_nav_list {
+	margin-top: -3px;
 }
 
-.cul-banner .cul-banner-logo {
-  display: inline-block;
-  width: 320px;
+.pkp_nav_list > li a {
+	color: white;
+}
+
+.pkp_nav_list ul li a {
+	color: @color-main;
 }
 
 
 
-
-
-
-/* layout */
-
-main {
-	margin: 0 auto;
-	max-width: 1100px;
-	padding: 0 20px;
-}
-
-main {
-}
 
 
 
@@ -61,17 +75,18 @@ main {
 
 header {
 	// background: darken(@color-main, 10%);
-	padding-top: 38px;
 }
 
+/*
 header h1 {
 	font-size: 40px;
 	font-weight: normal;
 	margin: 0 0 20px 0;
 }
+*/
 
 header h1 img {
-	width: 50%;
+	width: 70%;
 }
 
 header h1 span {
@@ -115,15 +130,6 @@ header h1 span {
 
 
 
-hr {
-	border: 0;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-	margin: 12px 0 12px 0;
-}
-
-
-
-
 
 
 
@@ -132,7 +138,11 @@ hr {
 
 /* main */
 
-
+main {
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 200px 20px;
+}
 
 
 
@@ -149,7 +159,7 @@ hr {
 /* footer */
 
 footer {
-	background: #000d74;
+	background: @color-main;
 	color: #fff;
 	margin-top: 40px;
 	padding: 30px 20px;
@@ -162,6 +172,11 @@ footer a {
 	text-decoration: underline;
 }
 
+
+
+
+
+
 /* links */
 
 a {
@@ -171,5 +186,5 @@ a {
 }
 
 a:hover {
-	color: #1a9fff;
+	color: @color-highlight;
 }

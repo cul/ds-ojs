@@ -7,6 +7,14 @@
 
 {include file="frontend/components/header.tpl"}
 
+
+
+
+
+
+
+
+{*
 <div class="top">
 
   <div class="intro">
@@ -19,8 +27,18 @@
   </div>
 
 </div>
+*}
 
-<hr>
+
+
+
+
+
+
+
+
+
+
 
 <main>
 
