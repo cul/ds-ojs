@@ -2,7 +2,7 @@
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class JCEPTChildThemePlugin extends ThemePlugin {
+class SALTChildThemePlugin extends ThemePlugin {
 	/**
 	 * Initialize the theme's styles, scripts and hooks. This is only run for
 	 * the currently active theme.
@@ -12,7 +12,7 @@ class JCEPTChildThemePlugin extends ThemePlugin {
 	public function init() {
 		$this->setParent('bootstrapthreechildthemeplugin');
 		$this->addStyle('slideshow', 'styles/slideshow.css');
-		$this->addStyle('jcept', 'styles/jcept.less');
+		$this->addStyle('salt', 'styles/salt.less');
 	}
 
 	/**
@@ -20,7 +20,7 @@ class JCEPTChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.jcept-child.name');
+		return __('plugins.themes.salt-child.name');
 	}
 
 	/**
@@ -28,7 +28,7 @@ class JCEPTChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.jcept-child.description');
+		return __('plugins.themes.salt-child.description');
 	}
 }
 
