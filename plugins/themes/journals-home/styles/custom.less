@@ -1,15 +1,15 @@
 /* variables */
 
-
+@border: 1px solid #ddd;
 @color-main: #000d74;
 @color-highlight: #1a9fff;
-
-
 
 /* journals home styles */
 
 body {
+	color: #444;
 	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
 }
@@ -22,14 +22,12 @@ img {
 /* general layout */
 
 .cul-banner .container,
-header, 
+header h1,
 main {
 	margin: 0 auto;
-	max-width: 1100px;
+	max-width: 1200px;
+	padding: 0 20px;
 }
-
-
-
 
 /* cul banner */
 
@@ -62,99 +60,78 @@ main {
 	color: @color-main;
 }
 
-
-
-
-
-
-
-
-
-
 /* header */
 
 header {
-	// background: darken(@color-main, 10%);
+	box-shadow: 0 5px 8px #eee;
+	margin-bottom: 30px;
+	padding: 40px 20px;
+	
+	& h1 img {
+		width: 57%;
+	}
+
+	& h1 span {
+		left: -1000px;
+		position: absolute;
+	}
 }
 
-/*
-header h1 {
-	font-size: 40px;
-	font-weight: normal;
+h2 {
+	font-size: 1rem;
 	margin: 0 0 20px 0;
-}
-*/
-
-header h1 img {
-	width: 70%;
+	text-transform: uppercase;
 }
 
-header h1 span {
-	left: -1000px;
-	position: absolute;
-}
-
-
-
-
-
-
-
-/* top */
-
-.top {
-	display: flex;
-	justify-content: space-between;
+.intro {
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 17px;
+	line-height: 1.5;
+	margin: 0 0 30px 0;
+	max-width: 800px;
 }
 
 .intro p {
-	font-size: 19px;
-	line-height: 1.5;
-	margin: 0 0 25px 0;
+	margin: 0 0 20px 0;
 }
 
-.contact h2 {
-	margin: 0 0 1px 0;
+ul.menu {
+	display: flex;
+	margin: 0 0 30px 0;
+	padding: 0;
+
+	& li {
+		list-style: none;
+		margin-right: 2%;
+		padding: 0;
+		width: 15%;
+	}
+	
+	& a {
+		display: block;
+		font-weight: normal;
+	}
+	
+	& a img {
+		transform: translate(0,-0);
+    transition: all 250ms;
+	}
+	
+	& a:hover img {
+	  transform: translate(3px,-3px);
+    transition-delay: 0s;	
+	}
+	
+	& img {
+		margin-bottom: 5px;
+	}
+	
+	& h3 {
+		font-size: .9rem;
+		font-weight: normal;
+		margin: 0;
+	}
 }
-
-.contact p {
-	color: #888;
-	line-height: 1.7;
-	margin: 0;
-	width: 70%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* main */
-
-main {
-	margin: 0 auto;
-	max-width: 1100px;
-	padding: 200px 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 
@@ -171,11 +148,6 @@ footer a {
 	font-weight: normal;
 	text-decoration: underline;
 }
-
-
-
-
-
 
 /* links */
 
