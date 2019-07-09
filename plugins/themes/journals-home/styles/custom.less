@@ -23,10 +23,10 @@ img {
 
 .cul-banner .container,
 header h1,
+h2,
 main {
 	margin: 0 auto;
-	max-width: 1200px;
-	padding: 0 20px;
+	width: 80%;
 }
 
 /* cul banner */
@@ -64,8 +64,8 @@ main {
 
 header {
 	box-shadow: 0 5px 8px #eee;
-	margin-bottom: 30px;
-	padding: 40px 20px;
+	margin-bottom: 35px;
+	padding: 30px 0;
 	
 	& h1 img {
 		width: 57%;
@@ -78,16 +78,16 @@ header {
 }
 
 h2 {
-	font-size: 1rem;
-	margin: 0 0 20px 0;
-	text-transform: uppercase;
+	color: #111;
+	font-size: 1.5rem;
+	margin-bottom: 25px;
 }
 
 .intro {
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 17px;
 	line-height: 1.5;
-	margin: 0 0 30px 0;
+	margin: 0 0 35px 0;
 	max-width: 800px;
 }
 
@@ -95,14 +95,24 @@ h2 {
 	margin: 0 0 20px 0;
 }
 
+section {
+	background: #f1f4f7;
+	border-bottom: 1px solid #d7dde3;
+	margin-left: -12.5%;
+	margin-right: -12.5%;
+	padding-top: 25px;
+}
+
 ul.menu {
 	display: flex;
-	margin: 0 0 30px 0;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 80%;
 	padding: 0;
 
 	& li {
 		list-style: none;
-		margin-right: 2%;
+		margin: 0 2% 3% 0;
 		padding: 0;
 		width: 15%;
 	}
@@ -138,7 +148,6 @@ ul.menu {
 footer {
 	background: @color-main;
 	color: #fff;
-	margin-top: 40px;
 	padding: 30px 20px;
 	text-align: center;
 }
