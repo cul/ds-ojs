@@ -7,18 +7,17 @@
 
 {include file="frontend/components/header.tpl"}
 
-<main>
-
-	<article>
+{if $about}
+	<div class="intro">
+		{$about|nl2br}
+	</div>
+{/if}
 	
-	{if $about}
-		<div class="intro">
-			{$about|nl2br}
-		</div>
-	{/if}
+<main>
 	
 	<section>
 		<h2>Humanities</h2>	
+		<hr>
 		<ul class="menu">
 			<li>
 				<a href="http://smallaxe.net/sxarchipelagos/">
@@ -42,6 +41,7 @@
 	</section>
 	<section>
 		<h2>Social Sciences and Education</h2>	
+		<hr>
 		<ul class="menu">
 			<li>
 				<a href="https://journals.library.columbia.edu/index.php/cswr">
@@ -64,7 +64,8 @@
 		</ul>
 	</section>
 	<section>
-		<h2>Law</h2>	
+		<h2>Law</h2>
+		<hr>	
 		<ul class="menu">
 			<li>
 				<a href="https://journals.library.columbia.edu/index.php/CBLR">
@@ -112,6 +113,7 @@
 	</section>
 	<section>
 		<h2>Sciences</h2>
+		<hr>
 		<ul class="menu">
 			<li>
 				<a href="https://journals.library.columbia.edu/index.php/jcept">
@@ -128,7 +130,8 @@
 		</ul>
 	</section>
 	<section>
-		<h2>Columbia Undergraduate Publications</h2>	
+		<h2>Columbia Undergraduate Publications</h2>
+		<hr>
 		<ul class="menu">
 			<li>
 				<a href="https://journals.library.columbia.edu/index.php/consilience">
@@ -156,8 +159,6 @@
 			</li>		
 		</ul>
 	</section>
-
-	</article>
 
 </main>
 
