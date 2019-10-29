@@ -39,7 +39,6 @@ Modifications:
         <input type="radio" name="slides" id="slides_1" checked />
         <input type="radio" name="slides" id="slides_2" />
         <input type="radio" name="slides" id="slides_3" />
-        <input type="radio" name="slides" id="slides_4" />
         <ul>
           <li class="cover">
             <img src="{$baseUrl}/plugins/themes/salt-child/assets/slideshow-1.jpg" alt="">
@@ -50,15 +49,11 @@ Modifications:
           <li>
             <img src="{$baseUrl}/plugins/themes/salt-child/assets/slideshow-3.jpg" alt="">
           </li>
-          <li>
-            <img src="{$baseUrl}/plugins/themes/salt-child/assets/slideshow-4.jpg" alt="">
-          </li>
         </ul>
         <div class="arrows">
           <label for="slides_1"></label>
           <label for="slides_2"></label>
           <label for="slides_3"></label>
-          <label for="slides_4"></label>
           <!-- <label for="slides_1" class="goto-first"></label>
           <label for="slides_N" class="goto-last"></label> -->
         </div>
@@ -67,7 +62,6 @@ Modifications:
           	<label for="slides_1"></label>
           	<label for="slides_2"></label>
           	<label for="slides_3"></label>
-          	<label for="slides_4"></label>
     	    </div>
         </div>
     </div>
