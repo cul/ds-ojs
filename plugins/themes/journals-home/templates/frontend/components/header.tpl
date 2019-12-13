@@ -6,13 +6,8 @@
 
 <body>
 
-<div class="cul-banner">
-  <div class="container">
-    <a href="http://library.columbia.edu" class="cul-banner-logo">
-      <img src="{$baseUrl}/plugins/themes/journals-home/assets/logo-cul-banner.png">
-    </a>
-		{load_menu name="user" id="navigationUser" ulClass="nav nav-pills tab-list pull-right user-nav"}
-	</div>
+<div class="top-bar">
+  {load_menu name="user" id="navigationUser" ulClass="nav nav-pills tab-list pull-right user-nav"}
 </div>
 
 <header>
@@ -21,3 +16,7 @@
     <span>Columbia University Journals</span>
   </h1>
 </header>
+
+<div class="cover">
+
+</div>
