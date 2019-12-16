@@ -21,6 +21,7 @@
     <div class="support">
       <h2>Publishing Education & Editorial Support</h2>
       <p>At Columbia University Libraries, we work to support our journal editors with opportunities to learn about publishing, digital technologies, and scholarly communications. <a href="http://tiny.cc/digitalpublishingworkshop">The Digital Publishing Workshop</a> is an online space supporting Columbia University Libraries’ on-campus publishing workshops and the editors of CUL’s journals publishing program. Explore our <a href="http://blogs.cuit.columbia.edu/digitalpublishingworkshop/the-digital-publishing-workshop/">publishing workshop curriculum</a>, find <a href="http://blogs.cuit.columbia.edu/digitalpublishingworkshop/editorial-workbook/">resources</a> to support your journal, or <a href="http://blogs.cuit.columbia.edu/digitalpublishingworkshop/events/">find an event</a> to attend on campus!</p>
+      <p>Journal editors can find links to our program's standard documentation, including media permissions forms and art logs. Editors will also be able to download typesetting templates and to access sample texts that can aid in writing peer review forms, author guidelines, and more.</p>
     </div>
   </div>
   <div class="journals">

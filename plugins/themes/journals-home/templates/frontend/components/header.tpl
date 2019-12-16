@@ -6,10 +6,6 @@
 
 <body>
 
-<div class="top-bar">
-  {load_menu name="user" id="navigationUser" ulClass="nav nav-pills tab-list pull-right user-nav"}
-</div>
-
 <header>
   <h1>
     <img src="{$baseUrl}/plugins/themes/journals-home/assets/logo-journals.svg" alt="">
