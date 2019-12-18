@@ -101,3 +101,71 @@
 blockquote {
   margin: 0 0 1rem 4rem;
 }
+
+/* blog */
+
+.page-blog {
+	margin: 0 auto;
+	max-width: 800px;
+
+	& .page-content {
+		border: 0;
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+
+	& .page-header {
+		border: 0;
+		margin-top: 0;
+	}
+
+	& .filter-box {
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		padding: 20px;
+	}
+
+	& .blog-summary {
+		border-bottom: 1px solid #ddd;
+		padding: 25px 0;
+	}
+
+	& .blog-summary h2 {
+		line-height: 1.2;
+		margin: 0;
+	}
+
+	& .blog-summary-date,
+	& .blog-summary-byline {
+		color: rgba(0,0,0,.5);
+		display: inline-block;
+	}
+
+	& .blog-summary-description {
+		margin: 25px 0 20px 0;
+	}
+
+	& .blog-summary-description p {
+		margin: 0;
+	}
+
+	& .blog-summary-more a {
+		color: rgba(0,0,0,.5);
+		display: inline-block;
+		font-size: 14px;
+	}
+
+
+	& .blog-summary-tags a {
+		background: rgba(0,0,0,.1);
+		border-radius: 3px;
+		font-size: 14px;
+		padding: 5px 10px;
+	}
+
+	& .blog-summary-tags a:hover {
+		background: rgba(0,0,0,.4);
+		color: white;
+		text-decoration: none;
+	}
+}
