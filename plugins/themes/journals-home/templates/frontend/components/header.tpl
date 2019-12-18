@@ -14,5 +14,5 @@
 </header>
 
 <div class="cover">
-
+  <img src="{$baseUrl}/plugins/themes/journals-home/assets/cover.jpg" alt="">
 </div>
