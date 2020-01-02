@@ -2,10 +2,6 @@
 
 /* header */
 
-.main-header {
-  // background-color: #002B7F;
-}
-
 @media (min-width: 992px) {
 
   .navbar-logo img {
@@ -104,8 +100,9 @@ blockquote {
 
 /* blog */
 
-.page-blog {
-	margin: 0 auto;
+.page-blog,
+.page-blog-post {
+	margin: 20px auto;
 	max-width: 800px;
 
 	& .page-content {
@@ -154,16 +151,27 @@ blockquote {
 		display: inline-block;
 		font-size: 14px;
 	}
+	
+	& .blog-post-content {
+		font-size: 16px;
+	}
 
+	& .blog-post-tags {
+		padding: 20px 0;
+	}
 
-	& .blog-summary-tags a {
+	& .blog-summary-tags a,
+	& .blog-post-tags a {
 		background: rgba(0,0,0,.1);
 		border-radius: 3px;
 		font-size: 14px;
+		font-weight: normal;
 		padding: 5px 10px;
+		text-align: lowercase;
 	}
 
-	& .blog-summary-tags a:hover {
+	& .blog-summary-tags a:hover,
+	& .blog-post-tags a:hover {
 		background: rgba(0,0,0,.4);
 		color: white;
 		text-decoration: none;
