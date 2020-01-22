@@ -141,12 +141,6 @@
           <h3>Morningside Review</h3>
         </a>
       </li>
-      <li>
-        <a href="https://tremorjournal.org/">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/tremor.png" alt="">
-          <h3>Tremor and Other Hyperkinetic Movements</h3>
-        </a>
-      </li>
     </ul>
   </div>
 
