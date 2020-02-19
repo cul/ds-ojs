@@ -1,5 +1,8 @@
 dev:
   application: app_name
+  plugin_repo_name: ojs-plugin
+  plugin_name: plugin_name
+  plugin_type: generic
 test:
   application: app_name
 prod:
