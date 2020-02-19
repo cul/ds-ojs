@@ -20,9 +20,9 @@ The OJS update:themes task requires the following variable set in ojs_config.yml
 ```yaml
   application: app_name
 ```
-The OJS update:plugins task requires the following variables set in ojs_config.yml
+The OJS update:plugins task requires the following variables set in ojs_config.yml. (With example values for ojs-blog plugin deployed to the journals ojs install.)
 ```yaml
-  application: app_name
+  application: journals
   plugin_repo_name: ojs-blog
   plugin_name: blog
   plugin_type: generic
