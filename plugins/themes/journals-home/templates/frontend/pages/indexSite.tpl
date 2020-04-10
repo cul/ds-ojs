@@ -138,7 +138,7 @@
       <li>
         <a href="https://journals.library.columbia.edu/index.php/TMR">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/tmr.png" alt="">
-          <h3>Morningside Review</h3>
+          <h3>The Morningside Review</h3>
         </a>
       </li>
     </ul>
