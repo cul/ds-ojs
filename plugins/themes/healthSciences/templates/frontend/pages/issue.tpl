@@ -32,7 +32,7 @@
 			{include file="frontend/components/notification.tpl" messageKey="editor.issues.preview"}
 		{/if}
 
-			<h1>{$issue->getIssueSeries()}</h1>
+			<h1>{$issue->getIssueSeries()|escape}</h1>
 			<div class="page-issue-date">
 				{translate key="plugins.themes.healthSciences.currentIssuePublished" date=$issue->getDatePublished()|date_format:$dateFormatLong}
 			</div>
@@ -44,7 +44,7 @@
 					{assign var="doiUrl" value=$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}
 					{if $doiUrl}
 						{capture assign="pubId"}
-							<a href="{$doiUrl|escape}">
+							<a href="{$doiUrl}">
 								{$doiUrl}
 							</a>
 						{/capture}
@@ -98,7 +98,7 @@
 			{/if}
 		</div><!-- .row -->
 
-		<div class="row">
+		<div class="row{if !$issue->getLocalizedDescription() || !$issue->getLocalizedCoverImageUrl()} issue-wrapper{/if}">
 			<div class="col-12 col-lg-9">
 				{include file="frontend/objects/issue_toc.tpl" sectionHeading="h2"}
 			</div>

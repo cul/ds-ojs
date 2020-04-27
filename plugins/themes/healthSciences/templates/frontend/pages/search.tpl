@@ -22,9 +22,9 @@
 	<div class="page-header">
 		<h1>
 			{if $query}
-				{translate key="plugins.themes.healthSciences.search.resultsFor" query=$query}
+				{translate key="plugins.themes.healthSciences.search.resultsFor" query=$query|escape}
 			{elseif $authors}
-				{translate key="plugins.themes.healthSciences.search.resultsFor" query=$authors}
+				{translate key="plugins.themes.healthSciences.search.resultsFor" query=$authors|escape}
 			{else}
 				{translate key="common.search"}
 			{/if}
@@ -39,7 +39,7 @@
 					{if $error}
 						<div class="alert alert-danger" role="alert">{$error|escape}</div>
 					{else}
-						<div class="alert alert-info" role="alert">{translate key="search.noResults"}</div>
+						<div class="alert alert-primary" role="alert">{translate key="search.noResults"}</div>
 					{/if}
 
 				{* Results pagination *}
@@ -69,7 +69,7 @@
 						<label for="authors">
 							{translate key="search.author"}
 						</label>
-						<input type="text" class="form-control" id"authors" name="authors" value="{$authors|escape}">
+						<input type="text" class="form-control" id="authors" name="authors" value="{$authors|escape}">
 					</div>
 					<div class="form-group form-group-date-from">
 						<label for="dateFromYear">

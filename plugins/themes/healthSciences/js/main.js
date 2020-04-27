@@ -51,7 +51,9 @@
 
 // initiating tag-it
 $(document).ready(function() {
-	$("#tagitInput").tagit();
+	$("#tagitInput").tagit({
+		autocomplete: {disabled: true}
+	});
 });
 
 (function () {
@@ -147,3 +149,17 @@ $(document).ready(function() {
 		moreButton.classList.remove('hidden');
 	};
 })();
+
+// Toggle display of consent checkboxes in site-wide registration
+var $contextOptinGroup = $('#contextOptinGroup');
+if ($contextOptinGroup.length) {
+	var $roles = $contextOptinGroup.find('.roles :checkbox');
+	$roles.change(function() {
+		var $thisRoles = $(this).closest('.roles');
+		if ($thisRoles.find(':checked').length) {
+			$thisRoles.siblings('.context_privacy').addClass('context_privacy_visible');
+		} else {
+			$thisRoles.siblings('.context_privacy').removeClass('context_privacy_visible');
+		}
+	});
+}

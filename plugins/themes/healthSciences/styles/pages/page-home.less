@@ -1,3 +1,13 @@
+/**
+ * @file styles/pages/page-home.less
+ *
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief journal index page
+ */
+
 .homepage-image {
 
 	img {
@@ -9,6 +19,20 @@
 
 .container-homepage-issue {
 	margin-top: 2rem;
+	border: 0;
+}
+
+.homepage-announcement {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.homepage-announcement-date {
+	font-weight: 400;
+	font-size: 75%;
+	color: @mid-grey;
 }
 
 .homepage-issue-current,
@@ -67,7 +91,7 @@
 }
 
 #homepageDescriptionMore, #homepageDescriptionLess {
-	color: #0a7b83;
+	color: @primary-text;
 	cursor: pointer;
 }
 
@@ -145,7 +169,7 @@
 		.homepage-issue-identifier,
 		.homepage-issue-published {
 			color: #fff;
-			text-shadow: 0 0 2px #000;
+			text-shadow: 0 0 2px @black;
 		}
 
 		.homepage-issue-current {

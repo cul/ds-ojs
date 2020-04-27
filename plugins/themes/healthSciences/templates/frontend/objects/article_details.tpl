@@ -34,11 +34,11 @@
 		<div class="col-lg article-meta-mobile">
 			{* Title and issue details *}
 			<div class="article-details-issue-section small-screen">
-				<a href="{url page="issue" op="view" path=$issue->getBestIssueId()}">{$issue->getIssueSeries()}</a>{if $section}, <span>{$section->getLocalizedTitle()|escape}</span>{/if}
+				<a href="{url page="issue" op="view" path=$issue->getBestIssueId()}">{$issue->getIssueSeries()|escape}</a>{if $section}, <span>{$section->getLocalizedTitle()|escape}</span>{/if}
 			</div>
 
 			<div class="article-details-issue-identifier large-screen">
-				<a href="{url page="issue" op="view" path=$issue->getBestIssueId()}">{$issue->getIssueSeries()}</a>
+				<a href="{url page="issue" op="view" path=$issue->getBestIssueId()}">{$issue->getIssueSeries()|escape}</a>
 			</div>
 
 			<h1 class="article-details-fulltitle">
@@ -52,7 +52,7 @@
 			{* DOI only for large screens *}
 			{foreach from=$pubIdPlugins item=pubIdPlugin}
 				{if $pubIdPlugin->getPubIdType() != 'doi'}
-					{php}continue;{/php}
+					{continue}
 				{/if}
 				{assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
 				{if $pubId}
@@ -75,11 +75,15 @@
 					{foreach from=$article->getAuthors() item=authorString key=authorStringKey}
 						{strip}
 							<li>
+								{if $authorString->getLocalizedAffiliation() or $authorString->getLocalizedBiography()}
 								<a class="author-string-href" href="#author-{$authorStringKey+1}">
 									<span>{$authorString->getFullName()|escape}</span>
 									<sup class="author-symbol author-plus">&plus;</sup>
 									<sup class="author-symbol author-minus hide">&minus;</sup>
 								</a>
+								{else}
+								<span>{$authorString->getFullName()|escape}</span>
+								{/if}
 								{if $authorString->getOrcid()}
 									<a class="orcidImage" href="{$authorString->getOrcid()|escape}"><img src="{$baseUrl}/{$orcidImage}"></a>
 								{/if}
@@ -109,23 +113,23 @@
 								</div>
 							{/if}
 							{if $author->getLocalizedBiography()}
-								<button type="button" class="article-details-bio-toggle" data-toggle="modal" data-target="#authorBiographyModal{$smarty.foreach.authorLoop.index}">
+								<button type="button" class="article-details-bio-toggle" data-toggle="modal" data-target="#authorBiographyModal{$authorKey+1}">
 									{translate key="plugins.themes.healthSciences.article.authorBio"}
 								</button>
 								{* Store author biographies to print as modals in the footer *}
 								{capture append="authorBiographyModalsTemp"}
 									<div
 											class="modal fade"
-											id="authorBiographyModal{$smarty.foreach.authorLoop.index}"
+											id="authorBiographyModal{$authorKey+1}"
 											tabindex="-1"
 											role="dialog"
-											aria-labelledby="authorBiographyModalTitle{$smarty.foreach.authorLoop.index}"
+											aria-labelledby="authorBiographyModalTitle{$authorKey+1}"
 											aria-hidden="true"
 									>
 										<div class="modal-dialog" role="document">
 											<div class="modal-content">
 												<div class="modal-header">
-													<div class="modal-title" id="authorBiographyModalTitle{$smarty.foreach.authorLoop.index}">
+													<div class="modal-title" id="authorBiographyModalTitle{$authorKey+1}">
 														{$author->getFullName()|escape}
 													</div>
 													<button type="button" class="close" data-dismiss="modal" aria-label="{translate|escape key="common.close"}">
@@ -133,7 +137,7 @@
 													</button>
 												</div>
 												<div class="modal-body">
-													{$author->getLocalizedBiography()}
+													{$author->getLocalizedBiography()|strip_unsafe_html}
 												</div>
 											</div>
 										</div>
@@ -255,7 +259,7 @@
 				{* PubIds (other than DOI; requires plugins) *}
 				{foreach from=$pubIdPlugins item=pubIdPlugin}
 					{if $pubIdPlugin->getPubIdType() == 'doi'}
-						{php}continue;{/php}
+						{continue}
 					{/if}
 					{assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
 					{if $pubId}
@@ -293,7 +297,7 @@
 				{* DOI for small screens only *}
 				{foreach from=$pubIdPlugins item=pubIdPlugin}
 					{if $pubIdPlugin->getPubIdType() != 'doi'}
-						{php}continue;{/php}
+						{continue}
 					{/if}
 					{assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
 					{if $pubId}
@@ -339,17 +343,19 @@
 						{if $licenseUrl}
 							{if $ccLicenseBadge}
 								{$ccLicenseBadge}
+									{if $copyrightHolder}
+										<p>{translate key="submission.copyrightStatement" copyrightHolder=$copyrightHolder copyrightYear=$copyrightYear}</p>
+									{/if}
 							{else}
 								<a href="{$licenseUrl|escape}" class="copyright">
 									{if $copyrightHolder}
-										{translate key="submission.copyrightStatement" copyrightHolder=$copyrightHolder copyrightYear=$copyrightYear}
+										{translate key="submission.copyrightStatement" copyrightHolder=$copyrightHolder|escape copyrightYear=$copyrightYear|escape}
 									{else}
 										{translate key="submission.license"}
 									{/if}
 								</a>
 							{/if}
-						{/if}
-						{if !$licenseUrl}
+						{else}
 							{$copyright}
 						{/if}
 					</div>

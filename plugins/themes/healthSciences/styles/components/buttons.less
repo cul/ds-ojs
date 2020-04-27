@@ -5,13 +5,14 @@
 	background: transparent;
 	font-family: @font-sans;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 400;
 	color: @dark-grey;
 	text-decoration: none;
 	cursor: pointer;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		box-shadow: none;
 		color: @primary;
 		border-color: @primary;
@@ -27,13 +28,14 @@
 .btn-primary {
 	background: @primary;
 	border-color: @primary;
-	color: #fff;
+	color: @contrast;
 
 	&:hover,
-	&:focus {
-		background: @primary-light;
-		border-color: @primary-light;
-		color: @dark-grey;
+	&:focus,
+	&:active {
+		background: @primary-text !important;
+		border-color: @primary-text !important;
+		color: @contrast;
 	}
 }
 
@@ -42,7 +44,8 @@
 	color: @light-grey;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		background: @light-grey;
 		color: @dark-grey;
 	}
@@ -54,7 +57,8 @@
 	color: @dark-grey;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		background: @light-grey;
 		border-color: @dark-grey;
 		color: @dark-grey;
@@ -67,9 +71,10 @@
 	color: @primary;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		border-color: transparent;
-		color: @primary-light;
+		color: @primary-text;
 	}
 }
 
@@ -78,7 +83,8 @@
 	color: @dark-grey;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		color: @primary;
 	}
 }

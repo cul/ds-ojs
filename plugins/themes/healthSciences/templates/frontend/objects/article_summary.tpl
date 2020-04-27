@@ -25,16 +25,16 @@
 	{if $showAuthor && $article->getPages()}
 		<div class="row">
 			<div class="col">
-				<div class="article-summary-authors">{$article->getAuthorString()}</div>
+				<div class="article-summary-authors">{$article->getAuthorString()|escape}</div>
 			</div>
-			<div class="col-3 col-md-2 col-lg-1">
+			<div class="col-3 col-md-2 col-lg-2">
 				<div class="article-summary-pages text-right">
 					{$article->getPages()|escape}
 				</div>
 			</div>
 		</div>
 	{elseif $showAuthor}
-		<div class="article-summary-authors">{$article->getAuthorString()}</div>
+		<div class="article-summary-authors">{$article->getAuthorString()|escape}</div>
 	{elseif $article->getPages()}
 		<div class="article-summary-pages">
 			{$article->getPages()|escape}
@@ -57,7 +57,7 @@
 	{if $requestedPage === 'issue'}
 		{foreach from=$pubIdPlugins item=pubIdPlugin}
 			{if $pubIdPlugin->getPubIdType() != 'doi'}
-				{php}continue;{/php}
+				{continue}
 			{/if}
 			{assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
 			{if $pubId}
@@ -83,7 +83,7 @@
 				{if $primaryGenreIds}
 					{assign var="file" value=$galley->getFile()}
 					{if !$galley->getRemoteUrl() && !($file && in_array($file->getGenreId(), $primaryGenreIds))}
-						{php}continue;{/php}
+						{continue}
 					{/if}
 				{/if}
 				{assign var="hasArticleAccess" value=$hasAccess}

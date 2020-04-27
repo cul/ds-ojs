@@ -33,10 +33,20 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 		$additionalLessVariables = [];
 		if ($this->getOption('baseColour') !== '#10BECA') {
 			$additionalLessVariables[] = '@primary:' . $this->getOption('baseColour') . ';';
-			if (!$this->isColourDark($this->getOption('baseColour'))) {
-				$additionalLessVariables[] = '@primary-light: desaturate(lighten(@primary, 41%), 15%);';
-				$additionalLessVariables[] = '@primary-text: darken(@primary, 15%);';
-			}
+			$additionalLessVariables[] = '
+				@primary-light: desaturate(lighten(@primary, 41%), 15%);
+				@primary-text: darken(@primary, 15%);
+				@primary-link: darken(@primary, 50%);
+			';
+		}
+
+		// Update contrast colour based on primary colour
+		if ($this->isColourDark($this->getOption('baseColour'))) {
+			$additionalLessVariables[] = '
+				@contrast: rgba(255, 255, 255, 0.85);
+				@primary-text: lighten(@primary, 15%);
+				@primary-link: lighten(@primary, 50%);
+			';
 		}
 
 		// Load dependencies from CDN
@@ -48,12 +58,12 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 			);
 			$this->addStyle(
 				'bootstrap',
-				'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+				'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
 				array('baseUrl' => '')
 			);
 			$this->addStyle(
 				'fontawesome',
-				'https://use.fontawesome.com/releases/v5.2.0/css/all.css',
+				'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
 				array('baseUrl' => '')
 			);
 			$this->addScript(
@@ -63,12 +73,12 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 			);
 			$this->addScript(
 				'popper',
-				'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+				'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
 				array('baseUrl' => '')
 			);
 			$this->addScript(
 				'bootstrap',
-				'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+				'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
 				array('baseUrl' => '')
 			);
 
@@ -84,7 +94,18 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 		$this->addStyle('stylesheet', 'styles/index.less');
 		$this->modifyStyle('stylesheet', array('addLessVariables' => join($additionalLessVariables)));
 		$this->addScript('main', 'js/main.js');
-		
+
+		// Styles for HTML galleys
+		$this->addStyle('htmlGalley', 'templates/plugins/generic/htmlArticleGalley/css/default.css', array('contexts' => 'htmlGalley'));
+                $this->addStyle('htmlFont', 'https://fonts.googleapis.com/css?family=PT+Serif&display=swap', array('baseUrl' => '', 'contexts' => 'htmlGalley'));
+
+		// Styles for right to left scripts
+		$locale = AppLocale::getLocale();
+		$localeDirection = AppLocale::getLocaleDirection($locale);
+		if ($localeDirection === "rtl") {
+			$this->addStyle('rtl', 'styles/rtl.less');
+		}
+
 		// Add JQuery UI and tag-it libraries for registration page (reviewer's interests)
 		$this->addScript("jquery-ui", "libs/jquery-ui.min.js");
 		$this->addScript("tag-it", "libs/tag-it.min.js");
@@ -146,7 +167,7 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 			if (Config::getVar('security', 'force_login_ssl')) {
 				$loginUrl = PKPString::regexp_replace('/^http:/', 'https:', $loginUrl);
 			}
-			
+
 			$orcidImage = $this->getPluginPath() . '/templates/images/orcid.png';
 
 			$templateMgr->assign(array(

@@ -22,7 +22,7 @@
 			</div>
 			<div class="site-journals">
 				<h2 class="sr-only">{translate key="journal.journals"}</h2>
-				{if !count($journals)}
+				{if $journals->wasEmpty()}
 					<p>{translate key="site.noJournals"}</p>
 				{else}
 					<div class="site-journals-list">
@@ -33,7 +33,7 @@
 							<div class="site-journal">
 								{if $thumb}
 									<a class="site-journal-img" href="{$url|escape}">
-										<img src="{$journalFilesPath}{$journal->getId()}/{$thumb.uploadName|escape:"url"}"{if $altText} alt="{$altText|escape}"{/if}>
+										<img src="{$journalFilesPath}{$journal->getId()}/{$thumb.uploadName|escape:"url"}"{if $thumb.altText} alt="{$thumb.altText|escape}"{/if}>
 									</a>
 								{/if}
 								<div class="site-journal-body">
@@ -55,13 +55,6 @@
 							</div>
 						{/iterate}
 					</div>
-
-					{if $journals->getPageCount() > 0}
-						<div class="cmp_pagination">
-							{page_info iterator=$journals}
-							{page_links anchor="journals" name="journals" iterator=$journals}
-						</div>
-					{/if}
 				{/if}
 			</div>
 		</div>
