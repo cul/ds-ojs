@@ -326,7 +326,7 @@ Modifications:
 				{* PubIds (other than DOI; requires plugins) *}
 				{foreach from=$pubIdPlugins item=pubIdPlugin}
 					{if $pubIdPlugin->getPubIdType() == 'doi'}
-						{php}continue;{/php}
+						{continue}
 					{/if}
 					{assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
 					{if $pubId}
@@ -364,7 +364,7 @@ Modifications:
 				{* DOI for small screens only *}
 				{foreach from=$pubIdPlugins item=pubIdPlugin}
 					{if $pubIdPlugin->getPubIdType() != 'doi'}
-						{php}continue;{/php}
+						{continue}
 					{/if}
 					{assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
 					{if $pubId}
@@ -378,7 +378,7 @@ Modifications:
         {* DOI only for large screens *}
         {foreach from=$pubIdPlugins item=pubIdPlugin}
           {if $pubIdPlugin->getPubIdType() != 'doi'}
-            {php}continue;{/php}
+            {continue}
           {/if}
           {assign var=pubId value=$article->getStoredPubId($pubIdPlugin->getPubIdType())}
           {if $pubId}
