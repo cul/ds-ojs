@@ -3,8 +3,8 @@
 /**
  * @file plugins/themes/healthSciences/HealthSciencesThemePlugin.inc.php
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class HealthSciencesThemePlugin
@@ -115,9 +115,6 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 
 		// Get extra data for templates
 		HookRegistry::register ('TemplateManager::display', array($this, 'loadTemplateData'));
-
-		// Check if CSS embedded to the HTML galley
-		HookRegistry::register('TemplateManager::display', array($this, 'hasEmbeddedCSS'));
 	}
 
 	/**
@@ -150,7 +147,7 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 	 */
 	public function loadTemplateData($hookName, $args) {
 		$templateMgr = $args[0];
-		$request = Application::getRequest();
+		$request = Application::get()->getRequest();
 		$context = $request->getContext();
 
 		if (!defined('SESSION_DISABLE_INIT')) {
@@ -177,43 +174,5 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 				'orcidImage' => $orcidImage,
 			));
 		}
-	}
-
-	public function hasEmbeddedCSS($hookName, $args) {
-		$templateMgr = $args[0];
-		$template = $args[1];
-		$request = $this->getRequest();
-
-		// Retun false if not a galley page
-		if ($template != 'plugins/plugins/generic/htmlArticleGalley/generic/htmlArticleGalley:display.tpl') return false;
-
-		$articleArrays = $templateMgr->get_template_vars('article');
-
-		$boolEmbeddedCss = false;
-
-		foreach ($articleArrays->getGalleys() as $galley) {
-			if ($galley->getFileType() === 'text/html') {
-				$submissionFile = $galley->getFile();
-
-				$submissionFileDao = DAORegistry::getDAO('SubmissionFileDAO');
-				import('lib.pkp.classes.submission.SubmissionFile'); // Constants
-				$embeddableFiles = array_merge(
-					$submissionFileDao->getLatestRevisions($submissionFile->getSubmissionId(), SUBMISSION_FILE_PROOF),
-					$submissionFileDao->getLatestRevisionsByAssocId(ASSOC_TYPE_SUBMISSION_FILE, $submissionFile->getFileId(), $submissionFile->getSubmissionId(), SUBMISSION_FILE_DEPENDENT)
-				);
-
-				foreach ($embeddableFiles as $embeddableFile) {
-					if ($embeddableFile->getFileType() == 'text/css') {
-						$boolEmbeddedCss = true;
-					}
-				}
-			}
-
-		}
-
-		$templateMgr->assign(array(
-			'boolEmbeddedCss' => $boolEmbeddedCss,
-			'themePath' => $request->getBaseUrl() . "/" . $this->getPluginPath(),
-		));
 	}
 }

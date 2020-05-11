@@ -1,12 +1,12 @@
 {**
  * plugins/generic/htmlArticleGalley/display.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Embedded viewing of a HTML galley.
- * @uses $boolEmbeddedCss bool is true if HTML galley has attached CSS file
+ *
  *}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
@@ -17,19 +17,35 @@
 {* Header wrapper *}
 <header class="header_view">
 
-	<a href="{url page="article" op="view" path=$article->getBestArticleId()}" class="return">
+	{capture assign="articleUrl"}{url page="article" op="view" path=$article->getBestId()}{/capture}
+
+	<a href="{$articleUrl}" class="return">
 		<span class="pkp_screen_reader">
 			{translate key="article.return"}
 		</span>
 	</a>
-
-	<a href="{url page="article" op="view" path=$article->getBestArticleId()}" class="title">
-		{$article->getLocalizedTitle()|escape}
-	</a>
+	{if !$isLatestPublication}
+		<div class="title" role="alert">
+			{translate key="submission.outdatedVersion"
+				datePublished=$galleyPublication->getData('datePublished')|date_format:$dateFormatLong
+				urlRecentVersion=$articleUrl
+			}
+		</div>
+		{capture assign="htmlUrl"}
+			{url page="article" op="download" path=$article->getBestId()|to_array:'version':$galleyPublication->getId():$galley->getBestGalleyId() inline=true}
+		{/capture}
+	{else}
+		<a href="{url page="article" op="view" path=$article->getBestId()}" class="title">
+			{$galleyPublication->getLocalizedTitle()|escape}
+		</a>
+		{capture assign="htmlUrl"}
+			{url page="article" op="download" path=$article->getBestId()|to_array:$galley->getBestGalleyId() inline=true}
+		{/capture}
+	{/if}
 </header>
 
 <div id="htmlContainer" class="galley_view" style="overflow:visible;-webkit-overflow-scrolling:touch">
-	<iframe id="htmlGalleyFrame" name="htmlFrame" src="{url page="article" op="download" path=$article->getBestArticleId()|to_array:$galley->getBestGalleyId() inline=true}" allowfullscreen webkitallowfullscreen></iframe>
+	<iframe id="htmlGalleyFrame" name="htmlFrame" src="{$htmlUrl}" allowfullscreen webkitallowfullscreen></iframe>
 </div>
 {call_hook name="Templates::Common::Footer::PageFooter"}
 </body>

@@ -1,8 +1,8 @@
 {**
  * templates/frontend/pages/issueGalley.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Lightweight page for viewing PDF files
@@ -19,7 +19,7 @@
 	{assign var="parentId" value=$parent->getBestIssueId()}
 	{url op="view" path=$parentId}
 {else}
-	{assign var="parentId" value=$parent->getBestArticleId()}
+	{assign var="parentId" value=$parent->getBestId()}
 	{url page="article" op="view" path=$parentId}
 {/if}
 {/capture}

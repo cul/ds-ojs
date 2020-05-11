@@ -1,8 +1,8 @@
 {**
  * templates/frontend/pages/search.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Display the page to search and view search results.
@@ -45,7 +45,7 @@
 				{* Results pagination *}
 				{else}
 					{iterate from=results item=result}
-						{include file="frontend/objects/article_summary.tpl" article=$result.publishedArticle journal=$result.journal showDatePublished=true hideGalleys=true}
+						{include file="frontend/objects/article_summary.tpl" article=$result.publishedSubmission journal=$result.journal showDatePublished=true hideGalleys=true}
 					{/iterate}
 					<div class="pagination">
 						{page_info iterator=$results}
@@ -57,8 +57,14 @@
 		<div class="col-lg-4 search-col-filters">
 			<div class="search-filters">
 				<h2>{translate key="plugins.themes.healthSciences.search.params"}</h2>
-				<form class="form-search" method="post" action="{url op="search"}">
-					{csrf}
+
+				{capture name="searchFormUrl"}{url op="search" escape=false}{/capture}
+				{$smarty.capture.searchFormUrl|parse_url:$smarty.const.PHP_URL_QUERY|parse_str:$formUrlParameters}
+				<form class="form-search" method="get" action="{$smarty.capture.searchFormUrl|strtok:"?"|escape}">
+					{foreach from=$formUrlParameters key=paramKey item=paramValue}
+						<input type="hidden" name="{$paramKey|escape}" value="{$paramValue|escape}"/>
+					{/foreach}
+
 					<div class="form-group form-group-query">
 						<label for="query">
 							{translate key="common.searchQuery"}
