@@ -28,6 +28,12 @@
     <h2>Our Journals</h2>
     <ul class="menu">
       <li>
+  			<a href="https://journals.library.columbia.edu/index.php/alusur/index">
+  				<img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/al-usur-al-wusta.png" alt="">
+  				<h3>al `Usur al Wusta</h3>
+  			</a>
+  		</li>
+      <li>
   			<a href="https://archipelagosjournal.org">
   				<img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/archipelagos.png" alt="">
   				<h3>Archipelagos</h3>
@@ -106,6 +112,12 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/jgh/index">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jgh.png" alt="">
+          <h3>Journal of Global Health</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/lawandarts">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jla.png" alt="">
           <h3>Columbia Journal of Law and the Arts</h3>
@@ -139,6 +151,18 @@
         <a href="https://journals.library.columbia.edu/index.php/TMR">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/tmr.png" alt="">
           <h3>The Morningside Review</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/bioethics/index">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/voices-in-bioethics.png" alt="">
+          <h3>Voices in Bioethics</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/waxingmoon/index">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/waxing-moon.png" alt="">
+          <h3>Waxing Moon</h3>
         </a>
       </li>
     </ul>
