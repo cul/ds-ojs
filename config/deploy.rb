@@ -125,13 +125,15 @@ namespace :ojs do
         set :plugin_name, OJS_CONFIG[:plugin_name]
         set :plugin_repo_url, "git@github.com:cul/#{OJS_CONFIG[:plugin_repo_name]}.git"
         execute "cd #{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/ && git clone #{fetch(:plugin_repo_url)}"
-        if test("[ -d File.join(#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:plugin_name)}) ]")
+        set :path_to_current, File.join("#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:plugin_name)}")
+        set :path_to_previous, File.join("#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:previous_plugin)}")
+        if test("[ -d #{fetch(:path_to_current)} ]")
           execute :mkdir, " -p #{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:previous_plugin)}"
           execute :mv, "#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:plugin_name)}/*", "#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:previous_plugin)}/"
           execute :rm, " -rf #{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:plugin_name)}"
         end
         execute :mv, "#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{OJS_CONFIG[:plugin_repo_name]}", "#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:plugin_name)}"
-        if test("[ -d File.join(#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:previous_plugin)}) ]")
+        if test("[ -d #{fetch(:path_to_previous)} ]")
           execute :rm, '-rf', "#{fetch(:deploy_to)}/html/plugins/#{fetch(:plugin_type)}/#{fetch(:previous_plugin)}"
         end
       end
