@@ -171,9 +171,9 @@ body.pkp_page_article {
 
 /* hide breadcrumbs on announcement page */
 
-// .pkp_page_announcement .cmp_breadcrumbs {
-//   display: none;
-// }
+.page_announcement .cmp_breadcrumbs {
+  display: none;
+}
 
 /* footer */
 
@@ -238,7 +238,6 @@ table.table-small {
 
 /* blog */
 
-
 .page-blog,
 .page-blog-post {
 
@@ -257,6 +256,10 @@ table.table-small {
 		border-bottom: 1px solid #ddd;
 		padding: 25px 0;
 	}
+
+  & .blog-summary img {
+    max-width: 100%;
+  }
 
 	& .blog-summary h2 {
     line-height: 1.2;

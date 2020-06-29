@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.themes.jgh-child.name">JGH Child Theme</message>
+	<message key="plugins.themes.jgh-child.description">This theme child theme is based on the Bootstrap 3 child theme.</message>
+</locale>
