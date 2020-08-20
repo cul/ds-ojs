@@ -1,8 +1,8 @@
 {**
  * templates/frontend/objects/galley_link.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief View of a galley object as a link to view or download the galley, to be used
@@ -35,9 +35,16 @@
 {if $parent instanceOf Issue}
 	{assign var="page" value="issue"}
 	{assign var="parentId" value=$parent->getBestIssueId()}
+	{assign var="path" value=$parentId|to_array:$galley->getBestGalleyId()}
 {else}
 	{assign var="page" value="article"}
-	{assign var="parentId" value=$parent->getBestArticleId()}
+	{assign var="parentId" value=$parent->getBestId()}
+	{* Get a versioned link if we have an older publication *}
+	{if $publication && $publication->getId() !== $parent->getCurrentPublication()->getId()}
+		{assign var="path" value=$parentId|to_array:"version":$publication->getId():$galley->getBestGalleyId()}
+	{else}
+		{assign var="path" value=$parentId|to_array:$galley->getBestGalleyId()}
+	{/if}
 {/if}
 
 {* Get user access flag *}
@@ -50,7 +57,7 @@
 {/if}
 
 {* Don't be frightened. This is just a link *}
-<a class="btn{if !$isSupplementary} btn-primary{/if}" href="{url page=$page op="view" path=$parentId|to_array:$galley->getBestGalleyId()}">
+<a class="btn{if !$isSupplementary} btn-primary{/if}" href="{url page=$page op="view" path=$path}">
 
 	{* Add some screen reader text to indicate if a galley is restricted *}
 	{if $restricted}

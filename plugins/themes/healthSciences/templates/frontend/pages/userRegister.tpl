@@ -1,8 +1,8 @@
 {**
  * templates/frontend/pages/userRegister.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * User registration form.
@@ -11,7 +11,7 @@
  *}
 {include file="frontend/components/header.tpl" pageTitle="user.register"}
 
-<div class="container page-login">
+<div class="container page-register">
 	<div class="row page-header justify-content-md-center">
 		<div class="col-md-8">
 			<h1>{translate key="user.register"}</h1>

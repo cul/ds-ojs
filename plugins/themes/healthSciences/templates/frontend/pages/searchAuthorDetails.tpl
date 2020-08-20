@@ -1,8 +1,8 @@
 {**
  * templates/frontend/pages/searchAuthorDetails.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Index of published articles by author.
@@ -24,7 +24,7 @@
 			<div class="page-content" id="authorDetails">
 				<h3 class="author-details-author text-lg-center">{$lastName|escape}, {$firstName|escape}{if $middleName} {$middleName|escape}{/if}{if $affiliation}, {$affiliation|escape}{/if}{if $country}, {$country|escape}{/if}</h3>
 				<ul class="author-details-articles">
-					{foreach from=$publishedArticles item=article}
+					{foreach from=$submissions item=article}
 						{assign var=issueId value=$article->getIssueId()}
 						{assign var=issue value=$issues[$issueId]}
 						{assign var=issueUnavailable value=$issuesUnavailable.$issueId}
@@ -39,12 +39,12 @@
 									<span>{$section->getLocalizedTitle()|escape}</span>
 								</div>
 								<div class="author-details-block author-details-article">
-									<a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestArticleId()}">{$article->getLocalizedTitle()|strip_unsafe_html}</a>
+									<a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestId()}">{$article->getLocalizedTitle()|strip_unsafe_html}</a>
 								</div>
-								{if (!$issueUnavailable || $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN)}
+								{if (!$issueUnavailable || $publication->getData('accessStatus') == $smarty.const.ARTICLE_ACCESS_OPEN}}
 									<div class="author-details-block author-details-galleys">
 										{foreach from=$article->getGalleys() item=galley name=galleyList}
-											<a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestArticleId()|to_array:$galley->getBestGalleyId()}"
+											<a href="{url journal=$journal->getPath() page="article" op="view" path=$article->getBestId()|to_array:$galley->getBestGalleyId()}"
 											   class="btn btn-primary">{$galley->getGalleyLabel()|escape}</a>
 										{/foreach}
 									</div>

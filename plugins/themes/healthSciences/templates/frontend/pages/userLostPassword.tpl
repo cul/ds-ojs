@@ -1,7 +1,7 @@
 {**
  * templates/frontend/pages/userLostPassword.tpl
  *
- * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2000-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
@@ -43,7 +43,7 @@
 								</button>
 
 								{if !$disableUserReg}
-									{capture assign=registerUrl page="user" op="register" source=$source}
+									{capture assign=registerUrl}{url page="user" op="register" source=$source}{/capture}
 									<a href="{$registerUrl}" class="btn btn-link">
 										{translate key="user.login.registerNewAccount"}
 									</a>
