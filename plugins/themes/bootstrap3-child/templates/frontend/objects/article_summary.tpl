@@ -22,7 +22,7 @@ Modifications:
  * @uses $hideGalleys bool Hide the article galleys for this article?
  * @uses $primaryGenreIds array List of file genre ids for primary file types
  *}
-{assign var=articlePath value=$article->getBestArticleId($currentJournal)}
+{assign var=articlePath value=$article->getBestId($currentJournal)}
 {if (!$section.hideAuthor && $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_DEFAULT) || $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_SHOW}
 	{assign var="showAuthor" value=true}
 {/if}
@@ -31,7 +31,7 @@ Modifications:
 	{if $article->getLocalizedCoverImage()}
 		<div class="cover media-left">
 			<a href="{url page="article" op="view" path=$articlePath}" class="file">
-				<img class="media-object" src="{$article->getLocalizedCoverImageUrl()|escape}">
+				<img class="media-object" src="{$article->getLocalizedCoverImageUrl()|escape}" alt="{$article->getLocalizedCoverImageAltText()|escape|default:''}">
 			</a>
 		</div>
 	{/if}
@@ -40,20 +40,19 @@ Modifications:
 		<h3 class="media-heading">
 			<a href="{url page="article" op="view" path=$articlePath}">
 				{$article->getLocalizedTitle()|strip_unsafe_html}
+				{if $article->getLocalizedSubtitle()}
+					<p>
+						<small>{$article->getLocalizedSubtitle()|escape}</small>
+					</p>
+				{/if}
 			</a>
-			
+
       {* ARTICLE PUBLISHED DATE *}
       {if $article->getDatePublished()}
         <div class="article-published-date">
           {$article->getDatePublished()|date_format}
         </div>
       {/if}
-
-			{if $article->getLocalizedSubtitle()}
-				<p>
-					<small>{$article->getLocalizedSubtitle()|escape}</small>
-				</p>
-			{/if}
 		</h3>
 
 		{if $showAuthor || $article->getPages()}
@@ -62,7 +61,7 @@ Modifications:
 				<div class="meta">
 					{if $showAuthor}
 						<div class="authors">
-							{$article->getAuthorString()}
+							{$article->getAuthorString()|escape}
 						</div>
 					{/if}
 				</div>
@@ -85,6 +84,10 @@ Modifications:
 						{if !$galley->getRemoteUrl() && !($file && in_array($file->getGenreId(), $primaryGenreIds))}
 							{continue}
 						{/if}
+					{/if}
+					{assign var="hasArticleAccess" value=$hasAccess}
+					{if $currentContext->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_OPEN || $publication->getData('accessStatus') == $smarty.const.ARTICLE_ACCESS_OPEN}
+						{assign var="hasArticleAccess" value=1}
 					{/if}
 					{include file="frontend/objects/galley_link.tpl" parent=$article hasAccess=$hasArticleAccess}
 				{/foreach}
