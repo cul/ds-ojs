@@ -1,0 +1,138 @@
+.homepage-slideshow {
+
+  & .csslider li img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  & .textbox {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, transparent);
+    bottom: 0;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+
+    & h3 {
+      font-weight: bold;
+    }
+
+    & p {
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+
+      & h3 {
+        font-size: 23px;
+      }
+
+      & p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  /* cover slide */
+
+  & li.cover .textbox {
+    background: linear-gradient(0deg, transparent 0%, #777 100%);
+    bottom: auto;
+    left: 10px;
+    top: 10px;
+    width: auto;
+
+    & ul {
+      margin: 0;
+      padding: 5px 0 0 0;
+    }
+
+    & li {
+      display: block;
+      margin: 0 20px 10px 0;
+      padding: 0;
+    }
+
+    & h3 {
+      margin: 0 0 10px 0;
+      padding-bottom: 2px;
+    }
+  }
+
+  & .csslider li img.icon {
+    margin-right: 4px;
+    margin-top: -4px;
+    max-width: 30px;
+  }
+
+  & .csslider li img.logo {
+    margin-bottom: 8px;
+    max-width: 70px;
+  }
+
+  @media (max-width: 768px) {
+
+    & li.cover .textbox {
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    & .csslider li img.icon {
+      max-width: 23px;
+    }
+  }
+
+  /* slideshow modifications */
+
+  & .csslider {
+    display: block;
+  }
+
+  .csslider > .navigation label {
+    background: #bbb;
+  }
+
+  & .csslider > ul {
+    background: #ddd;
+    border: 0;
+    height: auto;
+    width: auto;
+  }
+
+  & .csslider > .arrows {
+    display: none;
+  }
+
+  @media (min-width: 480px) {
+    & .csslider > ul {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & .csslider {
+      display: inline-block;
+    }
+
+    & .csslider > ul {
+      width: 535px;
+    }
+
+    & .csslider > .arrows {
+      display: block;
+    }
+  }
+
+  @media (min-width: 992px) {
+    & .csslider > ul {
+      width: 560px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    & .csslider > ul {
+      width: 700px;
+    }
+  }
+}
