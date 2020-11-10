@@ -16,7 +16,7 @@
     <div class="publish">
       <h2>Publish With Us</h2>
       <p>Looking to publish a journal with Columbia University Libraries? Any individual faculty member, librarian, or student, or any department, center, research unit, or college associated with Columbia University or its affiliates can propose a digital project or journal partnership with the libraries. We seek out diverse and unique projects that aim to fill gaps in the scholarly record, to provide new publishing venues for disciplines outside the mainstream, graduate students, and emerging scholars, and that offer opportunities for participants to gain confidence and knowledge in academic publishing.</p>
-      <p>For information on eligibility and our journal publishing services and to submit a partnership request, see the <a href="https://library.columbia.edu/services/digital-scholarship/journals.html">Journal Publishing Partnerships</a> page.</p>
+      <p>For information on eligibility and our journal publishing services and to submit a partnership request, see <a href="https://library.columbia.edu/services/digital-scholarship/journals.html">Journal Publishing Partnerships</a>.</p>
     </div>
     <div class="support">
       <h2>Publishing Education & Editorial Support</h2>
