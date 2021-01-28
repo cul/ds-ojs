@@ -76,12 +76,6 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/consilience">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/consilience.png" alt="">
-          <h3>Consilience</h3>
-        </a>
-      </li>
-      <li>
         <a href="https://journals.library.columbia.edu/index.php/cswr">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cswr.png" alt="">
           <h3>Columbia Social Work Review</h3>
@@ -91,6 +85,12 @@
         <a href="https://journals.library.columbia.edu/index.php/curj">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/curj.png" alt="">
           <h3>Columbia Undergraduate Research Journal</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/consilience">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/consilience.png" alt="">
+          <h3>Consilience</h3>
         </a>
       </li>
       <li>
@@ -124,15 +124,33 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/taxlaw">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/tax-law.png" alt="">
+          <h3>Columbia Journal of Tax Law</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/ejab">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/ejab.png" alt="">
+          <h3>Electronic Journal of Africana Bibliography</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/jmetc">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jmetc.png" alt="">
           <h3>Journal of Mathematics Education at Teachers College</h3>
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/salt">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/salt.png" alt="">
-          <h3>Studies in Applied Linguistics & TESOL</h3>
+        <a href="https://journals.library.columbia.edu/index.php/openwork">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/openwork.png" alt="">
+          <h3>Openwork</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/portales">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/portales.png" alt="">
+          <h3>Portales</h3>
         </a>
       </li>
       <li>
@@ -142,9 +160,9 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/taxlaw">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/tax-law.png" alt="">
-          <h3>Columbia Journal of Tax Law</h3>
+        <a href="https://journals.library.columbia.edu/index.php/salt">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/salt.png" alt="">
+          <h3>Studies in Applied Linguistics & TESOL</h3>
         </a>
       </li>
       <li>
@@ -171,3 +189,10 @@
 </main>
 
 {include file="frontend/components/footer.tpl"}
+
+
+
+
+      
+      
+      
