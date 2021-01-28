@@ -70,9 +70,21 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/lawandarts">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jla.png" alt="">
+          <h3>Columbia Journal of Law and the Arts</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/cjrl">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cjrl.png" alt="">
           <h3>Columbia Journal of Race and Law</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/taxlaw">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/tax-law.png" alt="">
+          <h3>Columbia Journal of Tax Law</h3>
         </a>
       </li>
       <li>
@@ -88,6 +100,12 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/cusj">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cusj.png" alt="">
+          <h3>Columbia Undergradute Science Journal</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/consilience">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/consilience.png" alt="">
           <h3>Consilience</h3>
@@ -100,9 +118,9 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/cusj">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cusj.png" alt="">
-          <h3>Columbia Undergradute Science Journal</h3>
+        <a href="https://journals.library.columbia.edu/index.php/ejab">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/ejab.png" alt="">
+          <h3>Electronic Journal of Africana Bibliography</h3>
         </a>
       </li>
       <li>
@@ -115,24 +133,6 @@
         <a href="https://journals.library.columbia.edu/index.php/jgh/index">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jgh.png" alt="">
           <h3>Journal of Global Health</h3>
-        </a>
-      </li>
-      <li>
-        <a href="https://journals.library.columbia.edu/index.php/lawandarts">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jla.png" alt="">
-          <h3>Columbia Journal of Law and the Arts</h3>
-        </a>
-      </li>
-      <li>
-        <a href="https://journals.library.columbia.edu/index.php/taxlaw">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/tax-law.png" alt="">
-          <h3>Columbia Journal of Tax Law</h3>
-        </a>
-      </li>
-      <li>
-        <a href="https://journals.library.columbia.edu/index.php/ejab">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/ejab.png" alt="">
-          <h3>Electronic Journal of Africana Bibliography</h3>
         </a>
       </li>
       <li>
