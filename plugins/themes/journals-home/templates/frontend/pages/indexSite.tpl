@@ -118,6 +118,12 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/cice">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cice.png" alt="">
+          <h3>Current Issues in Comparative Education</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/ejab">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/ejab.png" alt="">
           <h3>Electronic Journal of Africana Bibliography</h3>
@@ -139,6 +145,12 @@
         <a href="https://journals.library.columbia.edu/index.php/jmetc">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jmetc.png" alt="">
           <h3>Journal of Mathematics Education at Teachers College</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/meliora">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/meliora.png" alt="">
+          <h3>Meliora</h3>
         </a>
       </li>
       <li>
