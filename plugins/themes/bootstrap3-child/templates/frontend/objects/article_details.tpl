@@ -6,6 +6,7 @@ Modifications:
 - modifies bootstrap column widths
 - adds article-primary-content class for styling
 - reorder more details sidebar items
+- move references widget box to main content column 
 
 *}
 
@@ -188,6 +189,16 @@ Modifications:
 
 				{call_hook name="Templates::Article::Main"}
 
+				{* References *}
+				{if $article->getCitations()}
+					<div class="article-references">
+						<h2>{translate key="submission.citations"}</h2>
+						<div class="article-references-content">
+							{$article->getCitations()|nl2br}
+						</div>
+					</div>
+				{/if}
+
 			</section><!-- .article-main -->
 
 			<section class="article-more-details">
@@ -333,16 +344,6 @@ Modifications:
 				{/if}
 
 				{call_hook name="Templates::Article::Details"}
-
-				{* References *}
-				{if $article->getCitations()}
-					<div class="article-references">
-						<h2>{translate key="submission.citations"}</h2>
-						<div class="article-references-content">
-							{$article->getCitations()|nl2br}
-						</div>
-					</div>
-				{/if}
 
 			</section><!-- .article-details -->
 		</div><!-- .col-md-8 -->
