@@ -23,6 +23,7 @@ class TMRThemePlugin extends ThemePlugin {
 	 */
 	public function init() {
 		$this->setParent('bootstrapthreechildthemeplugin');
+    $this->addStyle('tmr', 'styles/tmr.less');
 	}
 
 	/**
