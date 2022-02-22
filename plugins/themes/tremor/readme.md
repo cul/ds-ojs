@@ -1,1 +1,0 @@
-# Tremor OJS Child Theme
