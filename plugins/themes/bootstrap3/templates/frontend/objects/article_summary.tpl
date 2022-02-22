@@ -22,7 +22,7 @@
 <div class="article-summary media">
 	{if $article->getLocalizedCoverImage()}
 		<div class="cover media-left">
-			<a href="{url page="article" op="view" path=$articlePath}" class="file">
+			<a href="{if $journal}{url journal=$journal->getPath() page="article" op="view" path=$articlePath}{else}{url page="article" op="view" path=$articlePath}{/if}class="file">
 				<img class="media-object" src="{$article->getLocalizedCoverImageUrl()|escape}" alt="{$article->getLocalizedCoverImageAltText()|escape|default:''}">
 			</a>
 		</div>
@@ -30,7 +30,7 @@
 
 	<div class="media-body">
 		<h3 class="media-heading">
-			<a href="{url page="article" op="view" path=$articlePath}">
+            <a href="{if $journal}{url journal=$journal->getPath() page="article" op="view" path=$articlePath}{else}{url page="article" op="view" path=$articlePath}{/if}">
 				{$article->getLocalizedTitle()|strip_unsafe_html}
 				{if $article->getLocalizedSubtitle()}
 					<p>
@@ -70,6 +70,7 @@
 							{continue}
 						{/if}
 					{/if}
+					{assign var=publication value=$article->getCurrentPublication()}
 					{assign var="hasArticleAccess" value=$hasAccess}
 					{if $currentContext->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_OPEN || $publication->getData('accessStatus') == $smarty.const.ARTICLE_ACCESS_OPEN}
 						{assign var="hasArticleAccess" value=1}
