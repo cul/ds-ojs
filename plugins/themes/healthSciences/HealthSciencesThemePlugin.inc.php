@@ -58,7 +58,7 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 			);
 			$this->addStyle(
 				'bootstrap',
-				'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
+				'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css',
 				array('baseUrl' => '')
 			);
 			$this->addStyle(
@@ -68,24 +68,24 @@ class HealthSciencesThemePlugin extends ThemePlugin {
 			);
 			$this->addScript(
 				'jquery',
-				'https://code.jquery.com/jquery-3.3.1.min.js',
+				'https://code.jquery.com/jquery-3.5.1.min.js',
 				array('baseUrl' => '')
 			);
 			$this->addScript(
 				'popper',
-				'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
+				'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js',
 				array('baseUrl' => '')
 			);
 			$this->addScript(
 				'bootstrap',
-				'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+				'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js',
 				array('baseUrl' => '')
 			);
 
 		// Load local copies of dependencies if CDNs are not allowed
 		} else {
 			$this->addStyle('bootstrap', 'libs/bootstrap.min.css');
-			$this->addScript('jquery', 'libs/jquery-3.3.1.min.js');
+			$this->addScript('jquery', 'libs/jquery.min.js');
 			$this->addScript('popper', 'libs/popper.min.js');
 			$this->addScript('bootstrap', 'libs/bootstrap.min.js');
 		}

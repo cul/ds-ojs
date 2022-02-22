@@ -1,8 +1,8 @@
 {**
  * templates/frontend/components/header.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University
- * Copyright (c) 2003-2016 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Common frontend site header.
@@ -10,16 +10,12 @@
 
 {* Determine whether a logo or title string is being displayed *}
 {assign var="showingLogo" value=true}
-{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+{if !$displayPageHeaderLogo}
 	{assign var="showingLogo" value=false}
 {/if}
 
 {capture assign="homeUrl"}
-	{if $currentJournal && $multipleContexts}
-		{url page="index" router=$smarty.const.ROUTE_PAGE}
-	{else}
-		{url context="index" router=$smarty.const.ROUTE_PAGE}
-	{/if}
+	{url page="index" router=$smarty.const.ROUTE_PAGE}
 {/capture}
 
 {* Logo or site title. Only use <h1> heading on the homepage.
@@ -32,17 +28,13 @@
 
 {* Determine whether to show a logo of site title *}
 {capture assign="brand"}{strip}
-	{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+	{if $displayPageHeaderLogo}
 		<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}"
 		     {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"
 		     {else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}
 				 class="img-fluid">
-	{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+	{elseif $displayPageHeaderTitle}
 		<span class="navbar-logo-text">{$displayPageHeaderTitle|escape}</span>
-	{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
-		<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}"
-		     alt="{$displayPageHeaderTitle.altText|escape}"
-				 class="img-fluid">
 	{else}
 		<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" class="img-fluid">
 	{/if}

@@ -1,8 +1,8 @@
 {**
  * templates/frontend/components/footer.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University
- * Copyright (c) 2003-2016 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Common site frontend footer.
@@ -22,7 +22,7 @@
 				</div>
 			{/if}
 
-			<div class="col-md col-md-2 align-self-center text-right">
+			<div class="col-md col-md-2 align-self-center text-right" role="complementary">
 				<a href="{url page="about" op="aboutThisPublishingSystem"}">
 					<img class="footer-brand-image" alt="{translate key="about.aboutThisPublishingSystem"}"
 					     src="{$baseUrl}/{$brandImage}">
