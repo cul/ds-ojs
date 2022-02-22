@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
-
-<locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.journals-home.name">Journals Home Theme</message>
-	<message key="plugins.themes.journals-home.description">This is a theme for the Journals multisite homepage</message>
-</locale>
