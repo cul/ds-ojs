@@ -9,8 +9,8 @@ Modifications:
 {**
  * templates/frontend/components/header.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University
- * Copyright (c) 2003-2016 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Common frontend site header.
@@ -18,16 +18,12 @@ Modifications:
 
 {* Determine whether a logo or title string is being displayed *}
 {assign var="showingLogo" value=true}
-{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+{if !$displayPageHeaderLogo}
 	{assign var="showingLogo" value=false}
 {/if}
 
 {capture assign="homeUrl"}
-	{if $currentJournal && $multipleContexts}
-		{url page="index" router=$smarty.const.ROUTE_PAGE}
-	{else}
-		{url context="index" router=$smarty.const.ROUTE_PAGE}
-	{/if}
+	{url page="index" router=$smarty.const.ROUTE_PAGE}
 {/capture}
 
 {* Logo or site title. Only use <h1> heading on the homepage.
@@ -40,17 +36,15 @@ Modifications:
 
 {* Determine whether to show a logo of site title *}
 {capture assign="brand"}{strip}
-	{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+	{if $displayPageHeaderLogo}
 		<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}"
 		     {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"
-		     {else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
-	{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
-		<span class="navbar-logo-text">{$displayPageHeaderTitle}</span>
-	{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
-		<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}"
-		     alt="{$displayPageHeaderTitle.altText|escape}">
+		     {else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}
+				 class="img-fluid">
+	{elseif $displayPageHeaderTitle}
+		<span class="navbar-logo-text">{$displayPageHeaderTitle|escape}</span>
 	{else}
-		<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}">
+		<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" class="img-fluid">
 	{/if}
 {/strip}{/capture}
 
@@ -58,13 +52,13 @@ Modifications:
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="frontend/components/headerHead.tpl"}
-<body>
+<body dir="{$currentLocaleLangDir|escape|default:"ltr"}">
 
 {* Header *}
 <header class="main-header">
 	<div class="container">
 
-		<{$siteNameTag} class="sr-only">{$pageTitleTranslated}</{$siteNameTag}>
+		<{$siteNameTag} class="sr-only">{$pageTitleTranslated|escape}</{$siteNameTag}>
 
 	<div class="navbar-logo">
 		<a href="{$homeUrl}">{$brand}</a>
@@ -75,7 +69,7 @@ Modifications:
 		<a class="navbar-brand" href="{$homeUrl}">{$brand}</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
 		        aria-controls="main-navbar" aria-expanded="false"
-		        aria-label="{translate|escape key="plugins.themes.healthSciences.nav.toggle"}">
+		        aria-label="{translate key="plugins.themes.healthSciences.nav.toggle"}">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
