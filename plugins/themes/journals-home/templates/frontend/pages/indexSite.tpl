@@ -58,7 +58,7 @@
         </a>
       </li>
       <li>
-        <a href="cja.library.columbia.edu">
+        <a href="https://cja.library.columbia.edu">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cja.png" alt="">
           <h3>Columbia Journal of Asia</h3>
         </a>
