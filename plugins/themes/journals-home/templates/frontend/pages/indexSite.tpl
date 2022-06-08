@@ -52,6 +52,18 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/hrlr/index">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/hrlr.png" alt="">
+          <h3>Columbia Human Rights Law Review</h3>
+        </a>
+      </li>
+      <li>
+        <a href="cja.library.columbia.edu">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cja.png" alt="">
+          <h3>Columbia Journal of Asia</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/cjal">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cjal.png" alt="">
           <h3>Columbia Journal of Asian Law</h3>
@@ -127,6 +139,12 @@
         <a href="https://journals.library.columbia.edu/index.php/ejab">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/ejab.png" alt="">
           <h3>Electronic Journal of Africana Bibliography</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/ari/index">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/iggrot.png" alt="">
+          <h3>Iggrot Ha’Ari</h3>
         </a>
       </li>
       <li>
