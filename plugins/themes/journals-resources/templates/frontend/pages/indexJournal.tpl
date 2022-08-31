@@ -14,10 +14,3 @@
 </main>
 
 {include file="frontend/components/footer.tpl"}
-
-
-
-
-      
-      
-      
