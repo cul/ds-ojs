@@ -1,0 +1,1 @@
+# Journals Resources Child Theme
