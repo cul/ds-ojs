@@ -8,8 +8,10 @@
 
 <header>
   <h1>
-    <img src="{$baseUrl}/plugins/themes/journals-home/assets/logo-journals.svg" alt="">
-    <span>Columbia University Journals</span>
+    <a href="https://journals.library.columbia.edu">
+      <img src="{$baseUrl}/plugins/themes/journals-home/assets/logo-journals.svg" alt="">
+      <span>Columbia University Journals</span>
+    </a>
   </h1>
 </header>
 
