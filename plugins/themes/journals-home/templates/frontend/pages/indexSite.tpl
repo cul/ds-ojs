@@ -20,8 +20,9 @@
     </div>
     <div class="support">
       <h2>Publishing Education & Editorial Support</h2>
-      <p>At Columbia University Libraries, we work to support our journal editors with opportunities to learn about publishing, digital technologies, and scholarly communications. <a href="http://digitalpublishingworkshop.com/">The Digital Publishing Workshop</a> is an online space supporting Columbia University Libraries’ on-campus publishing workshops and the editors of CUL’s journals publishing program. Explore our publishing workshop curriculum, find resources to support your journal, or <a href="https://library.columbia.edu/services/digital-scholarship/events.html">find an event</a> to attend on campus!</p>
-      <p>Journal editors can find links to our program's standard documentation, including media permissions forms and art logs. Editors will also be able to download typesetting templates and to access sample texts that can aid in writing peer review forms, author guidelines, and more.</p>
+      <p>At Columbia University Libraries, we work to support our journal editors with
+opportunities to learn about publishing, digital technologies, and scholarly communications.</p>
+      <p>Journal editors can find links to our program's <a href="https://journals.library.columbia.edu/index.php/cul/resources">standard documentation</a>, including guidelines and exercises for making operational and policy decisions for your journal, media permissions forms, and art logs. Editors will also be able to download typesetting templates and to access sample texts that can aid in writing peer review forms, author guidelines, and more.</p>
     </div>
   </div>
   <div class="journals">
