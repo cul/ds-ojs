@@ -29,7 +29,7 @@ opportunities to learn about publishing, digital technologies, and scholarly com
     <h2>Our Journals</h2>
     <ul class="menu">
       <li>
-  			<a href="https://journals.library.columbia.edu/index.php/alusur/index">
+  			<a href="https://journals.library.columbia.edu/index.php/alusur">
   				<img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/al-usur-al-wusta.png" alt="">
   				<h3>al `Usur al Wusta</h3>
   			</a>
@@ -53,7 +53,7 @@ opportunities to learn about publishing, digital technologies, and scholarly com
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/hrlr/index">
+        <a href="https://journals.library.columbia.edu/index.php/hrlr">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/hrlr.png" alt="">
           <h3>Columbia Human Rights Law Review</h3>
         </a>
@@ -86,6 +86,12 @@ opportunities to learn about publishing, digital technologies, and scholarly com
         <a href="https://journals.library.columbia.edu/index.php/lawandarts">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jla.png" alt="">
           <h3>Columbia Journal of Law and the Arts</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/cjlc">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cjlc.png" alt="">
+          <h3>Columbia Journal of Literary Criticism</h3>
         </a>
       </li>
       <li>
@@ -125,15 +131,15 @@ opportunities to learn about publishing, digital technologies, and scholarly com
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/currentmusicology">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/current-musicology.png" alt="">
-          <h3>Current Musicology</h3>
-        </a>
-      </li>
-      <li>
         <a href="https://journals.library.columbia.edu/index.php/cice">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cice.png" alt="">
           <h3>Current Issues in Comparative Education</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/currentmusicology">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/current-musicology.png" alt="">
+          <h3>Current Musicology</h3>
         </a>
       </li>
       <li>
@@ -142,8 +148,14 @@ opportunities to learn about publishing, digital technologies, and scholarly com
           <h3>Electronic Journal of Africana Bibliography</h3>
         </a>
       </li>
+     <li>
+        <a href="https://journals.library.columbia.edu/index.php/gsjp">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/gsjp.png" alt="">
+          <h3>Graduate Student Journal of Psychology</h3>
+        </a>
+      </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/ari/index">
+        <a href="https://journals.library.columbia.edu/index.php/ari">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/iggrot.png" alt="">
           <h3>Iggrot Ha’Ari</h3>
         </a>
@@ -155,7 +167,7 @@ opportunities to learn about publishing, digital technologies, and scholarly com
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/jgh/index">
+        <a href="https://journals.library.columbia.edu/index.php/jgh">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jgh.png" alt="">
           <h3>Journal of Global Health</h3>
         </a>
@@ -203,13 +215,13 @@ opportunities to learn about publishing, digital technologies, and scholarly com
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/bioethics/index">
+        <a href="https://journals.library.columbia.edu/index.php/bioethics">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/voices-in-bioethics.png" alt="">
           <h3>Voices in Bioethics</h3>
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/waxingmoon/index">
+        <a href="https://journals.library.columbia.edu/index.php/waxingmoon">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/waxing-moon.png" alt="">
           <h3>Waxing Moon</h3>
         </a>
