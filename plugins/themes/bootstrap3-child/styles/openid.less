@@ -1,0 +1,60 @@
+/* this stylesheet is for the login page used by the OpenID plugin */
+
+.page_oauth {
+  border: 1px solid #ddd;
+	margin: 2em auto;
+  max-width: 1000px;
+  padding: 2em;
+
+  & nav {
+    display: none;
+  }
+  
+  & #openid-choice-select {
+    margin: 2em 0;
+  }
+  
+  & #login-form,
+  & #register-form {
+    background: #f5f5f5;
+    padding: 2em;
+
+    & p.cmp_notification {
+      font-weight: bold;
+    }
+    
+    & .login {
+      margin-bottom: 1.5em;
+    }
+    
+    & label {
+      align-items: center;
+      display: flex;
+      margin-bottom: .5em;
+    }
+    
+    & label span {
+      flex: 25% 0 0;
+    }
+    
+    & label input {
+      flex: 40% 0 0;
+      margin-right: .5em;
+    }
+    
+    & .consent label input, 
+    & .reviewer label input {
+      flex: none;
+    }
+    
+    & button.submit {
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      font-weight: bold;
+      background: #fff;
+      padding: 1em;
+    }
+  }
+}
+
+

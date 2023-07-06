@@ -24,6 +24,7 @@ class BootstrapThreeChildThemePlugin extends ThemePlugin {
 	public function init() {
 		$this->setParent('bootstrapthreethemeplugin');
 		$this->addStyle('custom', 'styles/custom.less');
+    $this->addStyle('openid', 'styles/openid.less');
     $this->addStyle('custom-backend', 'styles/backend.less', array( 'contexts' => 'backend' ));
 	}
 
