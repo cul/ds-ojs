@@ -24,6 +24,7 @@ class HealthSciencesChildThemePlugin extends ThemePlugin {
 	public function init() {
 		$this->setParent('healthsciencesthemeplugin');
 		$this->addStyle('custom', 'styles/custom.less');
+    $this->addStyle('custom', 'styles/openid.less');
     $this->addStyle('custom-backend', 'styles/backend.less', array( 'contexts' => 'backend' ));
 	}
 
