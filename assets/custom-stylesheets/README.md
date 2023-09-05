@@ -13,7 +13,7 @@ In addition to the CSS stylesheets included with the [Bootstrap3](/https://githu
 |	Citational Practice	|	---	|	TBA	|	[citational-practice-custom-styles.css](stylesheets/citational-practice-custom-styles.css)	|	Bootstrap	|		|
 |	Columbia Journal of Asia	|	CJA	|	TBA	|	[cja-custom-styles.css](stylesheets/cja-custom-styles.css)	|	Health Sciences	|		|
 |	Columbia Journal of Asian Law	|	CJAL	|	TBA	|	[cjal-custom-styles.css](stylesheets/cjal-custom-styles.css)	|	Health Sciences	|		|
-|	Columbia Journal of Environmental Law	|	CJEL	|	TBA	|		n/a		n/a		|	Health Sciences	|		|
+|	Columbia Journal of Environmental Law	|	CJEL	|	TBA	|		---		|	Health Sciences	|		|
 |	Columbia Journal of Gender and Law	|	CJGL	|	TBA	|	[cjgl-custom-styles.css](stylesheets/cjgl-custom-styles.css)	|	Health Sciences	|		|
 |	Columbia Journal of Literary Criticism	|	CJLC	|	TBA	|	[cjlc-custom-styles.css](stylesheets/cjlc-custom-styles.css)	|	Bootstrap	|		|
 |	Columbia Journal of Race and Law	|	CJRL	|	TBA	|	[cjrl-custom-styles.css](stylesheets/cjrl-custom-styles.css)	|	Bootstrap	|		|
@@ -37,9 +37,9 @@ In addition to the CSS stylesheets included with the [Bootstrap3](/https://githu
 |	Portales	|	---	|	TBA	|	[portales-custom-styles.css](stylesheets/portales-custom-styles.css)	|	Health Sciences	|		|
 |	Prokofiev Studies Almanac	|	PSA	|	TBA	|	[psa-custom-styles.css](stylesheets/psa-custom-styles.css)	|	Bootstrap	|		|
 |	Studies in Applied Linguistics and TESOL	|	SALT	|	TBA	|	[salt-custom-styles.css](stylesheets/salt-custom-styles.css)	|	Bootstrap	|		|
-|	Small Axe	|	---	|	TBA	|		n/a		n/a		|	Default Theme	|		|
+|	Small Axe	|	---	|	TBA	|		---		|	Default Theme	|		|
 |	Science and Technology Law Review	|	STLR	|	TBA	|	[stlr-custom-styles.css](stylesheets/stlr-custom-styles.css)	|	Health Sciences	|		|
-|	Columbia Journal of Tax Law	|	Tax Law	|	TBA	|		n/a		n/a		|	Health Sciences	|		|
+|	Columbia Journal of Tax Law	|	Tax Law	|	TBA	|		---		|	Health Sciences	|		|
 |	The Morningside Review	|	TMR	|	TBA	|	[tmr-custom-styles.css](stylesheets/tmr-custom-styles.css)	|	Bootstrap	|		|
 |	Voices in Bioethics	|	---	|	TBA	|	[voices-in-bioethics-custom-styles.css](stylesheets/voices-in-bioethics-custom-styles.css)	|	Bootstrap	|		|
 |	Waxing Moon	|	---	|	TBA	|	[waxing-moon-custom-styles.css](stylesheets/waxing-moon-custom-styles.css)	|	Bootstrap	|		|
