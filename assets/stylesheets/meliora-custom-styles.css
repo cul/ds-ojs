@@ -1,0 +1,103 @@
+/* Meliora Custom Styles */
+
+/* fonts */
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'EB Garamond', serif;
+  font-size: 19px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+}
+
+h1,
+.page-header h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.page-content p,
+.page-content li,
+.submissions-checklist {
+  font-size: 19px;
+}
+
+/* header modifications */
+
+.main-header {
+  background-color: #00427a;
+}
+
+#primaryNav .nav-link,
+#primaryNav .nav-link:hover,
+#primaryNav .nav-link:focus,
+#userNav .nav-link, 
+.language-toggle .dropdown-toggle {
+  color: white;
+}
+
+/* logo size */
+
+@media (min-width: 992px) {
+  .navbar-logo img {
+      max-height: 215px;
+  }
+}
+
+.navbar-brand img {
+  max-height: 3em;
+}
+
+/* color fixes */
+
+.navbar-toggler {
+  background-color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .dropdown-item,
+#primaryNav .dropdown-item {
+  color: #fff;
+}
+
+/* footer styling */
+
+.site-footer {
+  background: #00427a;
+}
+
+.site-footer h3 {
+  font-size: 1.5rem;
+}
+
+.site-footer p {
+  font-size: 18px;
+}
+
+/* modify footer blocks */
+
+@media (min-width: 992px) {
+
+  .site-footer .pkp_block {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}

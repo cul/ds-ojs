@@ -1,0 +1,50 @@
+/* Waxing Moon Custom Styles */
+
+/* header */
+
+.top-nav {
+  border-color: #ddd;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* header link color */
+
+.navbar-default .nav > li > a {
+  color: #000;
+}
+
+.navbar-default .nav > li > a:hover {
+  background-color: #ddd;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 250px;
+  padding: 13px 25px 15px 10px;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-nav {
+  font-size: 20px;
+  margin-top: 123px;
+}
+
+.navbar-form {
+  margin-top: 127px;
+}
+
+/* nav toggle button */
+
+.navbar-default .navbar-toggle {
+  border-color: #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+}

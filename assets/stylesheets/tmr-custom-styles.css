@@ -1,0 +1,68 @@
+/* TMR Custom Styles */
+
+/* header color*/
+
+.navbar-default {
+  background-color: #111;
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #000;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 190px;
+  padding: 10px;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-nav {
+  margin-top: 72px;
+}
+
+.navbar-form {
+  margin-top: 76px;
+}
+
+.navbar-form .form-control {
+  width: 149px;
+}
+
+/* hide Abstract label on article pages */
+
+.article-summary h2 {
+  display: none;
+}
+
+.article-details .authors {
+  margin-bottom: 0;
+}
+
+/* article abstract styling */
+
+.article-abstract br {
+  display: none; /* there's an issue with OJS injecting brs; see https://issues.cul.columbia.edu/browse/DS-5079 */
+}
+
+.article-abstract blockquote p br {
+  display: block;
+}
+
+.article-abstract p {
+  margin: 0 0 25px 0;
+}
+
+/* blockquote modification */
+
+blockquote {
+  border: 0;
+  color: #222;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0 0 40px;
+}

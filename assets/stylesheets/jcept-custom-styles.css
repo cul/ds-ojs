@@ -1,0 +1,30 @@
+/* JCEPT Custom Styles */
+
+/* header color*/
+
+.navbar-default {
+  background-color: #002B7F;
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #0041bf;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 157px;
+  padding: 0;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-nav {
+  margin-top: 49px;
+}
+
+.navbar-form {
+  margin-top: 60px;
+}

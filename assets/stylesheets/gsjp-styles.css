@@ -1,0 +1,70 @@
+/* GSJP Custom Styles */
+
+/* modify fonts */
+
+body {
+  font-family: 'Noto Sans', serif;
+}
+
+/* header color*/
+
+.navbar-default {
+  background: rgb(240,240,240);
+  background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%);
+  border-bottom: 2px solid #ddd;
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a {
+  color: #333;
+}
+
+.navbar-default .nav > li > a:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 230px;
+  padding: 10px;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-header {
+  padding: 10px;
+}
+
+.navbar-nav {
+  font-size: 20px;
+  margin-top: 111px;
+}
+
+.navbar-form {
+  margin-top: 116px;
+}
+
+.navbar-form .form-control {
+  width: 149px;
+}
+
+/* link color */
+
+a {
+  color: #004AAD;
+}
+
+a:hover {
+  color: #002a62;
+}
+
+.btn-primary {
+  background-color: #004AAD;
+}
+
+.btn-primary:hover {
+  background-color: #002a62;
+}

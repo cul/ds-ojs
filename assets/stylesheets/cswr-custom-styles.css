@@ -1,0 +1,47 @@
+/* CSWR Custom Styles */
+
+.top-nav {
+  border-color: #ddd;
+}
+
+/* modify header fonts */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-default {
+  font-family: 'Playfair Display', serif;
+}
+
+/* change h2 text on homepage */
+
+.page_index_journal .cmp_announcements .page-header h2 {
+  visibility: hidden;
+}
+
+.page_index_journal .cmp_announcements .page-header h2:after {
+  content: 'Read The Amsterdam';
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  padding: 0 0 0 15px;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 200px;
+  padding: 10px;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-nav {
+  margin-top: 72px;
+}
+
+.navbar-form {
+  margin-top: 76px;
+}
+
+.navbar-form .form-control {
+  width: 125px;
+}

@@ -1,0 +1,40 @@
+/* Medievalist Toolkit Custom Styles */
+
+/* modify fonts */
+
+body {
+  font-family: 'raleway', sans-serif;
+  background-color: #314949;
+  color: #99B8AE;
+}
+
+/* header color */
+
+.navbar-default {
+  background: #c2d6d6;
+}
+
+/* logo modifications */
+
+.navbar-brand {
+  height: 165px;
+  padding: 10px;
+}
+
+.navbar-nav {
+  margin-top: 55px;
+}
+
+.navbar-form {
+  margin-top: 58px;
+}
+
+/* link colors */
+
+a {
+  color: #0AC2FF;
+}
+
+a:hover {
+  color: #00a9e2;
+}

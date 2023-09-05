@@ -1,0 +1,42 @@
+/* Women in Silent Cinema Custom Styles */
+
+body {
+  color: #000;
+  font-family: Georgia, 'IBM Plex Serif','Times New Roman', arial, sans-serif;
+}
+
+/* modify header fonts */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title,
+.navbar-default, ul#primaryNav {
+  font-family: 'Bebas Neue',Georgia,serif;
+}
+
+/* modify header design */
+
+.main-header {
+  background-color: black;
+}
+
+ul#userNav .nav-link,
+ul#userNav .nav-link:hover,
+.language-toggle .dropdown-toggle,
+ul#primaryNav .nav-link,
+ul#primaryNav .nav-link:hover {
+  color: white;
+}
+
+.navbar-logo img {
+  max-height: 170px;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-item {
+  font-size: 21px;
+}
+
+/* footer */
+
+.site-footer {
+  background: #737576;
+}

@@ -1,0 +1,26 @@
+/* JMETC Custom Styles */
+
+/* header color */
+
+.navbar-default {
+  background: rgb(177,48,30);
+  background: linear-gradient(0deg, rgba(177,48,30,1) 0%, rgba(129,17,0,1) 100%);
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #981400;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 140px;
+}
+
+/* nav menu */
+
+.navbar-nav {
+  font-size: 15px;
+}

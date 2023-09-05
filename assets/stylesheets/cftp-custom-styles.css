@@ -1,0 +1,157 @@
+/* CARE FOR THE POLIS Custom Styles */
+
+/* modify header fonts */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-default {
+  font-family: 'arsenal', sans-serif;
+}
+
+/*modify body fonts*/
+
+body {
+  font-family: 'open sans', sans-serif;
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #2d7f7f;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 323px;
+  padding: 10px;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-nav {
+  margin-top: 236px;
+}
+
+.navbar-form {
+  margin-top: 240px;
+}
+
+.navbar-form .form-control {
+  width: 149px;
+}
+
+/* link color */
+
+a {
+  color: #2d7f7f;
+}
+
+a:hover {
+  color: #2d7f7f;
+}
+
+.btn-primary {
+  background-color: #162844;
+}
+
+.btn-primary:hover {
+  background-color: #162844;
+}
+
+/* front page layout changes */
+
+.pkp_page_index .issue-toc {
+  /* padding-top: 150px; */
+}
+
+.pkp_page_index .additional_content {
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pkp_page_index .page-header {
+  padding-bottom: 0;
+  /* border: 0;
+  display: none; */
+}
+
+.pkp_page_index header.page-header {
+  display: none;
+}
+
+.pkp_page_index .issue-details .published {
+  display: none;
+}
+
+.pkp_page_index  div#main-content {
+  padding-top: 220px;
+}
+
+/* larger article titles */
+
+h3.media-heading {
+  font-size: 35px;
+}
+
+/* gray box for issue description */
+
+.issue-details .description {
+  background: #f7f7f7;
+  padding: 2em;
+}
+
+/* remove issue volume number */
+
+h3.issue-title p {
+  display: none;
+}
+
+/* remove view-all-issues button */
+
+section.current_issue a.read-more {
+  display: none;
+}
+
+/* hide Abstract label on article pages */
+
+.article-summary h2 {
+  display: none;
+}
+
+.article-details .authors {
+  margin-bottom: 0;
+}
+
+/* hide issue and section boxes on article pages */
+
+.article-details section.article-more-details {
+  display: none;
+}
+
+body.pkp_page_article .article-main {
+  width: 100%;
+}
+
+/* footer modifications */
+
+footer[role="contentinfo"] {
+  background: rgb(22, 40, 68);
+}
+
+footer[role="contentinfo"] .col-md-10 {
+  background: url("https://journals.library.columbia.edu/plugins/themes/bootstrap3-child/assets/logo-cul-white.png") 20px bottom no-repeat;
+  background-size: 300px;
+  padding-bottom: 38px;
+}
+
+footer[role="contentinfo"] a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer img.cul-logo,
+footer img.ojs-logo {
+  display: none;
+}

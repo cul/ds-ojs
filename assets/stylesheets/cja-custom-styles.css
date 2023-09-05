@@ -1,0 +1,92 @@
+/* CJA Custom Styles */
+
+/* header */
+
+.main-header {
+  background-color: #fff;
+}
+
+.navbar-nav {
+  background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.navbar-logo img {
+  max-height: 200px;
+}
+
+/* fonts */
+
+body {
+  font-size: 21px;
+}
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.issue-toc-section-title,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.page-content p,
+.page-content li,
+.submissions-checklist,
+.btn {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.article-summary-title {
+  font-size: 1.6rem;
+}
+
+/* homepage image modification */
+
+@media screen and (min-width: 1200px) {
+
+  .homepage-additional-content,
+  .homepage-additional-content a {
+    color: #fff;
+  }
+
+  .homepage-additional-content a {
+    text-decoration: underline;
+  }
+
+  .homepage-image-behind-issue+.container-homepage-issue .homepage-issue-published {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .homepage-image img {
+    filter: brightness(85%);
+  }
+}
+
+/* modify footer blocks */
+
+@media (min-width: 992px) {
+
+  .site-footer .pkp_block {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+
+/* twitter widget */
+
+#customblock-Twitter {
+  background: #555;
+  border-radius: 5px;
+}

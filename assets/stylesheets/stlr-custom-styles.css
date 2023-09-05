@@ -1,0 +1,76 @@
+/* STLR Custom Styles */
+
+/* logo */
+
+@media (min-width: 992px) {
+  .navbar-logo img {
+    max-height: 140px;
+  }
+}
+
+.navbar-brand img {
+  max-height: 2em;
+}
+
+/* fonts */
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Noto Serif', serif;
+}
+
+/* link color */
+
+a {
+  color: #3366ff;
+}
+
+/* header styling */
+
+.main-header {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 58%, rgba(240,240,240,1) 100%);
+}
+
+/* footer styling */
+
+.site-footer {
+  background: #1f2979;
+}
+
+/* modify footer blocks */
+
+@media (min-width: 992px) {
+
+  .site-footer .pkp_block {
+    flex: 0 0 33%;
+    width: 33%;
+  }
+}
+
+/* twitter widget */
+
+#customblock-Twitter {
+  background: rgba(0,0,0,.3);
+  border-radius: 5px;
+  flex: 0 0 33%;
+  width: 33%;
+}
+
+/* facebook widget */
+
+#customblock-Facebook {
+  background: rgba(0,0,0,.3);
+  border-radius: 5px;
+  flex: 0 0 33%;
+  margin: 0 5px;
+  width: 33%;
+}

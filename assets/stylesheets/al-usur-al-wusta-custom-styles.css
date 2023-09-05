@@ -1,0 +1,40 @@
+/* al Usur al Wusta Custom Styles */
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, 
+.article-summary-title,
+.issue-toc-section-title,
+.card-title,
+.navbar-default {
+  font-family: 'Times New Roman', arial, sans-serif;
+}
+
+/* header */
+
+.main-header {
+  background-color: #333;
+}
+
+#primaryNav .nav-link,
+#primaryNav .nav-link:focus,
+#primaryNav .nav-link:hover,
+#userNav .nav-link {
+  color: #fff;
+}
+
+/* logo size */
+
+@media (min-width: 992px) {
+  .navbar-logo img {
+    max-height: 160px;
+  }
+}
+
+/* footer widgets */
+
+@media (min-width: 992px) {
+
+  .site-footer .pkp_block {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}

@@ -1,0 +1,20 @@
+/* SALT Custom Styles */
+
+/* header color */
+
+.navbar-default {
+  background: rgb(44,106,174);
+  background: linear-gradient(0deg, rgba(44,106,174,1) 0%, rgba(13,75,144,1) 100%);
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #2C6AAE;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 130px;
+}

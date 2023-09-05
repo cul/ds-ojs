@@ -1,0 +1,70 @@
+/* HRLR Custom Styles */
+
+/* modify fonts */
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-default {
+  font-family: 'PT Serif', serif;
+}
+
+/* header color*/
+
+.navbar-default {
+  background: #003865;
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #0c3861;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 240px;
+  padding: 10px;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-nav {
+  font-size: 22px;
+  margin-top: 111px;
+}
+
+.navbar-form {
+  margin-top: 116px;
+}
+
+.navbar-form .form-control {
+  width: 149px;
+}
+
+/* link color */
+
+a {
+  color: #3078BB;
+}
+
+a:hover {
+  color: #276096;
+}
+
+.btn-primary {
+  background-color: #3078BB;
+}
+
+.btn-primary:hover {
+  background-color: #276096;
+}
+
+/* fix custom block header */
+
+.block_make_submission h2 {
+  margin-left: 10px;
+}

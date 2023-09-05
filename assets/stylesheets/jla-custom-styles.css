@@ -1,0 +1,55 @@
+/* JLA Custom Styles */
+
+/* fonts */
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'EB Garamond', serif;
+}
+
+/* link color */
+
+a {
+  color: #2b6da3;
+}
+
+/* footer styling */
+
+.site-footer {
+  background: #2b6da3;
+}
+
+.site-footer h3 {
+  font-size: 1.5rem;
+}
+
+.site-footer p {
+  font-size: 18px;
+}
+
+/* modify footer blocks */
+
+@media (min-width: 992px) {
+
+  .site-footer .pkp_block {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+
+/* twitter widget */
+
+#customblock-Twitter {
+  background: #12466f;
+  border-radius: 5px;
+  /* flex: 0 0 35%;
+  width: 35%; */
+}

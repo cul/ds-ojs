@@ -1,0 +1,54 @@
+/* CURJ Custom Styles */
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Unna', serif;
+}
+
+.main-header {
+  background: url(https://journals.library.columbia.edu/public/site/images/admin/curj-cover.jpg);
+  background-size: cover;
+}
+
+.main-header .container {
+  max-width: none;
+  padding: 0;
+}
+
+.navbar {
+  background: white;
+}
+
+.navbar-logo {
+  padding-top: 18em;
+  padding-bottom: 9em;
+}
+
+.navbar-logo img {
+  max-width: 230px;
+}
+
+.navbar-logo a {
+  background: white;
+  bottom: 103px;
+  display: inline-block;
+  background: white;
+  padding: 15px 30px 15px 15px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  width: 100%;
+}
+
+#primaryNav {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+}

@@ -1,0 +1,77 @@
+/* CJAL Custom Styles */
+
+/* header */
+
+.main-header {
+  background-color: #62B5F5;
+}
+
+/* logo size */
+
+@media (min-width: 992px) {
+  .navbar-logo img {
+    max-height: 256px;
+  }
+}
+
+/* navbar */
+
+.navbar-logo {
+  padding-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .dropdown-item {
+  color: #fff;
+}
+
+#primaryNav .nav-link:hover,
+#primaryNav .nav-link:focus,
+.dropdown-menu {
+  background: #297fc2;
+  color: #fff;
+  border-color: transparent;
+}
+
+/* colors */
+
+.issue-toc-section-title,
+a {
+  color: #62B5F5;
+}
+
+a:hover {
+  color: #084371;
+}
+
+.btn-primary {
+  background-color: #62B5F5;
+  border-color: #62B5F5;
+}
+
+#primaryNav .dropdown-item:focus,
+#primaryNav .dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn:hover,
+.btn:focus {
+  background-color: #084371;
+  border-color: #084371;
+  color: #fff;
+}
+
+#primaryNav .dropdown-menu.show {
+  background-color: #297fc2;
+}
+
+/* footer styling */
+
+.site-footer {
+  background: #297fc2;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+/* Iggrot ha'Ari Custom Styles */
+
+/* fonts */
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Source Serif Pro', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+}
+
+.main-header {
+  background-color: #e6ecff;
+}
+
+/* logo size */
+
+@media (min-width: 992px) {
+  .navbar-logo img {
+      max-height: 250px;
+  }
+}

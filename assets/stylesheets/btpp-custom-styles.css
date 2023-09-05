@@ -1,0 +1,31 @@
+/* BTPP Custom Styles */
+
+/* header color*/
+
+.navbar-default {
+  background-color: #222;
+}
+
+/* header link hover color */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #000;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 130px;
+  padding: 20px;
+}
+
+/* nav menu and searchbox positioning */
+
+.navbar-nav {
+  font-size: 14px;
+  margin-top: 41px;
+}
+
+.navbar-form {
+  margin-top: 48px;
+}

@@ -1,0 +1,95 @@
+/* Voices in Bioethics Custom Styles */
+
+body {
+  color: #222;
+}
+
+/* custom cover image */
+
+@media (min-width: 768px) {
+
+  header.navbar {
+    background: url(https://journals.library.columbia.edu/public/site/images/admin/voices-in-bioethics-cover.jpg);
+    background-size: cover;
+    height: 27vw;
+  }
+
+  header.navbar .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  header.navbar nav#nav-menu {
+    background: white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  header.navbar .navbar-nav {
+    margin: 0;
+  }
+
+  header.navbar .navbar-form {
+    margin-top: 14px;
+  }
+
+  header.navbar .navbar-brand {
+    bottom: 65px;
+    height: 250px;
+    position: absolute;
+  }
+
+  header.navbar ul#navigationUser > li > a {
+    color: white;
+  }
+}
+
+/* modify fonts */
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-default {
+  font-family: 'Palanquin', serif;
+}
+
+/* crop homepage images */
+
+.article-summary .cover a.file {
+  display: block;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.article-summary .media-left img {
+  margin-top: -10px;
+  max-width: 250px;
+}
+
+/* hide Abstract label on article pages */
+
+.article-summary h2 {
+  display: none;
+}
+
+.article-details .authors {
+  margin-bottom: 0;
+}
+
+/* link color */
+
+a {
+  color: #666699;
+}
+
+a:hover {
+  color: #38386d;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #666699;
+}
+
+.btn-primary:hover {
+  background-color: #38386d;
+}

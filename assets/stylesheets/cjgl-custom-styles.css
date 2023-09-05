@@ -1,0 +1,29 @@
+/* CJGL Custom Styles */
+
+/* logo size */
+
+@media (min-width: 992px) {
+
+  .navbar-logo img {
+      max-height: 170px;
+  }
+}
+
+/* modify footer blocks */
+
+@media (min-width: 992px) {
+
+  .site-footer .pkp_block {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+
+/* twitter widget */
+
+#customblock-Connect_With_Us {
+  background: transparent;
+  border-radius: 5px;
+  flex: 0 0 35%;
+  width: 35%;
+}

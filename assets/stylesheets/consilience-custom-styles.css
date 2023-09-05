@@ -1,0 +1,89 @@
+/* Consilience Custom Styles */
+
+body {
+  font-family: "pt serif";
+  font-size: 18px;
+}
+
+/* modify header fonts */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title {
+  font-family: "pt serif";
+  color: #0e4d92;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navbar-default {
+  font-family: arial, sans-serif;
+}
+
+.main-header {
+  background-color: white;
+}
+
+.top-nav {
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-default {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-default .nav > li > a:hover {
+  background-color: #ccc;
+}
+
+@media (min-width: 992px) {
+
+  .navbar-brand {
+    height: 140px;
+  }
+}
+
+.navbar-nav {
+  font-size: 15px;
+  padding-top: 11px;
+}
+
+.search-form {
+  border-top: 1px solid #ddd;
+}
+
+.homepage-image .img-responsive {
+  width: 100%;
+}
+
+a {
+  color: #093b71;
+}
+
+a:hover {
+  color: #0655ab;
+}
+
+.btn-primary {
+  background-color: #093b71;
+  border-color: #093b71;
+}
+
+.btn-primary:hover {
+  background-color: #0655ab;
+  border-color: #0655ab;
+  color: white;
+}
+
+footer.site-footer {
+  background: #093b71;
+}
+
+/* footer widgets */
+
+@media (min-width: 992px) {
+
+  .site-footer .pkp_block {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}

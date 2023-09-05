@@ -1,0 +1,41 @@
+.main-header {
+  background: url(https://journals.library.columbia.edu/public/site/images/admin/SlipperCover.png);
+  background-size: cover;
+}
+
+.main-header .container {
+  max-width: none;
+  padding: 0;
+}
+
+.navbar {
+  background: white;
+}
+
+.navbar-logo {
+  padding-top: 18em;
+  padding-bottom: 18em;
+}
+
+.navbar-logo img {
+  max-width: 230px;
+}
+
+.navbar-logo a {
+  display: none;
+}
+
+#primaryNav {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+}
+
+.container-homepage-issue .homepage-issue-current,
+.container-homepage-issue .homepage-issue-identifier,
+.container-homepage-issue .homepage-issue-published {
+  display: none;
+}
+
+.container-homepage-issue .text-center a.btn {
+  display: none;
+}

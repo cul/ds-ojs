@@ -1,0 +1,37 @@
+/* PSA Custom Styles */
+
+/* fonts */
+
+body {
+  font-family: georgia, serif;
+}
+
+/* header color */
+
+.navbar-default {
+  background-color: #006699;
+}
+
+.navbar-default .nav > li > a {
+  color: white;
+}
+.navbar-default .nav > li > a:hover {
+  color: lightblue;
+}
+
+/* logo size */
+
+.navbar-brand {
+  height: 160px;
+  padding: 10px;
+}
+
+/* nav modifications */
+
+.navbar-nav {
+  margin-top: 67px;
+}
+
+.navbar-form {
+  margin-top: 51px;
+}

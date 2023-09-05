@@ -1,0 +1,55 @@
+/* CBLR Custom Styles */
+
+/* header color */
+
+.navbar-default {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+}
+
+/* header adjustements */
+
+.navbar-default .nav > li > a:hover {
+  background-color: #aaa;
+}
+
+.navbar-header {
+  float: none;
+}
+
+@media (min-width: 1100px) {
+  .navbar-brand {
+    height: 140px;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar,
+.header_view .navbar-toggle .icon-bar {
+  background-color: #ccc;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form,
+.header_view .navbar-collapse,
+.header_view .navbar-form {
+  border-color: transparent;
+}
+
+#nav-menu {
+  border-top: 1px solid #ccc;
+}
+
+.navbar-default .nav>li>a,
+.header_view .nav>li>a {
+  color: #555;
+}
+
+.navbar-nav {
+  font-size: 16px;
+  margin: 3px 0 0 0;
+  padding: 0;
+}
+
+.navbar-form {
+  margin: 8px 0;
+}
