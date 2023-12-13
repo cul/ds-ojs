@@ -5,6 +5,7 @@ Modifications:
 - always show date in article summary
 - hide doi in article summary
 - increase column size to col-lg-2 for article-summary-pages
+- add article subtitles (DS-7473)
 
 *}
 
@@ -55,12 +56,13 @@ Modifications:
 		<a {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
 			{$article->getLocalizedTitle()|strip_unsafe_html}
 		</a>
-    {if $article->getLocalizedSubtitle()}
-      <div class="article-summary-subtitle">
-        {$article->getLocalizedSubtitle()|escape}
-      </div>
-    {/if}
-	</div>
+  </div>
+
+  {if $article->getLocalizedSubtitle()}
+    <div class="article-summary-subtitle">
+      {$article->getLocalizedSubtitle()|escape}
+    </div>
+  {/if}
 
 	{if $article->getDatePublished()}
 		<div class="article-summary-date">
