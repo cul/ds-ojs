@@ -53,8 +53,11 @@ Modifications:
 
 	<div class="article-summary-title">
 		<a {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
-			{$article->getLocalizedFullTitle()|escape}
+			{$article->getLocalizedTitle()|strip_unsafe_html}
 		</a>
+    <div class="article-summary-subtitle">
+			{$article->getLocalizedSubtitle()|escape}
+		</div>
 	</div>
 
 	{if $article->getDatePublished()}
