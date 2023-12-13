@@ -216,3 +216,17 @@ blockquote {
 		text-decoration: none;
 	}
 }
+
+/* switch to vertical dropdown menu DS-7473 */
+
+@media (min-width: 992px) {
+
+  #primaryNav .nav-item {
+    position: relative;
+  }
+
+  #primaryNav .dropdown-menu.show {
+    justify-content: normal;
+    width: auto;
+  }
+}
