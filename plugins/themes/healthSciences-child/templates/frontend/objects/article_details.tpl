@@ -67,9 +67,9 @@ Modifications:
         {$publication->getLocalizedTitle()|escape}
 			</h1>
 
-      {if $publication->getLocalizedSubtitle()}
+      {if $publication->getLocalizedData('subtitle')}
         <div class="article-details-subtitle">
-          {$publication->getLocalizedSubtitle()|escape}
+          {$publication->getLocalizedData('subtitle')|escape}
         </div>
       {/if}
 
