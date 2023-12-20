@@ -2,7 +2,8 @@
 
 Modifications:
 
-- remove article subtitles (DS-7473)
+- remove article subtitles from title h1 element (DS-7473)
+- add article subtitles below title (DS-7473)
 
 *}
 
@@ -65,6 +66,12 @@ Modifications:
 			<h1 class="article-details-fulltitle">
         {$publication->getLocalizedTitle()|escape}
 			</h1>
+
+      {if $publication->getLocalizedSubtitle()}
+        <div class="article-details-subtitle">
+          {$publication->getLocalizedSubtitle()|escape}
+        </div>
+      {/if}
 
 			{if $section}
 				<div class="article-details-issue-section large-screen">{$section->getLocalizedTitle()|escape}</div>
