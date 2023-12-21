@@ -35,6 +35,13 @@ a {
   color: #3366ff;
 }
 
+@media (min-width: 992px) {
+  #primaryNav .dropdown-item,
+  #primaryNav .dropdown-item:hover {
+    color: #fff;
+  }
+}
+
 /* header styling */
 
 .main-header {
