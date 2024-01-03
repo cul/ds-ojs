@@ -22,15 +22,24 @@ body,
 .article-summary-title,
 .article-summary-date,
 .announcement-date,
+.issue-toc-section-title,
+.card-title,
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Noto Serif', serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* link color */
 
 a {
   color: #3366ff;
+}
+
+@media (min-width: 992px) {
+  #primaryNav .dropdown-item,
+  #primaryNav .dropdown-item:hover {
+    color: #fff;
+  }
 }
 
 /* header styling */
@@ -54,23 +63,4 @@ a {
     flex: 0 0 33%;
     width: 33%;
   }
-}
-
-/* twitter widget */
-
-#customblock-Twitter {
-  background: rgba(0,0,0,.3);
-  border-radius: 5px;
-  flex: 0 0 33%;
-  width: 33%;
-}
-
-/* facebook widget */
-
-#customblock-Facebook {
-  background: rgba(0,0,0,.3);
-  border-radius: 5px;
-  flex: 0 0 33%;
-  margin: 0 5px;
-  width: 33%;
 }

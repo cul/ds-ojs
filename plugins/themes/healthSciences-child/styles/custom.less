@@ -29,7 +29,12 @@
   }
 }
 
-/* front page */
+/* homepage */
+
+h1.homepage-issue-identifier {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
 .issue-image-cover {
   margin: 0;
@@ -38,6 +43,36 @@
 .homepage-additional-content {
   margin-top: 0;
 }
+
+/* homepage article summary boxes */
+
+.issue-toc-section-title {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.issue-toc-section+.issue-toc-section {
+  border: 0;
+  margin-top: 3rem;
+}
+
+.article-summary {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 1.8rem;
+}
+
+.article-summary-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.article-summary-subtitle {
+  color: #757575;
+}
+
+/* homepage announcements */
 
 .homepage-announcements {
   box-shadow: 0 0 5px #ccc;
@@ -56,6 +91,27 @@
 .homepage-announcement {
   flex: none;
   max-width: 100%;
+}
+
+/* article page titles */
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* article page subtitles */
+
+.article-details-subtitle {
+  color: #757575;
+  margin: 0 auto 20px auto;
+  max-width: 800px;
+}
+
+@media (max-width: 991px) {
+  .article-details-subtitle {
+      order: 4;
+  }
 }
 
 /* archives page */
@@ -215,4 +271,30 @@ blockquote {
 		color: white;
 		text-decoration: none;
 	}
+}
+
+/* button styling */
+
+.btn,
+.btn-primary {
+  border-radius: 8px;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  color: #fff;
+}
+
+/* switch to vertical dropdown menu DS-7473 */
+
+@media (min-width: 992px) {
+
+  #primaryNav .nav-item {
+    position: relative;
+  }
+
+  #primaryNav .dropdown-menu.show {
+    justify-content: normal;
+    width: auto;
+  }
 }
