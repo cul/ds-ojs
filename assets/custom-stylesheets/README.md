@@ -17,6 +17,7 @@ In addition to the CSS stylesheets included with the [Bootstrap3](/https://githu
 | Columbia Journal of Gender and Law | CJGL | TBA | [cjgl-custom-styles.css](stylesheets/cjgl-custom-styles.css) | Health Sciences | DS-4947 |
 | Columbia Journal of Literary Criticism | CJLC | TBA | [cjlc-custom-styles.css](stylesheets/cjlc-custom-styles.css) | Bootstrap | OJS-97 |
 | Columbia Journal of Race and Law | CJRL | TBA | [cjrl-custom-styles.css](stylesheets/cjrl-custom-styles.css) | Bootstrap | OJS-165 |
+| Columbia Journal of Undergraduate Mathematics | CJUM | TBA | [cjum-custom-styles.css](stylesheets/cjum-custom-styles.css) | Health Sciences | OJS-272 |
 | Consilience | --- | TBA | [consilience-custom-styles.css](stylesheets/consilience-custom-styles.css) | Health Sciences | OJS-192 |
 | Columbia Social Work Review | CSWR | TBA | [cswr-custom-styles.css](stylesheets/cswr-custom-styles.css) | Bootstrap | OJS-241 |
 | Columbia Undergraduate Research Journal | CURJ | TBA | [curj-custom-styles.css](stylesheets/curj-custom-styles.css) | Health Sciences | OJS-189 |

@@ -11,3 +11,20 @@
 .navbar-brand img {
   max-height: none;
 }
+
+/* fonts */
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+.issue-toc-section-title,
+.card-title,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'DM Sans', sans-serif;
+}
