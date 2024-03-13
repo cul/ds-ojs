@@ -72,3 +72,17 @@ a {
     width: 33%;
   }
 }
+
+/* blog page modifications OJS-75 */
+
+.page-blog .blog-summary img {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+
+.page-blog-post .blog-post-content img {
+  float: right;
+  margin: 0 0 15px 20px;
+  max-width: 50%;
+}
+
