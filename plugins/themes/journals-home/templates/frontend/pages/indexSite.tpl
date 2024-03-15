@@ -9,8 +9,7 @@
 
 <main>
   <div class="mission">
-    <p class="intro">Through our journals program, the Libraries and our Digital Scholarship team support the creation, discovery, and dissemination of quality open-access research. We seek collaborations with Columbia-affiliated faculty and students who want to ask new questions, play at the borders of currently canonized fields, open new pathways of inquiry, explore innovative methods, and bring new and traditionally underrepresented voices into conversation.<br><br>
-    The Columbia University Libraries Journals program is currently on hiatus as we evaluate our staffing and service levels. We thank you for your interest in working with us, and for your patience as we work to improve this space. Please check back periodically for updates.</p>
+    <p class="intro">Through our journals program, the Libraries and our Digital Scholarship team support the creation, discovery, and dissemination of quality open-access research. We seek collaborations with Columbia-affiliated faculty and students who want to ask new questions, play at the borders of currently canonized fields, open new pathways of inquiry, explore innovative methods, and bring new and traditionally underrepresented voices into conversation.</p>
     <p class="email">Contact us via email at: <a href="mailto:publishing@library.columbia.edu">publishing@library.columbia.edu</a></p>
   </div>
   <div class="publishing">
