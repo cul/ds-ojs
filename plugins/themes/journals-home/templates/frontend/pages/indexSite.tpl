@@ -51,12 +51,6 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/hrlr">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/hrlr.png" alt="">
-          <h3>Columbia Human Rights Law Review</h3>
-        </a>
-      </li>
-      <li>
         <a href="https://cja.library.columbia.edu">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cja.png" alt="">
           <h3>Columbia Journal of Asia</h3>
@@ -87,12 +81,6 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/cjlc">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cjlc.png" alt="">
-          <h3>Columbia Journal of Literary Criticism</h3>
-        </a>
-      </li>
-      <li>
         <a href="https://journals.library.columbia.edu/index.php/cjrl">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cjrl.png" alt="">
           <h3>Columbia Journal of Race and Law</h3>
@@ -105,15 +93,15 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/cswr">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cswr.png" alt="">
-          <h3>Columbia Social Work Review</h3>
+        <a href="https://journals.library.columbia.edu/index.php/cjum/index)">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cjum.png" alt="">
+          <h3>Columbia Journal of Undergraduate Mathematics</h3>
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/curj">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/curj.png" alt="">
-          <h3>Columbia Undergraduate Research Journal</h3>
+        <a href="https://journals.library.columbia.edu/index.php/cswr">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cswr.png" alt="">
+          <h3>Columbia Social Work Review</h3>
         </a>
       </li>
       <li>
@@ -153,12 +141,6 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/ari">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/iggrot.png" alt="">
-          <h3>Iggrot Ha’Ari</h3>
-        </a>
-      </li>
-      <li>
         <a href="https://journals.library.columbia.edu/index.php/jcept">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jcept.png" alt="">
           <h3>Journal of Clinical Education in Physical Therapy</h3>
@@ -189,12 +171,6 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/portales">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/portales.png" alt="">
-          <h3>Portales</h3>
-        </a>
-      </li>
-      <li>
         <a href="https://journals.library.columbia.edu/index.php/stlr">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/stlr.png" alt="">
           <h3>Science and Technology Law Review</h3>
@@ -216,12 +192,6 @@
         <a href="https://journals.library.columbia.edu/index.php/bioethics">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/voices-in-bioethics.png" alt="">
           <h3>Voices in Bioethics</h3>
-        </a>
-      </li>
-      <li>
-        <a href="https://journals.library.columbia.edu/index.php/waxingmoon">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/waxing-moon.png" alt="">
-          <h3>Waxing Moon</h3>
         </a>
       </li>
     </ul>
