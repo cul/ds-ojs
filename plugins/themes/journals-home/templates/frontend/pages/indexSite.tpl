@@ -141,6 +141,12 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/ari">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/iggrot.png" alt="">
+          <h3>Iggrot Ha’Ari</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/jcept">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/jcept.png" alt="">
           <h3>Journal of Clinical Education in Physical Therapy</h3>
@@ -192,6 +198,12 @@
         <a href="https://journals.library.columbia.edu/index.php/bioethics">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/voices-in-bioethics.png" alt="">
           <h3>Voices in Bioethics</h3>
+        </a>
+      </li>
+      <li>
+        <a href="https://journals.library.columbia.edu/index.php/waxingmoon">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/waxing-moon.png" alt="">
+          <h3>Waxing Moon</h3>
         </a>
       </li>
     </ul>
