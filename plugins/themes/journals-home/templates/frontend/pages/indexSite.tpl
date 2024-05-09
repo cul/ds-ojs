@@ -183,6 +183,12 @@
         </a>
       </li>
       <li>
+        <a href="https://journals.library.columbia.edu/index.php/sjshr">
+          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/sjshr.png" alt="">
+          <h3>Student Journal of the Study of Human Rights</h3>
+        </a>
+      </li>
+      <li>
         <a href="https://journals.library.columbia.edu/index.php/salt">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/salt.png" alt="">
           <h3>Studies in Applied Linguistics & TESOL</h3>
