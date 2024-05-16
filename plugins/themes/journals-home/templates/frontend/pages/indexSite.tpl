@@ -107,7 +107,7 @@
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cusj">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cusj.png" alt="">
-          <h3>Columbia Undergradute Science Journal</h3>
+          <h3>Columbia Undergraduate Science Journal</h3>
         </a>
       </li>
       <li>
