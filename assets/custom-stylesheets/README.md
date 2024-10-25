@@ -9,7 +9,7 @@ In addition to the CSS stylesheets included with the [Bootstrap3](/https://githu
 | Black Theology Papers Project | BTPP | TBA | [btpp-custom-styles.css](stylesheets/btpp-custom-styles.css) | Bootstrap | DS-4974 |
 | Columbia Business Law Review | CBLR | TBA | [cblr-custom-styles.css](stylesheets/cblr-custom-styles.css) | Bootstrap | OJS-169 |
 | Care for the Polis | CFTP | TBA | [cftp-custom-styles.css](stylesheets/cftp-custom-styles.css) | Bootstrap | OJS-206 |
-| Current Issues in Comparative Education | CICE | TBA | [cice-custom-styles.css](stylesheets/cice-custom-styles.css) | Health Sciences | OJS-177 |
+| Current Issues in Comparative Education | CICE | TBA | [cice-custom-styles.css](stylesheets/cice-custom-styles.css) | Bootstrap | OJS-177 |
 | Citational Practice | --- | TBA | [citational-practice-custom-styles.css](stylesheets/citational-practice-custom-styles.css) | Bootstrap | OJS-82 |
 | Columbia Journal of Asia | CJA | TBA | [cja-custom-styles.css](stylesheets/cja-custom-styles.css) | Health Sciences | OJS-172 |
 | Columbia Journal of Asian Law | CJAL | TBA | [cjal-custom-styles.css](stylesheets/cjal-custom-styles.css) | Health Sciences | DS-4966 |
