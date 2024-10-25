@@ -1,66 +1,97 @@
-/* CICE Custom Styles */
+/* Current Issues in Contemporary Education Custom Styles */
 
-/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-body,
-.navbar-logo-text,
-.list-group-item-heading,
-.announcement-summary-date,
-.article-details-issue-identifier,
-.article-summary-title,
-.article-summary-date,
-.announcement-date,
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6,
-.page-content p,
-.page-content li,
-.submissions-checklist {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 19px;
+body {
+  color: #222;
 }
 
-/* header */
-
-.main-header {
-  background-color: #fff;
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-default {
+  font-family: 'Lexend', sans-serif;
 }
 
-/* logo size */
 
-@media (min-width: 992px) {
-  .navbar-logo img {
-    max-height: 160px;
+/* custom cover image */
+
+@media (min-width: 768px) {
+
+  header.navbar {
+    background: url(https://journals.library.columbia.edu/public/journals/43/pageHeaderLogoImage_en_US.jpg);
+    background-size: cover;
+    height: 27vw;
+  }
+
+  header.navbar .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  header.navbar nav#nav-menu {
+    background: white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  header.navbar .navbar-nav {
+    margin: 0;
+  }
+
+  header.navbar .navbar-form {
+    margin-top: 14px;
+  }
+
+  header.navbar .navbar-brand {
+    bottom: 65px;
+    height: 250px;
+    position: absolute;
+  }
+
+  header.navbar ul#navigationUser > li > a {
+    color: white;
   }
 }
 
+
+/* crop homepage images */
+
+.article-summary .cover a.file {
+  display: block;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.article-summary .media-left img {
+  margin-top: -10px;
+  max-width: 250px;
+}
+
+/* hide Abstract label on article pages */
+
+.article-summary h2 {
+  display: none;
+}
+
+.article-details .authors {
+  margin-bottom: 0;
+}
 
 /* link color */
 
 a {
-  color: #023A84;
+  color: #666699;
 }
 
-/* footer styling */
-
-.site-footer {
-  background: #023A84;
+a:hover {
+  color: #38386d;
+  text-decoration: none;
 }
 
-.site-footer h3 {
-  font-size: 1.5rem;
+.btn-primary {
+  background-color: #666699;
 }
 
-.site-footer p {
-  font-size: 18px;
+.btn-primary:hover {
+  background-color: #38386d;
 }
-
-/* modify footer blocks */
-
-@media (min-width: 992px) {
-
-  .site-footer .pkp_block {
-    flex: 0 0 50%;
-    width: 50%;
-  }
-}
-
