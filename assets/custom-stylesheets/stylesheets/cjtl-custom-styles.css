@@ -1,0 +1,75 @@
+/* CJTL Custom Styles */
+
+/* color modifications */
+
+body {
+  background-color: #faf0e7;
+}
+
+.main-header,
+.search-form,
+.site-footer {
+  background: #2b2d48;
+}
+
+#userNav .nav-link,
+#primaryNav .nav-link,
+#primaryNav .nav-link:focus,
+#primaryNav .nav-link:hover {
+  color: #fff;
+}
+
+.card {
+  background: transparent;
+}
+
+/* fonts */
+
+body,
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.announcement-date,
+.issue-toc-section-title,
+.card-title,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* header styling */
+
+@media (min-width: 992px) {
+  .main-header .container {
+      padding-top: 5rem;
+  }
+}
+
+/* hide search form */
+
+.search-form {
+  display: none;
+}
+
+/* fix box styling */
+
+.search-filters,
+.article-details-main,
+.article-summary {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 3px;
+  color: #333;
+}
+
+.page-issue-description-wrapper {
+  background-color: #e6dcd3;
+  border-radius: 3px;
+}
+
+.page-issue-description .h2 {
+  margin: 0;
+}
