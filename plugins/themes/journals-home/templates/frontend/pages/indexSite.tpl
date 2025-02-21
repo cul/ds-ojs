@@ -11,7 +11,8 @@
   <div class="mission">
     <p class="intro">Columbia Libraries supports the creation, discovery, and dissemination of open-access research by providing technical publishing support and covering hosting and related costs for over 30 scholarly journals. We collaborate with Columbia-affiliated faculty and students who produce and curate scholarly content focused on a range of topics. We support editors in learning about the traditional scholarly publishing ecosystem and give them support to push its boundaries and leverage its existing infrastructure and strengths.
     <br><br>
-    <a href="https://library.columbia.edu/research-teaching/open-scholarship/libraries-publishing/journal-publishing.html">Journal Publishing Partnerships Information</a> (please note that we are not currently accepting new partners)<br><br>
+    <a href="https://library.columbia.edu/research-teaching/open-scholarship/libraries-publishing/journal-publishing.html">Journal Publishing Partnerships Information</a><br>
+    <em>Please note that we are not currently accepting new partners</em><br><br>
     <a href="https://journals.library.columbia.edu/index.php/cul/resources">Journal Partner Resources</a></p>
     <p class="email">Contact us at: <a href="mailto:publishing@library.columbia.edu">publishing@library.columbia.edu</a></p>
   </div>
