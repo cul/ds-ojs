@@ -9,20 +9,13 @@
 
 <main>
   <div class="mission">
-    <p class="intro">Through our journals program, the Libraries and our Digital Scholarship team support the creation, discovery, and dissemination of quality open-access research. We seek collaborations with Columbia-affiliated faculty and students who want to ask new questions, play at the borders of currently canonized fields, open new pathways of inquiry, explore innovative methods, and bring new and traditionally underrepresented voices into conversation.</p>
-    <p class="email">Contact us via email at: <a href="mailto:publishing@library.columbia.edu">publishing@library.columbia.edu</a></p>
+    <p class="intro">Columbia Libraries supports the creation, discovery, and dissemination of open-access research by providing technical publishing support and covering hosting and related costs for over 30 scholarly journals. We collaborate with Columbia-affiliated faculty and students who produce and curate scholarly content focused on a range of topics. We support editors in learning about the traditional scholarly publishing ecosystem and give them support to push its boundaries and leverage its existing infrastructure and strengths.
+    <br><br>
+    <a href="https://library.columbia.edu/research-teaching/open-scholarship/libraries-publishing/journal-publishing.html">Journal Publishing Partnerships Information</a> (please note that we are not currently accepting new partners)<br><br>
+    <a href="https://journals.library.columbia.edu/index.php/cul/resources">Journal Partner Resources</a></p>
+    <p class="email">Contact us at: <a href="mailto:publishing@library.columbia.edu">publishing@library.columbia.edu</a></p>
   </div>
-  <div class="publishing">
-    <div class="publish">
-      <h2>Publishing</h2>
-      <p>We are not currently accepting new requests for the Journal Publishing Partnerships program, which is currently paused as we evaluate our processes, staffing, and services.</p>
-    </div>
-    <div class="support">
-      <h2>Publishing Education</h2>
-      <p>At Columbia University Libraries, our goal is to support our journal editors with opportunities to gain experience in scholarly publishing and discourse, digital technologies, and collaborative learning.</p>
-      <p>Our team provides onboarding and consultation support, so that journal editors can collaboratively engage in the process of building sustainable structures for scholarly publishing. Our partners can find links to program <a href="https://journals.library.columbia.edu/index.php/cul/resources">documentation</a> (currently under review), including guidelines and exercises for making operational and policy decisions for your journal, media permissions forms, and art logs. Editors will also be able to download typesetting templates and to access sample texts that can aid in writing peer review forms, author guidelines, and more.</p>
-    </div>
-  </div>
+  
   <div class="journals">
     <h2>Our Journals</h2>
     <ul class="menu">
