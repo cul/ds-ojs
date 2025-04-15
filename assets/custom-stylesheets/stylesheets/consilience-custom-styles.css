@@ -1,5 +1,20 @@
 /* Consilience Custom Styles */
 
+/* fix layout issue OJS-317 */
+
+@media (min-width: 1200px) {
+  .issue-only-image {
+      margin-top: auto;
+  }
+}
+
+.homepage-announcements {
+  background: #fff;
+  margin-bottom: 65px;
+}
+
+/* main styles */
+
 body {
   font-family: "pt serif";
   font-size: 18px;
