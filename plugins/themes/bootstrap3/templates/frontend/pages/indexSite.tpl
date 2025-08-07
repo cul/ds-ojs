@@ -1,9 +1,9 @@
 {**
  * templates/frontend/pages/indexSite.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University Library
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Copyright (c) 2014-2023 Simon Fraser University Library
+ * Copyright (c) 2003-2023 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * Site index.
  *
@@ -32,7 +32,7 @@
 
 		{else}
 			<ul class="media-list">
-				{iterate from=journals item=journal}
+				{foreach from=$journals item=journal}
 					{capture assign="url"}{url journal=$journal->getPath()}{/capture}
 					{assign var="thumb" value=$journal->getLocalizedData('journalThumbnail')}
 					{assign var="description" value=$journal->getLocalizedDescription()}
@@ -70,15 +70,8 @@
 							</ul>
 						</div>
 					</li>
-				{/iterate}
+				{/foreach}
 			</ul>
-
-			{if $journals->getPageCount() > 0}
-				<div class="cmp_pagination">
-					{page_info iterator=$journals}
-					{page_links anchor="journals" name="journals" iterator=$journals}
-				</div>
-			{/if}
 		{/if}
 	</div>
 

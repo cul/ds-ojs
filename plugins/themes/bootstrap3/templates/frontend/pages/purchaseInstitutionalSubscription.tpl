@@ -1,9 +1,9 @@
 {**
  * templates/subscriptions/userInstitutionalSubscriptionForm.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Copyright (c) 2014-2023 Simon Fraser University
+ * Copyright (c) 2003-2023 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * User purchase institutional subscription form
  *
@@ -33,7 +33,7 @@
 			</label>
 			<select name="typeId" id="typeId" class="form-control" required>
 				{foreach name=types from=$subscriptionTypes item=subscriptionType}
-					<option value="{$subscriptionType->getId()}"{if $typeId == $subscriptionType->getId()} selected{/if}>{$subscriptionType->getLocalizedName()|escape}</option>
+					<option value="{$subscriptionType->getId()}"{if $typeId == $subscriptionType->getId()} selected{/if}>{$subscriptionType->getSummaryString()|escape}</option>
 				{/foreach}
 			</select>
 		</div>

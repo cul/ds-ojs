@@ -1,9 +1,9 @@
 {**
  * templates/frontend/components/registrationForm.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University Library
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Copyright (c) 2014-2023 Simon Fraser University Library
+ * Copyright (c) 2003-2023 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @brief Display the basic registration form fields
  *
@@ -42,7 +42,7 @@
 				{translate key="user.affiliation"}
 				<span class="form-control-required">*</span>
 				<span class="sr-only">{translate key="common.required"}</span>
-				<input class="form-control" type="text" name="affiliation" id="affiliation" value="{$affiliation.$primaryLocale|escape}" required>
+				<input class="form-control" type="text" name="affiliation" id="affiliation" value="{$affiliation|escape}" required>
 			</label>
 		</div>
 		<div class="form-group country">

@@ -1,9 +1,9 @@
 {**
  * templates/frontend/components/registrationFormContexts.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University Library
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Copyright (c) 2014-2023 Simon Fraser University Library
+ * Copyright (c) 2003-2023 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @brief Display role selection for all of the journals/presses on this site
  *
@@ -50,7 +50,6 @@
 												</span>
 												<span class="form-control">
 													{$userGroup->getLocalizedName()|escape}
-													{$userGroup->getLocalizedName()}
 												</span>
 											</label>
 											{if in_array($userGroupId, $userGroupIds)}
@@ -76,20 +75,20 @@
 									{/foreach}
 								</div>
 							</div>
+							{* Require the user to agree to the terms of the context's privacy policy *}
+							{if !$enableSiteWidePrivacyStatement && $context->getSetting('privacyStatement')}
+								<div class="context_privacy {if $isSelected}context_privacy_visible{/if}">
+									<label>
+										<input type="checkbox" name="privacyConsent[{$contextId}]" id="privacyConsent[{$contextId}]" value="1"{if $privacyConsent[$contextId]} checked="checked"{/if}>
+										{capture assign="privacyUrl"}{url router=$smarty.const.ROUTE_PAGE context=$context->getPath() page="about" op="privacy"}{/capture}
+										{translate key="user.register.form.privacyConsentThisContext" privacyUrl=$privacyUrl}
+									</label>
+								</div>
+							{/if}
 						</li>
 					{/foreach}
 				</ul>
 			</div>
 		</div>
 	</fieldset>
-	{* Require the user to agree to the terms of the context's privacy policy *}
-	{if !$enableSiteWidePrivacyStatement && $context->getSetting('privacyStatement')}
-		<div class="context_privacy {if $isSelected}context_privacy_visible{/if}">
-			<label>
-				<input type="checkbox" name="privacyConsent[{$contextId}]" id="privacyConsent[{$contextId}]" value="1"{if $privacyConsent[$contextId]} checked="checked"{/if}>
-				{capture assign="privacyUrl"}{url router=$smarty.const.ROUTE_PAGE context=$context->getPath() page="about" op="privacy"}{/capture}
-				{translate key="user.register.form.privacyConsentThisContext" privacyUrl=$privacyUrl}
-			</label>
-		</div>
-	{/if}
 {/if}

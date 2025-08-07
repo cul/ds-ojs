@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2014-2019 Simon Fraser University
  * Copyright (c) 2003-2019 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @brief Display the page to view a category of the catalog.
  *
@@ -43,27 +43,27 @@
 		{/if}
 	</div>
 
-	{if !$subcategories->wasEmpty()}
+	{if $subcategories|@count}
 	<nav class="subcategories" role="navigation">
 		<h2>
 			{translate key="catalog.category.subcategories"}
 		</h2>
 		<ul>
-			{iterate from=subcategories item=subcategory}
+			{foreach from=$subcategories item=subcategory}
 				<li>
 					<a href="{url op="category" path=$subcategory->getPath()}">
 						{$subcategory->getLocalizedTitle()|escape}
 					</a>
 				</li>
-			{/iterate}
+			{/foreach}
 		</ul>
 	</nav>
 	{/if}
 
-    {* Count of articles in this category *}
-    <div class="article_count">
-        {translate key="catalog.browseTitles" numTitles=$total}
-    </div>
+	{* Count of articles in this category *}
+	<div class="article_count">
+		{translate key="catalog.browseTitles" numTitles=$total}
+	</div>
 
 	{* No published titles in this category *}
 	{if empty($publishedSubmissions)}
@@ -72,7 +72,7 @@
 		<ul class="media-list">
 			{foreach from=$publishedSubmissions item=article}
 				<li>
-					{include file="frontend/objects/article_summary.tpl" article=$article hideGalleys=true}
+					{include file="frontend/objects/article_summary.tpl" article=$article hideGalleys=true heading="h3"}
 				</li>
 			{/foreach}
 		</ul>

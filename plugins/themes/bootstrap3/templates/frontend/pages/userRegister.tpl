@@ -1,9 +1,9 @@
 {**
 * templates/frontend/pages/userRegister.tpl
 *
-* Copyright (c) 2014-2017 Simon Fraser University Library
-* Copyright (c) 2003-2017 John Willinsky
-* Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+* Copyright (c) 2014-2023 Simon Fraser University Library
+* Copyright (c) 2003-2023 John Willinsky
+* Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
 *
 * User registration form.
 *}
@@ -72,6 +72,12 @@
 								{/if}
 							{/foreach}
 						</div>
+						<div id="reviewerInterests" class="form-group reviewer_interests">
+							<label>
+								{translate key="user.interests"}
+								<input class="form-control" type="text" name="interests" id="interests" value="{$interests|default:""|escape}">
+							</label>
+						</div>
 					</div>
 				</fieldset>
 			{/if}
@@ -81,7 +87,7 @@
 
 		{if !$currentContext}
 			{* Require the user to agree to the terms of the privacy policy *}
-		<fieldset class="consent">
+			<fieldset class="consent">
 				{if $siteWidePrivacyStatement}
 					<div class="form-group optin optin-privacy">
 						<label>
@@ -99,7 +105,14 @@
 						{translate key="user.register.form.emailConsent"}
 					</label>
 				</div>
-		</fieldset>
+				{* When a user is registering for no specific journal, allow them to enter their reviewer interests *}
+				<div class="form-group reviewer_nocontext_interests">
+					<label>
+						{translate key="user.register.noContextReviewerInterests"}
+						<input class="form-control" type="text" name="interests" id="interests" value="{$interests|default:""|escape}">
+					</label>
+				</div>
+			</fieldset>
 		{/if}
 
 		{* recaptcha spam blocker *}

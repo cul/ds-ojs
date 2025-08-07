@@ -1,9 +1,9 @@
 {**
  * templates/frontend/components/navigationMenu.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Copyright (c) 2014-2023 Simon Fraser University
+ * Copyright (c) 2003-2023 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @brief Primary navigation menu list for OJS
  *
@@ -23,7 +23,7 @@
 			{if !empty($navigationMenuItemAssignment->children)}
 				{assign var="hasChildren" value=true}
 			{/if}
-			<li class="{$liClass|escape}{if $hasChildren} dropdown{/if}">
+			<li class="{$liClass|escape} menu-item-{$navigationMenuItemAssignment->getMenuItemId()}{if $hasChildren} dropdown{/if}">
 				<a href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}"{if $hasChildren} class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"{/if}>
 					{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
 					{if $hasChildren}
@@ -34,7 +34,7 @@
 					<ul class="dropdown-menu {if $id === 'navigationUser'}dropdown-menu-right{/if}">
 						{foreach key=childField item=childNavigationMenuItemAssignment from=$navigationMenuItemAssignment->children}
 							{if $childNavigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
-								<li class="{$liClass|escape}">
+								<li class="{$liClass|escape} menu-item-{$childNavigationMenuItemAssignment->getMenuItemId()}">
 									<a href="{$childNavigationMenuItemAssignment->navigationMenuItem->getUrl()}">
 										{$childNavigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
 									</a>
