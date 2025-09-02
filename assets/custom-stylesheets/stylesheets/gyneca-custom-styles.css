@@ -1,0 +1,10 @@
+/* Gyneca Custom Styles */
+
+/* logo size */
+
+@media (min-width: 992px) {
+
+  .navbar-logo img {
+      max-height: 200px;
+  }
+}
