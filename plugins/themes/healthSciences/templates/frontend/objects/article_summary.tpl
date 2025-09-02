@@ -63,12 +63,12 @@
 			{if $pubId}
 				{assign var="doiUrl" value=$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}
 				<div class="article-summary-doi">
-					<a href="{$doiUrl}">{$doiUr}</a>
+					<a href="{$doiUrl}">{$doiUrl}</a>
 				</div>
 			{/if}
 		{/foreach}
 	{* Get DOI from PublishedArticle object ($pubIdPlugin isn't assigned to indexJournal template) *}
-	{elseif $requestedOp === "index" && $article->getStoredPubId('doi')}
+	{elseif ($requestedPage === "search" || $requestedPage === "catalog") && $article->getStoredPubId('doi')}
 		{assign var="doiUrl" value=$article->getStoredPubId('doi')|substr_replace:'https://doi.org/':0:0|escape}
 		{if $doiUrl}
 			<div class="article-summary-doi">
