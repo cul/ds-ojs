@@ -7,6 +7,8 @@
  *
  * @brief Handle JavaScript functionality unique to this theme.
  */
+
+/**
 (function($) {
 
 	// Open login modal when nav menu links clicked
@@ -15,6 +17,8 @@
 		return false;
 	})
 })(jQuery);
+*/
+
 
 (function ($) {
 
