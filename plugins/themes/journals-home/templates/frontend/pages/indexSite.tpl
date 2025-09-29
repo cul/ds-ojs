@@ -99,12 +99,6 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/curj">
-          <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/curj.png" alt="">
-          <h3>Columbia Undergraduate Research Journal</h3>
-        </a>
-      </li>
-      <li>
         <a href="https://journals.library.columbia.edu/index.php/cusj">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/cusj.png" alt="">
           <h3>Columbia Undergraduate Science Journal</h3>
