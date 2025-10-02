@@ -1,3 +1,9 @@
+/* OJS-341: HIDE ARTICLES ON FRONT PAGE  */
+
+.issue-toc-section {
+  display:none;
+}
+
 /* CURJ Custom Styles */
 
 body,
