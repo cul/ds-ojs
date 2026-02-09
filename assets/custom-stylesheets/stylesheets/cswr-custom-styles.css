@@ -45,3 +45,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 .navbar-form .form-control {
   width: 125px;
 }
+
+/* fix for blog layout OJS-358 */
+
+.page-blog-post {
+    padding-right: 5rem;
+}
