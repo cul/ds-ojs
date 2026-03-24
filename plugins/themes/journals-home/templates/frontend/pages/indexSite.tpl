@@ -27,12 +27,6 @@
   			</a>
   		</li>
       <li>
-  			<a href="https://archipelagosjournal.org">
-  				<img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/archipelagos.png" alt="">
-  				<h3>Archipelagos</h3>
-  			</a>
-  		</li>
-      <li>
         <a href="https://journals.library.columbia.edu/index.php/btpp">
           <img src="{$baseUrl}/plugins/themes/journals-home/assets/logos/btpp.png" alt="">
           <h3>Black Theology Papers Project</h3>
