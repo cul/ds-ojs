@@ -11,8 +11,8 @@ msgstr ""
 "PO-Revision-Date: 2020-11-27T16:11:07+00:00\n"
 "Language: \n"
 
-msgid "plugins.themes.JournalsResources.name"
-msgstr "Journals Resources Theme"
+msgid "plugins.themes.journalsHome.name"
+msgstr "Journals Home Theme"
 
-msgid "plugins.themes.JournalsResources.description"
-msgstr "This is a theme for the Journals Resources page"
+msgid "plugins.themes.journalsHome.description"
+msgstr "This is a theme for the Journals multisite homepage"

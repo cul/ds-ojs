@@ -1,35 +1,22 @@
 <?php
 
+namespace APP\plugins\themes\journalsHome;
+
 use PKP\plugins\ThemePlugin;
 
 class JournalsHomeThemePlugin extends ThemePlugin {
-	/**
-	 * Initialize the theme's styles, scripts and hooks. This is only run for
-	 * the currently active theme.
-	 *
-	 * @return null
-	 */
+
 	public function init() {
 		$this->setParent('defaultthemeplugin');
 		$this->addStyle('custom', 'styles/custom.less');
-    $this->addStyle('custom-backend', 'styles/backend.less', array( 'contexts' => 'backend' ));
+		$this->addStyle('custom-backend', 'styles/backend.less', array('contexts' => 'backend'));
 	}
 
-	/**
-	 * Get the display name of this plugin
-	 * @return string
-	 */
-	function getDisplayName() {
-		return __('plugins.themes.JournalsHome.name');
+	public function getDisplayName() {
+		return __('plugins.themes.journalsHome.name');
 	}
 
-	/**
-	 * Get the description of this plugin
-	 * @return string
-	 */
-	function getDescription() {
-		return __('plugins.themes.JournalsHome.description');
+	public function getDescription() {
+		return __('plugins.themes.journalsHome.description');
 	}
 }
-
-?>

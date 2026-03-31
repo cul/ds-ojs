@@ -1,7 +1,3 @@
 <?php
 
-require_once('JournalsResourcesThemePlugin.php');
-
-return new JournalsResourcesThemePlugin();
-
-?>
+return new \APP\plugins\themes\journalsResources\JournalsResourcesThemePlugin();
