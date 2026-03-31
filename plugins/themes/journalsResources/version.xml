@@ -3,7 +3,7 @@
 
 <version>
 	<!-- The application should match the theme folder to ensure it is unique -->
-	<application>journals-home</application>
+	<application>JournalsResources</application>
 
 	<!-- The type should always be `plugins.themes` -->
 	<type>plugins.themes</type>
@@ -16,11 +16,11 @@
 	<release>1.0.0.0</release>
 
 	<!-- The date of the latest version -->
-	<date>2018-10-25</date>
+	<date>2022-08-31</date>
 
 	<!-- This should always be 0 -->
 	<lazy-load>0</lazy-load>
 
 	<!-- The class name of the plugin. See index.php -->
-	<class>JournalsHomeThemePlugin</class>
+	<class>JournalsResourcesThemePlugin</class>
 </version>

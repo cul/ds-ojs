@@ -20,7 +20,7 @@ class JournalsResourcesThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.journals-resources.name');
+		return __('plugins.themes.JournalsResources.name');
 	}
 
 	/**
@@ -28,7 +28,7 @@ class JournalsResourcesThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.journals-resources.description');
+		return __('plugins.themes.JournalsResources.description');
 	}
 }
 

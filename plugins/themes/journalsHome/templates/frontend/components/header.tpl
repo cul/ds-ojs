@@ -8,13 +8,11 @@
 
 <header>
   <h1>
-    <a href="https://journals.library.columbia.edu">
-      <img src="{$baseUrl}/plugins/themes/journals-home/assets/logo-journals.svg" alt="">
-      <span>Columbia University Journals</span>
-    </a>
+    <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logo-journals.svg" alt="">
+    <span>Columbia University Journals</span>
   </h1>
 </header>
 
 <div class="cover">
-  <img src="{$baseUrl}/plugins/themes/journals-home/assets/cover.jpg" alt="">
+  <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/cover.jpg" alt="">
 </div>
