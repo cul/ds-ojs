@@ -1,6 +1,6 @@
 <?php
 
-require_once('JournalsResourcesThemePlugin.inc.php');
+require_once('JournalsResourcesThemePlugin.php');
 
 return new JournalsResourcesThemePlugin();
 

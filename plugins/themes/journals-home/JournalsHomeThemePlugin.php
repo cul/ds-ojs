@@ -1,6 +1,6 @@
 <?php
 
-import('lib.pkp.classes.plugins.ThemePlugin');
+use PKP\plugins\ThemePlugin;
 
 class JournalsHomeThemePlugin extends ThemePlugin {
 	/**
