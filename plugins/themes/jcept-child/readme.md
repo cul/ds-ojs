@@ -1,1 +1,0 @@
-# JCEPT Child Theme

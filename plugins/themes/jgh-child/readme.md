@@ -1,1 +1,0 @@
-# JGH Child Theme

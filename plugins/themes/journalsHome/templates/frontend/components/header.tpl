@@ -8,11 +8,11 @@
 
 <header>
   <h1>
-    <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logo-journals.svg" alt="">
+    <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logo-journals.svg" alt="">
     <span>Columbia University Journals</span>
   </h1>
 </header>
 
 <div class="cover">
-  <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/cover.jpg" alt="">
+  <img src="{$baseUrl}/plugins/themes/journalsHome/assets/cover.jpg" alt="">
 </div>

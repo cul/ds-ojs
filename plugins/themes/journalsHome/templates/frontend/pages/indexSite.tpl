@@ -22,181 +22,181 @@
     <ul class="menu">
       <li>
   			<a href="https://journals.library.columbia.edu/index.php/alusur">
-  				<img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/al-usur-al-wusta.png" alt="">
+  				<img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/al-usur-al-wusta.png" alt="">
   				<h3>al `Usur al Wusta</h3>
   			</a>
   		</li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/btpp">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/btpp.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/btpp.png" alt="">
           <h3>Black Theology Papers Project</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cblr">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cblr.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cblr.png" alt="">
           <h3>Columbia Business Law Review</h3>
         </a>
       </li>
       <li>
         <a href="https://cja.library.columbia.edu">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cja.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cja.png" alt="">
           <h3>Columbia Journal of Asia</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cjal">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cjal.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cjal.png" alt="">
           <h3>Columbia Journal of Asian Law</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cjel">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cjel.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cjel.png" alt="">
           <h3>Columbia Journal of Environmental Law</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cjgl">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cjgl.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cjgl.png" alt="">
           <h3>Columbia Journal of Gender and Law</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/lawandarts">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/jla.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/jla.png" alt="">
           <h3>Columbia Journal of Law and the Arts</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cjrl">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cjrl.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cjrl.png" alt="">
           <h3>Columbia Journal of Race and Law</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/taxlaw">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/tax-law.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/tax-law.png" alt="">
           <h3>Columbia Journal of Tax Law</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cjum/index)">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cjum.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cjum.png" alt="">
           <h3>Columbia Journal of Undergraduate Mathematics</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cswr">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cswr.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cswr.png" alt="">
           <h3>Columbia Social Work Review</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cusj">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cusj.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cusj.png" alt="">
           <h3>Columbia Undergraduate Science Journal</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/consilience">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/consilience.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/consilience.png" alt="">
           <h3>Consilience</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/cice">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/cice.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cice.png" alt="">
           <h3>Current Issues in Comparative Education</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/currentmusicology">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/current-musicology.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/current-musicology.png" alt="">
           <h3>Current Musicology</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/ejab">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/ejab.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/ejab.png" alt="">
           <h3>Electronic Journal of Africana Bibliography</h3>
         </a>
       </li>
      <li>
         <a href="https://journals.library.columbia.edu/index.php/gsjp">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/gsjp.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/gsjp.png" alt="">
           <h3>Graduate Student Journal of Psychology</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/ari">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/iggrot.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/iggrot.png" alt="">
           <h3>Iggrot Ha’Ari</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/jcept">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/jcept.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/jcept.png" alt="">
           <h3>Journal of Clinical Education in Physical Therapy</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/jgh">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/jgh.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/jgh.png" alt="">
           <h3>Journal of Global Health</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/jmetc">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/jmetc.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/jmetc.png" alt="">
           <h3>Journal of Mathematics Education at Teachers College</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/meliora">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/meliora.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/meliora.png" alt="">
           <h3>Meliora</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/openwork">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/openwork.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/openwork.png" alt="">
           <h3>Openwork</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/stlr">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/stlr.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/stlr.png" alt="">
           <h3>Science and Technology Law Review</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/sjshr">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/sjshr.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/sjshr.png" alt="">
           <h3>Student Journal of the Study of Human Rights</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/salt">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/salt.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/salt.png" alt="">
           <h3>Studies in Applied Linguistics & TESOL</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/TMR">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/tmr.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/tmr.png" alt="">
           <h3>The Morningside Review</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/bioethics">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/voices-in-bioethics.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/voices-in-bioethics.png" alt="">
           <h3>Voices in Bioethics</h3>
         </a>
       </li>
       <li>
         <a href="https://journals.library.columbia.edu/index.php/waxingmoon">
-          <img src="{$baseUrl}/plugins/themes/JournalsHome/assets/logos/waxing-moon.png" alt="">
+          <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/waxing-moon.png" alt="">
           <h3>Waxing Moon</h3>
         </a>
       </li>
