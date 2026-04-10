@@ -4,14 +4,14 @@ OJS_CONFIG = YAML.load(File.read(File.expand_path('../ojs_config.yml', __FILE__)
 set :department, 'cdrs'
 set :instance, fetch(:department)
 set :application, OJS_CONFIG[:application]
-set :deploy_name, "#{fetch(:application)}_#{fetch(:stage)}"
+set :deploy_name, "journals_#{fetch(:stage)}"
 
 #this holds the deploy script only, for cap deploy
 set :repo_url,  "git@github.com:cul/ds-ojs.git"
 
-set :deploy_to,   "/var/www/#{fetch(:instance)}/#{fetch(:deploy_name)}"
+set :deploy_to,   "/opt/httpd/www/#{fetch(:deploy_name)}"
 
-set :remote_user, "#{fetch(:instance)}serv"
+set :remote_user, "renserv"
 
 
 
