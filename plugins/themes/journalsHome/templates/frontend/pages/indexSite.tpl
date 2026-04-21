@@ -81,7 +81,7 @@
         </a>
       </li>
       <li>
-        <a href="https://journals.library.columbia.edu/index.php/cjum/index)">
+        <a href="https://journals.library.columbia.edu/index.php/cjum">
           <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logos/cjum.png" alt="">
           <h3>Columbia Journal of Undergraduate Mathematics</h3>
         </a>
