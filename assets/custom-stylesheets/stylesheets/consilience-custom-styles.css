@@ -97,13 +97,3 @@ a:hover {
 footer.site-footer {
   background: #093b71;
 }
-
-/* footer widgets */
-
-@media (min-width: 992px) {
-
-  .site-footer .pkp_block {
-    flex: 0 0 50%;
-    width: 50%;
-  }
-}
