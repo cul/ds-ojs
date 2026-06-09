@@ -1,5 +1,27 @@
 /* Health Sciences child theme — shared customizations for all Health Sciences sites */
 
+/* fonts — the Health Sciences parent sets an explicit font on these elements,
+   so they don't inherit from `body`. Resetting them to `inherit` lets a site's
+   per-site stylesheet restyle everything with a single `body { font-family }`. */
+
+.navbar-logo-text,
+.list-group-item-heading,
+.announcement-summary-date,
+.article-details-issue-identifier,
+.article-summary-title,
+.article-summary-date,
+.issue-toc-section-title,
+.card-title,
+.dropdown-header,
+.btn,
+.page-announcement,
+.category-title,
+.homepage-issue-published,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+}
+
 /* header */
 
 @media (min-width: 992px) {
