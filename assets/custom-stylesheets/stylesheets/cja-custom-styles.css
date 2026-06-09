@@ -73,10 +73,3 @@ h1, h2, h3, h4, h5, h6 {
     filter: brightness(85%);
   }
 }
-
-/* twitter widget */
-
-#customblock-Twitter {
-  background: #555;
-  border-radius: 5px;
-}

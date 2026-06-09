@@ -42,12 +42,3 @@ a {
 .site-footer p {
   font-size: 18px;
 }
-
-/* twitter widget */
-
-#customblock-Twitter {
-  background: #12466f;
-  border-radius: 5px;
-  /* flex: 0 0 35%;
-  width: 35%; */
-}
