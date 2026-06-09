@@ -1,0 +1,296 @@
+/* Bootstrap3 child theme — shared customizations for all Bootstrap3 sites */
+
+/* general formatting */
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 12px;
+}
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.alert {
+  font-size: 16px;
+}
+
+.alert-info {
+  background-color: #20809D;
+  border-radius: 5px;
+  color: white;
+}
+
+.alert-info a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.alert-info a:hover {
+  text-decoration: none;
+}
+
+/* header */
+
+.navbar-brand {
+  height: 115px;
+  padding: 25px;
+}
+
+.navbar-nav {
+  font-size: 17px;
+  margin: 33px 0 0 20px;
+}
+
+.navbar-form {
+  margin-top: 42px;
+
+  & .form-control {
+    padding: 6px;
+  }
+}
+
+.navbar-header .navbar-toggle {
+  margin-top: 42px;
+}
+
+@media (max-width: 1210px) {
+  .navbar-brand {
+    height: 82px;
+    padding: 15px;
+  }
+
+  .navbar-nav {
+    font-size: 13px;
+    margin: 16px 0 0 10px;
+  }
+
+  .navbar-form {
+    margin-top: 23px;
+  }
+
+  .navbar-header .navbar-toggle {
+    margin-top: 23px;
+  }
+}
+
+/* article details */
+
+h3.media-heading {
+  font-size: 21px;
+}
+
+h3.media-heading p {
+  line-height: 1.2;
+  margin: 0 0 0.2em 0;
+}
+
+h3.media-heading a:hover {
+  text-decoration: none;
+}
+
+.meta .authors {
+  padding: 0.2em 0 0.7em 0;
+}
+
+/* article author bio */
+
+.article-main {
+  & .panel-default {
+    margin-top: 30px;
+  }
+
+  & .panel-heading {
+    background-color: white;
+    font-weight: bold;
+  }
+}
+
+/* modify author photos */
+
+.biography .media-body img {
+  float: left;
+  margin: 10px 15px 5px 0;
+  max-width: 150px;
+}
+
+/* article page */
+
+body.pkp_page_article {
+  & .date-published strong {
+    display: block;
+  }
+
+  & .article-abstract img {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.article-references-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* announcement page */
+
+.announcements {
+  padding-top: 10px;
+}
+
+/* hide breadcrumbs on announcement page */
+
+.pkp_page_announcement .cmp_breadcrumbs {
+  display: none;
+}
+
+/* footer */
+
+footer[role="contentinfo"] {
+  font-size: 14px;
+}
+
+/* small tables embedded in posts */
+
+table.table-small {
+  border-collapse: collapse;
+
+  & tr {
+    vertical-align: top;
+  }
+
+  & td,
+  & th {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+    width: 33%;
+  }
+}
+
+/* lists with checkboxes */
+
+.checkboxes {
+  padding-left: 10px;
+
+  & li {
+    display: flex;
+    list-style: none;
+    margin: 5px 0;
+    padding-left: 6px;
+  }
+
+  & input[type="checkbox"] {
+    margin-top: 4px;
+  }
+
+  & span {
+    padding-left: 10px;
+  }
+}
+
+/* mailchimp newsletter */
+
+#mc_embed_signup input#mce-EMAIL {
+  margin-bottom: 8px;
+  padding: 6px;
+  width: 100%;
+}
+
+/* blog (static pages plugin) */
+
+.page-blog,
+.page-blog-post {
+  & .page-header {
+    border: 0;
+    margin-top: 0;
+  }
+
+  & .filter-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  & .blog-summary {
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0;
+  }
+
+  & .blog-summary img {
+    max-width: 100%;
+  }
+
+  & .blog-summary h2 {
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  & .blog-summary-date,
+  & .blog-summary-byline {
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+  }
+
+  & .blog-summary-description {
+    margin: 25px 0 20px 0;
+  }
+
+  & .blog-summary-description p {
+    margin: 0;
+  }
+
+  & .blog-summary-more a {
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  & .blog-post-content {
+    padding-right: 30px;
+  }
+
+  & .blog-post-tags {
+    padding: 20px 0;
+  }
+
+  & .blog-summary-tags a,
+  & .blog-post-tags a {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 10px;
+    text-transform: lowercase;
+  }
+
+  & .blog-summary-tags a:hover,
+  & .blog-post-tags a:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* prepend pp. before display of page numbers OJS-233 */
+
+.media-body p.pages:before {
+  content: 'pp.';
+}
+
+/* hide issue publication date OJS-233 */
+
+.issue-details p.published {
+  display: none;
+}
