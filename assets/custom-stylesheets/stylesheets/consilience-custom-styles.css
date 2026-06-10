@@ -23,14 +23,9 @@ body {
 /* modify header fonts */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title {
-  font-family: "pt serif";
   color: #0e4d92;
   font-weight: 600;
   font-size: 20px;
-}
-
-.navbar-default {
-  font-family: arial, sans-serif;
 }
 
 .main-header,

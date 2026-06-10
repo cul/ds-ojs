@@ -1,5 +1,11 @@
 /* Columbia Journal of Gender and Law (cjgl) — Custom Styles */
 
+/* fonts */
+
+body {
+  font-family: 'PT Serif', serif;
+}
+
 /* logo size */
 
 @media (min-width: 992px) {

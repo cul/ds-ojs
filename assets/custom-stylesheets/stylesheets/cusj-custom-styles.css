@@ -1,5 +1,11 @@
 /* Columbia Undergraduate Science Journal (cusj) — Custom Styles */
 
+/* fonts */
+
+body {
+  font-family: 'PT Serif', serif;
+}
+
 /* logo size */
 
 @media (min-width: 992px) {

@@ -1,10 +1,8 @@
 /* Al-Usur al-Wusta (alusur) — Custom Styles */
 
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, 
-.article-summary-title,
-.issue-toc-section-title,
-.card-title,
-.navbar-default {
+/* fonts */
+
+body {
   font-family: 'Times New Roman', arial, sans-serif;
 }
 
