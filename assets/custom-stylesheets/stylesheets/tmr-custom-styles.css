@@ -66,3 +66,9 @@ blockquote {
   margin: 0;
   padding: 0 0 0 40px;
 }
+
+/* hide option for authors to register as reviewers DS-4911 */
+
+.register fieldset.reviewer {
+  display: none;
+}

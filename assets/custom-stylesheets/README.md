@@ -31,13 +31,13 @@ The table below lists **all** journals on the multisite, including those that do
 | openwork | openwork | Health Sciences (child) | [openwork-custom-styles.css](stylesheets/openwork-custom-styles.css) |
 | Sample Site | SS | Health Sciences (child) | — |
 | Science and Technology Law Review | stlr | Health Sciences (child) | [stlr-custom-styles.css](stylesheets/stlr-custom-styles.css) |
-| Studies in Applied Linguistics and TESOL | SALT | Bootstrap3 (salt-child) | [salt-custom-styles.css](stylesheets/salt-custom-styles.css) |
+| Studies in Applied Linguistics and TESOL | SALT | Bootstrap3 (child) | [salt-custom-styles.css](stylesheets/salt-custom-styles.css) |
 | Student Journal for the Study of Human Rights | sjshr | Health Sciences (child) | [sjshr-custom-styles.css](stylesheets/sjshr-custom-styles.css) |
 | Teaching Citational Practice: Critical Feminist Approaches | citationalpractice | Bootstrap3 (child) | [citational-practice-custom-styles.css](stylesheets/citational-practice-custom-styles.css) |
 | The Columbia Journal of Asia | cja | Health Sciences (child) | [cja-custom-styles.css](stylesheets/cja-custom-styles.css) |
 | The Columbia Journal of Law & the Arts | lawandarts | Health Sciences (child) | [jla-custom-styles.css](stylesheets/jla-custom-styles.css) |
 | The Columbia University Journal of Global Health | jgh | Bootstrap3 (child) | [jgh-custom-styles.css](stylesheets/jgh-custom-styles.css) |
-| The Journal of Clinical Education in Physical Therapy | jcept | Bootstrap3 (jcept-child) | [jcept-custom-styles.css](stylesheets/jcept-custom-styles.css) |
-| The Morningside Review | TMR | Bootstrap3 (tmr) | [tmr-custom-styles.css](stylesheets/tmr-custom-styles.css) |
+| The Journal of Clinical Education in Physical Therapy | jcept | Bootstrap3 (child) | [jcept-custom-styles.css](stylesheets/jcept-custom-styles.css) |
+| The Morningside Review | TMR | Bootstrap3 (child) | [tmr-custom-styles.css](stylesheets/tmr-custom-styles.css) |
 | Voices in Bioethics | bioethics | Bootstrap3 (child) | [voices-in-bioethics-custom-styles.css](stylesheets/voices-in-bioethics-custom-styles.css) |
 | Waxing Moon | waxingmoon | Bootstrap3 (child) | [waxing-moon-custom-styles.css](stylesheets/waxing-moon-custom-styles.css) |
