@@ -20,7 +20,7 @@ The table below lists **all** journals on the multisite, including those that do
 | Columbia Undergraduate Science Journal | cusj | Health Sciences (child) | [cusj-custom-styles.css](stylesheets/cusj-custom-styles.css) |
 | Consilience | consilience | Health Sciences (child) | [consilience-custom-styles.css](stylesheets/consilience-custom-styles.css) |
 | Current Issues in Comparative Education | cice | Bootstrap3 (child) | [cice-custom-styles.css](stylesheets/cice-custom-styles.css) |
-| Current Musicology | currentmusicology | Bootstrap3 (child) | [current-musicology-custom-styles.css](stylesheets/current-musicology-custom-styles.css) |
+| Current Musicology | currentmusicology | Bootstrap3 (child) | — |
 | Electronic Journal of Africana Bibliography | ejab | Bootstrap3 (child) | [ejab-custom-styles.css](stylesheets/ejab-custom-styles.css) |
 | Graduate Student Journal of Psychology | gsjp | Bootstrap3 (child) | [gsjp-custom-styles.css](stylesheets/gsjp-custom-styles.css) |
 | Gyneca | gyneca | Health Sciences (child) | [gyneca-custom-styles.css](stylesheets/gyneca-custom-styles.css) |

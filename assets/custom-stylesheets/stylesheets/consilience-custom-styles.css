@@ -37,19 +37,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title {
   color: #64a5eb;
 }
 
-.top-nav {
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar-default {
-  background: white;
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar-default .nav > li > a:hover {
-  background-color: #ccc;
-}
-
 @media (min-width: 992px) {
 
   .navbar-brand {
@@ -60,14 +47,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title {
 .navbar-nav {
   font-size: 15px;
   padding-top: 11px;
-}
-
-.search-form {
-  border-top: 1px solid #ddd;
-}
-
-.homepage-image .img-responsive {
-  width: 100%;
 }
 
 a {

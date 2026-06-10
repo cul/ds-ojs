@@ -7,7 +7,6 @@ body {
 }
 
 .main-header,
-.search-form,
 .site-footer {
   background: #2b2d48;
 }
@@ -35,12 +34,6 @@ body {
   .main-header .container {
       padding-top: 5rem;
   }
-}
-
-/* hide search form */
-
-.search-form {
-  display: none;
 }
 
 /* fix box styling */
