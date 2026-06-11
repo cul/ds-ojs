@@ -1,4 +1,4 @@
-/* EJAB Custom Styles */
+/* Electronic Journal of Africana Bibliography (ejab) — Custom Styles */
 
 /* header image */
 
@@ -104,7 +104,6 @@ footer[role="contentinfo"] a {
 
 /* fonts */
 
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
-.navbar-default {
+body {
   font-family: 'Crimson Pro', sans-serif;
 }

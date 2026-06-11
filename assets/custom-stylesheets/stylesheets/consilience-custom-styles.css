@@ -1,4 +1,4 @@
-/* Consilience Custom Styles */
+/* Consilience (consilience) — Custom Styles */
 
 /* fix layout issue OJS-317 */
 
@@ -23,14 +23,9 @@ body {
 /* modify header fonts */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title {
-  font-family: "pt serif";
   color: #0e4d92;
   font-weight: 600;
   font-size: 20px;
-}
-
-.navbar-default {
-  font-family: arial, sans-serif;
 }
 
 .main-header,
@@ -40,19 +35,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title {
 
 .issue-toc-section-title {
   color: #64a5eb;
-}
-
-.top-nav {
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar-default {
-  background: white;
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar-default .nav > li > a:hover {
-  background-color: #ccc;
 }
 
 @media (min-width: 992px) {
@@ -65,14 +47,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .article-summary-title {
 .navbar-nav {
   font-size: 15px;
   padding-top: 11px;
-}
-
-.search-form {
-  border-top: 1px solid #ddd;
-}
-
-.homepage-image .img-responsive {
-  width: 100%;
 }
 
 a {
@@ -96,14 +70,4 @@ a:hover {
 
 footer.site-footer {
   background: #093b71;
-}
-
-/* footer widgets */
-
-@media (min-width: 992px) {
-
-  .site-footer .pkp_block {
-    flex: 0 0 50%;
-    width: 50%;
-  }
 }

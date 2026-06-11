@@ -1,4 +1,4 @@
-/* STLR Custom Styles */
+/* Science and Technology Law Review (stlr) — Custom Styles */
 
 /* logo */
 
@@ -14,18 +14,7 @@
 
 /* fonts */
 
-body,
-.navbar-logo-text,
-.list-group-item-heading,
-.announcement-summary-date,
-.article-details-issue-identifier,
-.article-summary-title,
-.article-summary-date,
-.announcement-date,
-.issue-toc-section-title,
-.card-title,
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+body {
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -61,16 +50,6 @@ a {
 
 .site-footer {
   background: #1f2979;
-}
-
-/* modify footer blocks */
-
-@media (min-width: 992px) {
-
-  .site-footer .pkp_block {
-    flex: 0 0 33%;
-    width: 33%;
-  }
 }
 
 /* blog page modifications OJS-75 */

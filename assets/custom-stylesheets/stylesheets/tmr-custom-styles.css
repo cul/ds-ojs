@@ -1,4 +1,4 @@
-/* TMR Custom Styles */
+/* The Morningside Review (TMR) — Custom Styles */
 
 /* header color*/
 
@@ -65,4 +65,10 @@ blockquote {
   font-size: 16px;
   margin: 0;
   padding: 0 0 0 40px;
+}
+
+/* hide option for authors to register as reviewers DS-4911 */
+
+.register fieldset.reviewer {
+  display: none;
 }

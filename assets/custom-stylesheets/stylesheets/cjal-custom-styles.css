@@ -1,4 +1,4 @@
-/* CJAL Custom Styles */
+/* Columbia Journal of Asian Law (cjal) — Custom Styles */
 
 /* header */
 
@@ -20,7 +20,11 @@
   padding-bottom: 0;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .dropdown-item {
+#primaryNav .nav-link,
+#primaryNav .nav-link:hover,
+#primaryNav .nav-link:focus,
+#userNav .nav-link,
+#primaryNav .dropdown-item {
   color: #fff;
 }
 
