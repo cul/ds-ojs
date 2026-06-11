@@ -18,9 +18,12 @@ h1, h2, h3, h4, h5, h6,
   font-size: 19px;
 }
 
-/* nav link color */
+/* header nav link color */
 
-.navbar-light .navbar-nav .nav-link {
+#primaryNav .nav-link,
+#primaryNav .nav-link:hover,
+#primaryNav .nav-link:focus,
+#userNav .nav-link {
   color: #EE7600;
 }
 
