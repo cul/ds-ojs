@@ -8,7 +8,7 @@ The table below lists **all** journals on the multisite, including those that do
 |---|---|---|---|---|---|
 | Al-Usur al-Wusta | alusur | 32 | Health Sciences (child) | [al-usur-al-wusta-custom-styles.css](stylesheets/al-usur-al-wusta-custom-styles.css) | [DS-6144](https://columbiauniversitylibraries.atlassian.net/browse/DS-6144) |
 | Black Theology Papers Project | btpp | 13 | Bootstrap3 (child) | [btpp-custom-styles.css](stylesheets/btpp-custom-styles.css) | [DS-4974](https://columbiauniversitylibraries.atlassian.net/browse/DS-4974) |
-| Columbia Business Law Review | CBLR | 27 | Bootstrap3 (child) | [cblr-custom-styles.css](stylesheets/cblr-custom-styles.css) | [OJS-169](https://columbiauniversitylibraries.atlassian.net/browse/OJS-169) |
+| Columbia Business Law Review | cblr | 27 | Bootstrap3 (child) | [cblr-custom-styles.css](stylesheets/cblr-custom-styles.css) | [OJS-169](https://columbiauniversitylibraries.atlassian.net/browse/OJS-169) |
 | Columbia Journal of Asian Law | cjal | 21 | Health Sciences (parent) | [cjal-custom-styles.css](stylesheets/cjal-custom-styles.css) | [DS-4966](https://columbiauniversitylibraries.atlassian.net/browse/DS-4966) |
 | Columbia Journal of Environmental Law | cjel | 24 | Health Sciences (child) | — | [OJS-93](https://columbiauniversitylibraries.atlassian.net/browse/OJS-93) |
 | Columbia Journal of Gender and Law | cjgl | 20 | Health Sciences (child) | [cjgl-custom-styles.css](stylesheets/cjgl-custom-styles.css) | [DS-4947](https://columbiauniversitylibraries.atlassian.net/browse/DS-4947) |
