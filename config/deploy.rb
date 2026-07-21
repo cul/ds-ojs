@@ -138,6 +138,23 @@ namespace :ojs do
         end
       end
     end
+
+    task :stylesheets do
+      on roles(:web) do
+        invoke 'deploy'
+
+        journals = YAML.load_file(File.expand_path('../assets/custom-stylesheets/journals.yml', __dir__))
+
+        journals.each do |slug, info|
+          source   = File.join(fetch(:current_path), 'assets/custom-stylesheets/stylesheets', info['stylesheet'])
+          dest_dir = File.join(fetch(:ojs_root), 'public/journals', info['id'].to_s)
+          dest     = File.join(dest_dir, 'styleSheet.css')
+
+          execute :mkdir, '-p', dest_dir
+          execute :cp, source, dest
+        end
+      end
+    end
   end
 
 end
