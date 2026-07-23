@@ -1,0 +1,99 @@
+# Maps each journal's slug to its numeric journal_id (see README.md) and the
+# custom stylesheet file in stylesheets/ that should be deployed for it as
+# public/journals/<id>/styleSheet.css.
+#
+# Journals with no custom stylesheet are omitted.
+
+alusur:
+  id: 32
+  stylesheet: al-usur-al-wusta-custom-styles.css
+ari:
+  id: 50
+  stylesheet: iggrot-ha-ari-custom-styles.css
+bioethics:
+  id: 37
+  stylesheet: voices-in-bioethics-custom-styles.css
+btpp:
+  id: 13
+  stylesheet: btpp-custom-styles.css
+cblr:
+  id: 27
+  stylesheet: cblr-custom-styles.css
+cice:
+  id: 43
+  stylesheet: cice-custom-styles.css
+citationalpractice:
+  id: 46
+  stylesheet: citational-practice-custom-styles.css
+cja:
+  id: 49
+  stylesheet: cja-custom-styles.css
+cjal:
+  id: 21
+  stylesheet: cjal-custom-styles.css
+cjgl:
+  id: 20
+  stylesheet: cjgl-custom-styles.css
+cjrl:
+  id: 19
+  stylesheet: cjrl-custom-styles.css
+cjum:
+  id: 54
+  stylesheet: cjum-custom-styles.css
+consilience:
+  id: 12
+  stylesheet: consilience-custom-styles.css
+cswr:
+  id: 15
+  stylesheet: cswr-custom-styles.css
+curj:
+  id: 5
+  stylesheet: curj-custom-styles.css
+cusj:
+  id: 4
+  stylesheet: cusj-custom-styles.css
+ejab:
+  id: 38
+  stylesheet: ejab-custom-styles.css
+gsjp:
+  id: 51
+  stylesheet: gsjp-custom-styles.css
+gyneca:
+  id: 56
+  stylesheet: gyneca-custom-styles.css
+jcept:
+  id: 14
+  stylesheet: jcept-custom-styles.css
+jgh:
+  id: 33
+  stylesheet: jgh-custom-styles.css
+jmetc:
+  id: 22
+  stylesheet: jmetc-custom-styles.css
+lawandarts:
+  id: 23
+  stylesheet: jla-custom-styles.css
+meliora:
+  id: 42
+  stylesheet: meliora-custom-styles.css
+openwork:
+  id: 40
+  stylesheet: openwork-custom-styles.css
+SALT:
+  id: 17
+  stylesheet: salt-custom-styles.css
+sjshr:
+  id: 55
+  stylesheet: sjshr-custom-styles.css
+stlr:
+  id: 31
+  stylesheet: stlr-custom-styles.css
+taxlaw:
+  id: 26
+  stylesheet: taxlaw-custom-styles.css
+TMR:
+  id: 18
+  stylesheet: tmr-custom-styles.css
+waxingmoon:
+  id: 29
+  stylesheet: waxing-moon-custom-styles.css
