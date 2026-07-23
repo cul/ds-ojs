@@ -14,6 +14,8 @@ copy ojs_config.template.yml to ojs_config.yml
    Updates themes managed in ds-ojs repo.
 4. `cap {env} ojs:update:plugins`
 	Deploys cul ojs plugins hosted in separate repos.
+5. `cap {env} ojs:update:stylesheets`
+	Deploys custom journal stylesheets listed in assets/custom-stylesheets/journals.yml.
 
 #### Configurable variables
 The OJS update:themes task requires the following variable set in ojs_config.yml.
