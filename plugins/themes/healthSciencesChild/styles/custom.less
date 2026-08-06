@@ -138,6 +138,20 @@ h1, h2, h3, h4, h5, h6,
   font-size: 14px;
 }
 
+/* footer blocks split the row evenly by count; a lone block is capped at 50% */
+@media (min-width: 992px) {
+  .site-footer .pkp_block {
+    flex: 1 1 0;
+    width: auto;
+  }
+
+  .site-footer .pkp_block:only-child {
+    flex: 0 1 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
 /* typography */
 
 h2, h3, h4, h5 {
