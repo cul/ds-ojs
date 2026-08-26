@@ -20,7 +20,7 @@ The table below lists **all** journals on the multisite, including those that do
 | Columbia Undergraduate Science Journal | cusj | 4 | Health Sciences (child) | [cusj-custom-styles.css](stylesheets/cusj-custom-styles.css) | — |
 | Consilience | consilience | 12 | Health Sciences (child) | [consilience-custom-styles.css](stylesheets/consilience-custom-styles.css) | [OJS-192](https://columbiauniversitylibraries.atlassian.net/browse/OJS-192) |
 | Current Issues in Comparative Education | cice | 43 | Bootstrap3 (child) | [cice-custom-styles.css](stylesheets/cice-custom-styles.css) | [OJS-177](https://columbiauniversitylibraries.atlassian.net/browse/OJS-177) |
-| Current Musicology | currentmusicology | 1 | Bootstrap3 (child) | — | — |
+| Current Musicology | currentmusicology | 1 | Bootstrap3 (child) | [current-musicology-custom-styles.css](stylesheets/current-musicology-custom-styles.css) | — |
 | Electronic Journal of Africana Bibliography | ejab | 38 | Bootstrap3 (child) | [ejab-custom-styles.css](stylesheets/ejab-custom-styles.css) | [OJS-94](https://columbiauniversitylibraries.atlassian.net/browse/OJS-94) |
 | Graduate Student Journal of Psychology | gsjp | 51 | Bootstrap3 (child) | [gsjp-custom-styles.css](stylesheets/gsjp-custom-styles.css) | [DS-5752](https://columbiauniversitylibraries.atlassian.net/browse/DS-5752) |
 | Gyneca | gyneca | 56 | Health Sciences (child) | [gyneca-custom-styles.css](stylesheets/gyneca-custom-styles.css) | — |
