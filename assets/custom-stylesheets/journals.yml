@@ -49,6 +49,9 @@ cswr:
 curj:
   id: 5
   stylesheet: curj-custom-styles.css
+currentmusicology:
+  id: 1
+  stylesheet: current-musicology-custom-styles.css
 cusj:
   id: 4
   stylesheet: cusj-custom-styles.css
