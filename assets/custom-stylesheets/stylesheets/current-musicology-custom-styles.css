@@ -1,19 +1,20 @@
-/* Current Musicology (currentmusicology) — Custom Styles */
+/* Current Musicology (currentmusicology) - Custom Styles */
 
-.navbar {
+.navbar-default {
   background: linear-gradient(to bottom, rgba(185,217,235,1) 0%, rgba(185,217,235,0.6) 100%);
+  border: none;
   color: currentColor;
 }
 
-.navbar-logo {
-  padding-top: 18em;
-  padding-bottom: 18em;
+/* logo size */
+
+.navbar-brand {
+  height: 140px;
+  padding: 10px;
 }
 
-.navbar-logo img {
-  max-width: 230px;
-}
+/* nav link color */
 
-#primaryNav {
-  border-bottom: 1px solid #ddd;
+.navbar-default .nav>li>a {
+  color: #333;
 }
