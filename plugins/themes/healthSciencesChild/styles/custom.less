@@ -45,6 +45,31 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0;
 }
 
+/* homepage banner behind current issue; pin the height so the offsets clear it (OJS-317) */
+
+@media (min-width: 1200px) {
+  .homepage-image-behind-issue {
+    height: 500px;
+  }
+
+  .homepage-image-behind-issue img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .issue-only-image {
+    margin-top: 248px;
+  }
+}
+
+/* the parent theme grows the heading stack 48px here */
+@media (min-width: 1400px) {
+  .issue-only-image {
+    margin-top: 200px;
+  }
+}
+
 /* homepage article summary boxes */
 
 .issue-toc-section-title {

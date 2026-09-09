@@ -1,12 +1,6 @@
 /* Consilience (consilience) - Custom Styles */
 
-/* fix layout issue OJS-317 */
-
-@media (min-width: 1200px) {
-  .issue-only-image {
-      margin-top: auto;
-  }
-}
+/* homepage announcements */
 
 .homepage-announcements {
   background: #fff;
