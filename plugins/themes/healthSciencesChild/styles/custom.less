@@ -61,6 +61,11 @@ h1, h2, h3, h4, h5, h6,
   .issue-only-image {
     margin-top: 248px;
   }
+
+  /* an issue with galleys still gets .issue-only-image, but its header block already clears the banner */
+  .homepage-issue-header ~ .issue-only-image {
+    margin-top: 0;
+  }
 }
 
 /* the parent theme grows the heading stack 48px here */
