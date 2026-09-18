@@ -294,3 +294,26 @@ table.table-small {
 .issue-details p.published {
   display: none;
 }
+
+/* edits styling of browse-by-section pages (OJS-397) */
+
+.page_section {
+  & .cmp_article_header {
+    display: none;
+  }
+
+  & .cmp_article_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* bootstrap3 zeroes margin-top on each list's first .media */
+  & .cmp_article_list:not(:first-of-type) .media:first-child {
+    margin-top: 15px;
+  }
+
+  & .pager {
+    display: none;
+  }
+}

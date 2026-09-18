@@ -322,3 +322,21 @@ blockquote {
     width: auto;
   }
 }
+
+/* edits styling of browse-by-section pages (OJS-397) */
+
+.page-section {
+  & .cmp_article_header {
+    display: none;
+  }
+
+  & .cmp_article_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & .pagination {
+    display: none;
+  }
+}
