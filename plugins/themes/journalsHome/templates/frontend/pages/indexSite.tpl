@@ -9,7 +9,10 @@
 
 <main>
   <div class="mission">
-    <p class="intro">Columbia Libraries supports the creation, discovery, and dissemination of open-access research by providing technical publishing support and covering hosting and related costs for over 30 scholarly journals. We collaborate with Columbia-affiliated faculty and students who produce and curate scholarly content focused on a range of topics. We support editors in learning about the traditional scholarly publishing ecosystem and give them support to push its boundaries and leverage its existing infrastructure and strengths.
+    <p class="intro">
+    <span style="font-weight: 500"><em>We are currently troubleshooting an issue with our journal software and a read-only version of the website is only accessible to those on the Columbia campuses or <a href="https://www.cuit.columbia.edu/remote-access-services">Columbia VPN</a>. We expect to restore access soon. If you have an emergency related to access, please email us at <a href="mailto:publishing@library.columbia.edu">publishing@library.columbia.edu</a> and we will do our best to assist you.</em></span>
+    <br><br>
+    Columbia Libraries supports the creation, discovery, and dissemination of open-access research by providing technical publishing support and covering hosting and related costs for over 30 scholarly journals. We collaborate with Columbia-affiliated faculty and students who produce and curate scholarly content focused on a range of topics. We support editors in learning about the traditional scholarly publishing ecosystem and give them support to push its boundaries and leverage its existing infrastructure and strengths.
     <br><br>
     <a href="https://library.columbia.edu/research-teaching/open-scholarship/libraries-publishing/journal-publishing.html">Journal Publishing Partnerships Information</a><br>
     <em>Please note that we are not currently accepting new partners</em><br><br>
