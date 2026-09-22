@@ -48,6 +48,7 @@ header,
 header {
 	margin: 0 auto;
 	padding: 50px 20px 8px 20px;
+	position: relative;
 
 	& h1 {
 		margin: 0;
@@ -66,6 +67,59 @@ header {
 		height: auto;
 		width: 100%;
 	}
+}
+
+/* user navigation */
+
+.user-nav {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+}
+
+.user-nav-list,
+.user-nav-list ul {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-nav-list li {
+	position: relative;
+}
+
+.user-nav-list a {
+	font-size: .9rem;
+	text-decoration: none;
+}
+
+.user-nav-list a:hover,
+.user-nav-list a:focus {
+	text-decoration: underline;
+}
+
+/* submenu shown when logged in */
+
+.user-nav-list li > ul {
+	background: #fff;
+	border: @border;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	display: none;
+	flex-direction: column;
+	gap: 8px;
+	min-width: 160px;
+	padding: 12px 16px;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 10;
+}
+
+.user-nav-list li:hover > ul,
+.user-nav-list li:focus-within > ul {
+	display: flex;
 }
 
 /* cover */
@@ -201,6 +255,15 @@ footer a {
 
 	header {
 		padding: 0 20px;
+	}
+
+	.user-nav {
+		padding: 10px 0;
+		position: static;
+	}
+
+	.user-nav-list {
+		justify-content: flex-end;
 	}
 
 	.mission,
