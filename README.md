@@ -17,7 +17,7 @@ copy ojs_config.template.yml to ojs_config.yml
 5. `cap {env} ojs:update:stylesheets`
 	Deploys custom journal stylesheets listed in assets/custom-stylesheets/journals.yml.
 6. `cap {env} ojs:update:favicon`
-	Deploys assets/favicon/favicon.ico to the OJS web root, replacing the stock PKP icon. Re-run after any OJS upgrade that unpacks a fresh distribution.
+	Deploys assets/favicon/favicon.ico to the OJS web root, replacing the stock PKP icon. Re-run after OJS upgrades.
 
 #### Configurable variables
 The OJS update:themes task requires the following variable set in ojs_config.yml.
