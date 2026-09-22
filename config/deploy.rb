@@ -155,6 +155,17 @@ namespace :ojs do
         end
       end
     end
+
+    task :favicon do
+      on roles(:web) do
+        invoke 'deploy'
+
+        source = File.join(current_path, 'assets/favicon/favicon.ico')
+        dest   = File.join(fetch(:ojs_root), 'favicon.ico')
+
+        execute :cp, source, dest
+      end
+    end
   end
 
 end
