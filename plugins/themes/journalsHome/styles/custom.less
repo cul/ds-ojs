@@ -47,7 +47,7 @@ header,
 
 header {
 	margin: 0 auto;
-	padding: 50px 20px 8px 20px;
+	padding: 12px 20px 8px 20px;
 	position: relative;
 
 	& h1 {
@@ -72,13 +72,12 @@ header {
 /* user navigation */
 
 .user-nav {
-	position: absolute;
-	right: 20px;
-	top: 12px;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 20px 0 20px;
 }
 
-.user-nav-list,
-.user-nav-list ul {
+.user-nav-list {
 	display: flex;
 	gap: 20px;
 	list-style: none;
@@ -91,7 +90,10 @@ header {
 }
 
 .user-nav-list a {
+	align-items: center;
+	display: flex;
 	font-size: .9rem;
+	gap: 6px;
 	text-decoration: none;
 }
 
@@ -100,17 +102,61 @@ header {
 	text-decoration: underline;
 }
 
+/* unread task count on the dashboard item */
+
+.user-nav-list .task_count {
+	background: @color-main;
+	border-radius: 10px;
+	color: #fff;
+	font-size: .7rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 4px 7px;
+}
+
+/* menu trigger shown when logged in */
+
+.user-nav-list > li:has(> ul) > a {
+	border: @border;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+
+.user-nav-list > li:has(> ul) > a:hover,
+.user-nav-list > li:has(> ul) > a:focus {
+	text-decoration: none;
+}
+
+/* dropdown caret */
+
+.user-nav-list > li:has(> ul) > a:after {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 5px solid currentColor;
+	content: "";
+	height: 0;
+	transition: transform 150ms;
+	width: 0;
+}
+
+.user-nav-list > li:hover > a:after,
+.user-nav-list > li:focus-within > a:after {
+	transform: rotate(180deg);
+}
+
 /* submenu shown when logged in */
 
 .user-nav-list li > ul {
 	background: #fff;
 	border: @border;
+	border-radius: 3px;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 	display: none;
 	flex-direction: column;
-	gap: 8px;
-	min-width: 160px;
-	padding: 12px 16px;
+	list-style: none;
+	margin: 0;
+	min-width: 190px;
+	padding: 6px 0;
 	position: absolute;
 	right: 0;
 	top: 100%;
@@ -120,6 +166,17 @@ header {
 .user-nav-list li:hover > ul,
 .user-nav-list li:focus-within > ul {
 	display: flex;
+}
+
+.user-nav-list li > ul a {
+	justify-content: space-between;
+	padding: 7px 16px;
+}
+
+.user-nav-list li > ul a:hover,
+.user-nav-list li > ul a:focus {
+	background: #f1f3f5;
+	text-decoration: none;
 }
 
 /* cover */
@@ -258,12 +315,7 @@ footer a {
 	}
 
 	.user-nav {
-		padding: 10px 0;
-		position: static;
-	}
-
-	.user-nav-list {
-		justify-content: flex-end;
+		padding: 10px 20px 0 20px;
 	}
 
 	.mission,
