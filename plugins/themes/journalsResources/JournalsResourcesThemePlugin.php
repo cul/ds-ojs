@@ -7,7 +7,6 @@ use PKP\plugins\ThemePlugin;
 class JournalsResourcesThemePlugin extends ThemePlugin {
 
 	public function init() {
-		$this->setParent('defaultthemeplugin');
 		$this->addStyle('custom', 'styles/custom.less');
 	}
 

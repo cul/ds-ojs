@@ -7,8 +7,8 @@ use PKP\plugins\ThemePlugin;
 class JournalsHomeThemePlugin extends ThemePlugin {
 
 	public function init() {
-		$this->setParent('defaultthemeplugin');
 		$this->addStyle('custom', 'styles/custom.less');
+		$this->addMenuArea(['user']);
 	}
 
 	public function getDisplayName() {

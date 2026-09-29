@@ -6,6 +6,10 @@
 
 <body>
 
+<nav class="user-nav" aria-label="{translate key="common.navigation.user"}">
+  {load_menu name="user" id="navigationUser" ulClass="user-nav-list"}
+</nav>
+
 <header>
   <h1>
     <img src="{$baseUrl}/plugins/themes/journalsHome/assets/logo-journals.svg" alt="">
