@@ -10,6 +10,7 @@ class HealthSciencesChildThemePlugin extends ThemePlugin {
 		$this->setParent('healthsciencesthemeplugin');
 		$this->addStyle('custom', 'styles/custom.less');
 		$this->addStyle('openid', 'styles/openid.less');
+		$this->addScript('custom', 'js/custom.js');
 	}
 
 	public function getDisplayName() {
