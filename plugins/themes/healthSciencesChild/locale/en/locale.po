@@ -14,3 +14,6 @@ msgstr "Health Sciences Child Theme"
 
 msgid "plugins.themes.healthSciencesChild.description"
 msgstr "A child theme of the Health Sciences theme carrying Columbia University Libraries' shared customizations."
+
+msgid "orcid.unauthenticated"
+msgstr " "

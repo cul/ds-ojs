@@ -14,3 +14,6 @@ msgstr "Bootstrap3 Child Theme"
 
 msgid "plugins.themes.bootstrap3Child.description"
 msgstr "A child theme of the Bootstrap3 theme carrying Columbia University Libraries' shared customizations."
+
+msgid "orcid.unauthenticated"
+msgstr " "
